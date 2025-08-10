@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory_TestNG;
 import utils.ConfigReader;
+import utils.ExcelReader;
 
 public class BasePage {
 	
@@ -22,6 +23,7 @@ public class BasePage {
 	WebDriverWait wait;
 	ConfigReader config;
 	Alert alert;
+	ExcelReader excelReader;
 	
 	
 	
@@ -53,21 +55,22 @@ public class BasePage {
 
 		this.config = new ConfigReader();
 		this.tldriver = DriverFactory_TestNG.getDriver();
-		
-		//this.tldriver = driver;
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
+		this.excelReader = new ExcelReader();
 
 	}
 	
 	
 	
-	public void launch_webpage() {
+	public void launch_webpage() throws IOException {
 		tldriver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
 		signinBtn.click();
-		userName.sendKeys("ninjalinos@work.com");
-		pwd.sendKeys("sdet218920@");
+		String username = excelReader.getData("Credentials", 1, "Username");
+		userName.sendKeys(username);
+		String password = excelReader.getData("Credentials", 1, "Password");
+		pwd.sendKeys(password);
 		logInBtn.click();
 	}
 	
