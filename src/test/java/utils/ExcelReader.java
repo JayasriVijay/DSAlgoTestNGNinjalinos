@@ -86,5 +86,42 @@ public class ExcelReader {
 		
         return data;
 	}
+	
+	public Object[] getCode_arrayPractice(String sheetName) throws IOException {
+		sheet = wb.getSheet(sheetName);
+		Object[] data = new Object[sheet.getRow(1).getLastCellNum()];
+		for(int j=0; j<sheet.getRow(1).getLastCellNum(); j++) {
+			data[j]= sheet.getRow(1).getCell(j).toString();
+		}
+		
+        return data;
+	}
+	
+	public Object[][] getLoginTestData(String sheetName) throws IOException {
+		sheet = wb.getSheet(sheetName);
+		Object[][] data = new Object[sheet.getLastRowNum()][2];
+		for(int i=0; i<sheet.getLastRowNum(); i++) {
+			for(int j=0 ; j<2;j++) {
+				data[i][j]= sheet.getRow(i+1).getCell(j).toString();
+				
+			}
+			
+		}
+		
+        return data;
+	}
+	
+	public Object[][] getRegisterTestData(String sheetName) throws IOException {
+		sheet = wb.getSheet(sheetName);
+		Object[][] data = new Object[sheet.getLastRowNum()][3];
+		for(int i=0; i<sheet.getLastRowNum(); i++) {
+			for(int j=0;j<3;j++) {
+				data[i][j]= sheet.getRow(i+1).getCell(j).toString();
+			}
+			
+		}
+		
+        return data;
+	}
 
 }
