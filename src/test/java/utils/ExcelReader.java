@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -44,15 +45,16 @@ public class ExcelReader {
 		}
 	}
 
-	public int getColNumber(String cellName) {
-		return colNums.get(cellName);
-	}
+//	public int getColNumber(String cellName) {
+//		return colNums.get(cellName);
+//	}
 
 	public String getData(String sheetName, int rowNum, String cellName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		populateColumNums();
 		String cellData = "";
-		int cellNum = getColNumber(cellName);
+		//int cellNum = getColNumber(cellName);
+		int cellNum = colNums.get(cellName);
 		cellData = getData_UsingColNum(sheetName, rowNum, cellNum);
 		return cellData;
 
@@ -73,6 +75,16 @@ public class ExcelReader {
 		}
 		return cellData;
 
+	}
+	
+	public Object[] getCode(String sheetName) throws IOException {
+		sheet = wb.getSheet(sheetName);
+		Object[] data = new Object[sheet.getLastRowNum()];
+		for(int i=0; i<sheet.getLastRowNum(); i++) {
+			data[i]= sheet.getRow(i+1).getCell(0).toString();
+		}
+		
+        return data;
 	}
 
 }

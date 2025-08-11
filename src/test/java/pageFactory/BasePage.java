@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,7 @@ public class BasePage {
 	WebDriverWait wait;
 	ConfigReader config;
 	Alert alert;
+	JavascriptExecutor js;
 	ExcelReader excelReader;
 	
 	
@@ -50,6 +52,9 @@ public class BasePage {
 	@FindBy(xpath = "//button[contains(text(),'Run')]")
 	WebElement runBtn;
 	
+	@FindBy(id = "output")
+	WebElement outputTxt;
+	
 	
 	public BasePage() throws IOException {
 
@@ -58,6 +63,7 @@ public class BasePage {
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
 		this.excelReader = new ExcelReader();
+		js = (JavascriptExecutor) tldriver;
 
 	}
 	
@@ -95,6 +101,41 @@ public class BasePage {
 		alert.accept();
 
 	}
+	
+	public void validAndInvalidCode(String code) {
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".CodeMirror")));
+		js.executeScript(
+				"let editor = document.querySelector('.CodeMirror').CodeMirror;" + "editor.setValue(arguments[0]);",
+				code);
+		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
+	}
+	
+	public String validCode() throws IOException {
+		String validCodeData = excelReader.getData("TextEditor", 1, "Code");
+		return validCodeData;
+	}
+	
+	public String inValidCode() throws IOException {
+		String inValidCodeData = excelReader.getData("TextEditor", 2, "Code");
+		return inValidCodeData;
+	}
+	
+	public String validOutput() throws IOException {
+		String validOutputData = excelReader.getData("TextEditor", 1, "ExpectedResults");
+		return validOutputData;
+	}
+	
+	public String expectedAlert() throws IOException {
+		String alert = excelReader.getData("TextEditor", 2, "ExpectedAlert");
+		return alert;
+	}
+	
+	public String output_text() {
+		wait.until(ExpectedConditions.visibilityOf(outputTxt));
+		String outputText = outputTxt.getText();
+		return outputText;
 
+	}
 
-}
+	}

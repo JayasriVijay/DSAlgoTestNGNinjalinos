@@ -15,6 +15,11 @@ import utils.LoggerLoad;
 @Listeners(CustomListener.class)
 public class Queue extends BaseTest {
 
+	public Queue() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	Queue_pf queue;
 	BasePage base;
 	LoggerLoad log;

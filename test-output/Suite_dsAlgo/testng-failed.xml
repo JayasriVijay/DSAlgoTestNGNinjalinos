@@ -24,8 +24,8 @@
     <classes>
       <class name="testCases.Stack">
         <methods>
-          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="stack_page"/>
+          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>

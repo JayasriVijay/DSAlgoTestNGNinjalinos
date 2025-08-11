@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
@@ -20,11 +21,16 @@ import driverFactory.DriverFactory_TestNG;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageFactory.BasePage;
+import utils.ExcelReader;
 
 
 public class BaseTest {
 	
-
+	ExcelReader excelReader;
+	
+	public BaseTest() throws IOException {
+		this.excelReader = new ExcelReader();
+	}
 	
 		
 	@Parameters({"browser"})	
@@ -59,6 +65,12 @@ public class BaseTest {
 	    }
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
 		//return screenshot_for_allureReport;
+	}
+	
+	@DataProvider(name = "pythonCodeValidandInvalid")
+	public Object[] pythonCode() throws IOException {
+		Object data[] = excelReader.getCode("TextEditor");
+		return data;
 	}
 }
 
