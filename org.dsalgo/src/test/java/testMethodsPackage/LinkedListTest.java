@@ -2,12 +2,21 @@ package testMethodsPackage;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+
+import java.util.Map;
+
 import org.testng.Assert;
 import pageObjects.LinkedListPage;
+import utils.ExcelReaderTestNg;
+
 
 public class LinkedListTest extends BaseTest {
 
     LinkedListPage linkedListPg;
+    private Map<String, String> testData;
+    String Input;
+    String  actualOutput;
+    String expectedOutput;
 
     @BeforeMethod
     public void initPageObjects() {
@@ -55,10 +64,15 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_Intro() throws InterruptedException {
         System.out.println("Checking for Valid Code...");
         navigateToIntroTryEditor();
-        linkedListPg.validCode();
-        String ActualOuput=linkedListPg.checkOuputMsg();
-        String expectedOutput = "hello"; 
-        Assert.assertEquals(ActualOuput, expectedOutput, "Output didn't Match for Valid Code");
+        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");
+        System.out.println(testData);
+        Input = testData.get("Input");
+        System.out.println(Input);
+        expectedOutput=linkedListPg.enterData(Input);
+        System.out.println(expectedOutput);
+        actualOutput = testData.get("Output");
+        System.out.println(actualOutput);
+        Assert.assertEquals(actualOutput, expectedOutput, "Output didn't Match for Valid Code");
         
         
     }

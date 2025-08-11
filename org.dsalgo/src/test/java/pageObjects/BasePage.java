@@ -6,6 +6,8 @@ import java.util.Properties;
 import java.util.function.Function;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,7 +41,7 @@ public class BasePage {
 	@FindBy(id="id_password") WebElement passWord;
 	@FindBy (xpath="//input[@type='submit' and @value='Login']") WebElement loginButton;
 	@FindBy (xpath="//a[@href='graph' and text()='Get Started']") WebElement GraphPageButton;
-	@FindBy(xpath = "//form[@id='answer_form']/div/div/div[6]/div")
+	@FindBy(xpath = "//*[@class='CodeMirror-scroll']")
 	WebElement textEditor;
 	@FindBy(xpath = "//button[contains(text(),'Run')]")
 	WebElement runBtn;
@@ -109,9 +111,38 @@ public class BasePage {
 		return text;
 	}
 	
-	public void validCode() {
-		action.moveToElement(textEditor).sendKeys(textEditor, "print(\"hello\")");
-		action.moveToElement(runBtn).click().perform();
+	 public String enterData(String inputData) {
+		 if (inputData != null && !inputData.isEmpty()) {
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript(
+		        "document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0]);", 
+		        inputData
+		    );
+		 }
+		    runBtn.click();
+          
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		    if (isAlertPresent()) {
+		        Alert alert = driver.switchTo().alert();
+		        String alertText = alert.getText();
+		        alert.accept();
+		        return alertText;
+		    } else {
+		     
+		        String text = outputTxt.getText();
+		        System.out.println("text"+text);
+		        return text;
+		        }
+		    }
+
+	private boolean isAlertPresent() {
+		try {
+	        driver.switchTo().alert();
+	        return true;
+	    } catch (NoAlertPresentException e) {
+	        return false;
+	    }
 	}
 	public void invalidCode() {
 		String invalid_data= "hello__world";

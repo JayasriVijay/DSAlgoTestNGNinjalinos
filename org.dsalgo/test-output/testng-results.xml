@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-06T14:23:38 MDT" name="Default suite" finished-at="2025-08-06T14:24:12 MDT" duration-ms="34064">
+  <suite started-at="2025-08-11T12:16:01 MDT" name="Default suite" finished-at="2025-08-11T12:16:09 MDT" duration-ms="8218">
     <groups>
     </groups>
-    <test started-at="2025-08-06T14:23:38 MDT" name="Default test" finished-at="2025-08-06T14:24:12 MDT" duration-ms="34064">
+    <test started-at="2025-08-11T12:16:01 MDT" name="Default test" finished-at="2025-08-11T12:16:09 MDT" duration-ms="8218">
       <class name="testMethodsPackage.LinkedListTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:38 MDT" name="setup" finished-at="2025-08-06T14:23:44 MDT" duration-ms="6119" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@4879dfad]" started-at="2025-08-11T12:16:01 MDT" name="setup" finished-at="2025-08-11T12:16:06 MDT" duration-ms="5396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,107 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:44 MDT" name="initPageObjects" finished-at="2025-08-06T14:23:44 MDT" duration-ms="420" status="PASS">
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@4879dfad]" started-at="2025-08-11T12:16:06 MDT" name="initPageObjects" finished-at="2025-08-11T12:16:07 MDT" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyIntroPageTitle()[pri:1, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:44 MDT" name="verifyIntroPageTitle" finished-at="2025-08-06T14:23:45 MDT" duration-ms="487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIntroPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:45 MDT" name="tearDown" finished-at="2025-08-06T14:23:45 MDT" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:45 MDT" name="setup" finished-at="2025-08-06T14:23:49 MDT" duration-ms="4521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:49 MDT" name="initPageObjects" finished-at="2025-08-06T14:23:50 MDT" duration-ms="385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyPracticeQuestionsPageTitle_Intro()[pri:2, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:50 MDT" name="verifyPracticeQuestionsPageTitle_Intro" finished-at="2025-08-06T14:23:50 MDT" duration-ms="612" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPracticeQuestionsPageTitle_Intro -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:50 MDT" name="tearDown" finished-at="2025-08-06T14:23:51 MDT" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:51 MDT" name="setup" finished-at="2025-08-06T14:23:55 MDT" duration-ms="4004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:55 MDT" name="initPageObjects" finished-at="2025-08-06T14:23:56 MDT" duration-ms="952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifytryEditorPageTitle_Intro()[pri:3, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:56 MDT" name="verifytryEditorPageTitle_Intro" finished-at="2025-08-06T14:23:57 MDT" duration-ms="1219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytryEditorPageTitle_Intro -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:57 MDT" name="tearDown" finished-at="2025-08-06T14:23:57 MDT" duration-ms="201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:23:57 MDT" name="setup" finished-at="2025-08-06T14:24:02 MDT" duration-ms="4486" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:02 MDT" name="initPageObjects" finished-at="2025-08-06T14:24:02 MDT" duration-ms="408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifytryEditorforValidCode_Intro()[pri:4, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:02 MDT" name="verifytryEditorforValidCode_Intro" finished-at="2025-08-06T14:24:04 MDT" duration-ms="1980" status="PASS">
+        <test-method signature="verifytryEditorforValidCode_Intro()[pri:4, instance:testMethodsPackage.LinkedListTest@4879dfad]" started-at="2025-08-11T12:16:07 MDT" name="verifytryEditorforValidCode_Intro" finished-at="2025-08-11T12:16:09 MDT" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytryEditorforValidCode_Intro -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:04 MDT" name="tearDown" finished-at="2025-08-06T14:24:04 MDT" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:04 MDT" name="setup" finished-at="2025-08-06T14:24:08 MDT" duration-ms="4286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:08 MDT" name="initPageObjects" finished-at="2025-08-06T14:24:09 MDT" duration-ms="1047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifytryEditorforInvalidCode_Intro()[pri:5, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:09 MDT" name="verifytryEditorforInvalidCode_Intro" finished-at="2025-08-06T14:24:11 MDT" duration-ms="1931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytryEditorforInvalidCode_Intro -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@126945f9]" started-at="2025-08-06T14:24:11 MDT" name="tearDown" finished-at="2025-08-06T14:24:12 MDT" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testMethodsPackage.LinkedListTest@4879dfad]" started-at="2025-08-11T12:16:09 MDT" name="tearDown" finished-at="2025-08-11T12:16:09 MDT" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

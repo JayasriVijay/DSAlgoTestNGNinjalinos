@@ -8,7 +8,7 @@
           <include name="setup"/>
           <include name="initPageObjects"/>
           <include name="tearDown"/>
-          <include name="verifytryEditorforInvalidCode_Intro"/>
+          <include name="verifytryEditorforValidCode_Intro"/>
         </methods>
       </class> <!-- testMethodsPackage.LinkedListTest -->
     </classes>

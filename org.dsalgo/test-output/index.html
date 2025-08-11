@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,26 +101,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testMethodsPackage.LinkedListTest" class="method navigator-link" hash-for-method="verifyIntroPageTitle">verifyIntroPageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testMethodsPackage.LinkedListTest" class="method navigator-link" hash-for-method="verifyPracticeQuestionsPageTitle_Intro">verifyPracticeQuestionsPageTitle_Intro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testMethodsPackage.LinkedListTest" class="method navigator-link" hash-for-method="verifytryEditorPageTitle_Intro">verifytryEditorPageTitle_Intro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testMethodsPackage.LinkedListTest" class="method navigator-link" hash-for-method="verifytryEditorforInvalidCode_Intro">verifytryEditorforInvalidCode_Intro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testMethodsPackage.LinkedListTest" class="method navigator-link" hash-for-method="verifytryEditorforValidCode_Intro">verifytryEditorforValidCode_Intro</a> <!-- method navigator-link -->
@@ -146,34 +126,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyIntroPageTitle">
-                  </a> <!-- verifyIntroPageTitle -->
-                  <span class="method-name">verifyIntroPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPracticeQuestionsPageTitle_Intro">
-                  </a> <!-- verifyPracticeQuestionsPageTitle_Intro -->
-                  <span class="method-name">verifyPracticeQuestionsPageTitle_Intro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifytryEditorPageTitle_Intro">
-                  </a> <!-- verifytryEditorPageTitle_Intro -->
-                  <span class="method-name">verifytryEditorPageTitle_Intro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifytryEditorforInvalidCode_Intro">
-                  </a> <!-- verifytryEditorforInvalidCode_Intro -->
-                  <span class="method-name">verifytryEditorforInvalidCode_Intro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifytryEditorforValidCode_Intro">
                   </a> <!-- verifytryEditorforValidCode_Intro -->
                   <span class="method-name">verifytryEditorforValidCode_Intro</span>
@@ -184,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mh/4_0srypd02d59jxj1kf9w_lr0000gp/T/testng-eclipse--2133439354/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/mh/4_0srypd02d59jxj1kf9w_lr0000gp/T/testng-eclipse-409665052/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testMethodsPackage.LinkedListTest&quot;/&gt;
+      &lt;class name=&quot;testMethodsPackage.LinkedListTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifytryEditorforValidCode_Intro&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testMethodsPackage.LinkedListTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -233,32 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifytryEditorforValidCode_Intro')
 data.setCell(0, 2, 'testMethodsPackage.LinkedListTest')
-data.setCell(0, 3, 1980);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifytryEditorforInvalidCode_Intro')
-data.setCell(1, 2, 'testMethodsPackage.LinkedListTest')
-data.setCell(1, 3, 1931);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifytryEditorPageTitle_Intro')
-data.setCell(2, 2, 'testMethodsPackage.LinkedListTest')
-data.setCell(2, 3, 1219);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPracticeQuestionsPageTitle_Intro')
-data.setCell(3, 2, 'testMethodsPackage.LinkedListTest')
-data.setCell(3, 3, 612);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyIntroPageTitle')
-data.setCell(4, 2, 'testMethodsPackage.LinkedListTest')
-data.setCell(4, 3, 487);
+data.setCell(0, 3, 2101);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,9 +213,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testMethodsPackage.LinkedListTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifytryEditorPageTitle_Intro</span>
+                <br/>
+                <span class="ignored-method-name">verifyIntroPageTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifytryEditorforInvalidCode_Intro</span>
+                <br/>
+                <span class="ignored-method-name">verifyPracticeQuestionsPageTitle_Intro</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -291,79 +244,15 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initPageObjects</span>
-                <span class="method-start">6207 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyIntroPageTitle</span>
-                <span class="method-start">6630 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7135 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">7331 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPageObjects</span>
-                <span class="method-start">11854 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPracticeQuestionsPageTitle_Intro</span>
-                <span class="method-start">12240 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12855 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">13082 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPageObjects</span>
-                <span class="method-start">17088 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifytryEditorPageTitle_Intro</span>
-                <span class="method-start">18041 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">19266 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">19471 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPageObjects</span>
-                <span class="method-start">23959 ms</span>
+                <span class="method-start">5491 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifytryEditorforValidCode_Intro</span>
-                <span class="method-start">24369 ms</span>
+                <span class="method-start">5934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26353 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">26564 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPageObjects</span>
-                <span class="method-start">30851 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifytryEditorforInvalidCode_Intro</span>
-                <span class="method-start">31899 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33833 ms</span>
+                <span class="method-start">8043 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
