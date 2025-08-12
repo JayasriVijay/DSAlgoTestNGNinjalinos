@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_All_Modules_edge</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/3/9</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 11 20:38:18 EDT 2025</td>
+<td>Started on:</td><td>Tue Aug 12 08:30:54 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>147 seconds (147506 ms)</td>
+<tr><td>Total time:</td><td>63 seconds (63230 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,74 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name &apos;DsAlgoNew&apos; is not defined on line 1}
-  (Session info: MicrosoftEdge=139.0.3405.86): NameError: name &apos;DsAlgoNew&apos; is not defined on line 1
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ecd2131e97a96621432ab69b2f9fe919, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58686}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58686/devtoo..., se:cdpVersion: 139.0.3405.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ecd2131e97a96621432ab69b2f9fe919
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
-	at testCases.BaseTest.failed_screenshot(BaseTest.java:60)
-	at testCases.CustomListener.onTestFailure(CustomListener.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1742084309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1742084309'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name &apos;DsAlgoNew&apos; is not defined on line 1}
-  (Session info: MicrosoftEdge=139.0.3405.86): NameError: name &apos;DsAlgoNew&apos; is not defined on line 1
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ecd2131e97a96621432ab69b2f9fe919, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58686}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58686/devtoo..., se:cdpVersion: 139.0.3405.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ecd2131e97a96621432ab69b2f9fe919
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
-	at testCases.BaseTest.failed_screenshot(BaseTest.java:60)
-	at testCases.CustomListener.onTestFailure(CustomListener.java:18)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:99)
-	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:277)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:764)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>66</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
 <td title='testCases.Stack.StackoperationsTryingEmptyEditor()'><b>StackoperationsTryingEmptyEditor</b><br>Test class: testCases.Stack</td>
 <td><div><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
 	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
@@ -152,8 +84,8 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1557812205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1557812205'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671026593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671026593'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
 	at org.testng.Assert.fail(Assert.java:110)
 	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -177,47 +109,8 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>3</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: print("Hello World")</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace437028627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace437028627'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>1</td>
+<td>testCases.Stack@750ff7d3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -228,15 +121,25 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.Queue.queueImplementation()'><b>queueImplementation</b><br>Test class: testCases.Queue</td>
-<td></td>
-<td>1</td>
-<td>testCases.Queue@54cf7c6a</td></tr>
-<tr>
 <td title='testCases.Stack.open_stac_page()'><b>open_stac_page</b><br>Test class: testCases.Stack</td>
 <td></td>
+<td>0</td>
+<td>testCases.Stack@750ff7d3</td></tr>
+<tr>
+<td title='testCases.Stack.stackOperations()'><b>stackOperations</b><br>Test class: testCases.Stack</td>
+<td></td>
+<td>0</td>
+<td>testCases.Stack@750ff7d3</td></tr>
+<tr>
+<td title='testCases.Queue.queueImplementation()'><b>queueImplementation</b><br>Test class: testCases.Queue</td>
+<td></td>
+<td>0</td>
+<td>testCases.Queue@54cf7c6a</td></tr>
+<tr>
+<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: DsAlgoNew</td>
+<td></td>
 <td>1</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>testCases.Stack@750ff7d3</td></tr>
 <tr>
 <td title='testCases.Queue.open_queue_page()'><b>open_queue_page</b><br>Test class: testCases.Queue</td>
 <td></td>
@@ -245,13 +148,13 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 <tr>
 <td title='testCases.Queue.queueImplementationCodeEditor()'><b>queueImplementationCodeEditor</b><br>Test class: testCases.Queue</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>testCases.Queue@54cf7c6a</td></tr>
 <tr>
-<td title='testCases.Stack.stackOperations()'><b>stackOperations</b><br>Test class: testCases.Stack</td>
+<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: print("Hello World")</td>
 <td></td>
 <td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>testCases.Stack@750ff7d3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -270,16 +173,16 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace928971949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace928971949'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233158250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233158250'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
 	at org.testng.Assert.fail(Assert.java:110)
 	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -296,85 +199,7 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: DsAlgoNew</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1937120101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1937120101'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>3</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: DsAlgoNew</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace285247203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace285247203'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>testCases.Stack@750ff7d3</td></tr>
 <tr>
 <td title='testCases.Stack.StackoperationsTryingEmptyEditor()'><b>StackoperationsTryingEmptyEditor</b><br>Test class: testCases.Stack</td>
 <td><div><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
@@ -384,16 +209,16 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace323247762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace323247762'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace270710985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace270710985'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
 	at org.testng.Assert.fail(Assert.java:110)
 	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -409,8 +234,8 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>3</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>1</td>
+<td>testCases.Stack@750ff7d3</td></tr>
 <tr>
 <td title='testCases.Stack.StackoperationsTryingEmptyEditor()'><b>StackoperationsTryingEmptyEditor</b><br>Test class: testCases.Stack</td>
 <td><div><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
@@ -420,8 +245,8 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356117583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace356117583'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace975640153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace975640153'><pre>java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
 	at org.testng.Assert.fail(Assert.java:110)
 	at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -445,164 +270,8 @@ Session ID: ecd2131e97a96621432ab69b2f9fe919
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>3</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: print("Hello World")</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1741159808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1741159808'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: print("Hello World")</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242454868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1242454868'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: print("Hello World")</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace275144365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace275144365'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
-<tr>
-<td title='testCases.Stack.StackoperationsTryingValidAndInvalidCode()'><b>StackoperationsTryingValidAndInvalidCode</b><br>Test class: testCases.Stack<br>Parameters: DsAlgoNew</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace732351353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace732351353'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null
-	at utils.ExcelReader.getData(ExcelReader.java:86)
-	at pageFactory.BasePage.inValidCode(BasePage.java:120)
-	at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>testCases.Stack@2620e717</td></tr>
+<td>1</td>
+<td>testCases.Stack@750ff7d3</td></tr>
 </table><p>
 </body>
 </html>

@@ -70,9 +70,7 @@ public class Stack extends BaseTest {
 		Assert.fail("Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
 		
 	}
-	private String normalize(String s) {
-	    return s == null ? "" : s.replaceAll("\\s+", " ").trim();
-	}
+	
 	
 	@Test(priority = 4, dataProvider = "pythonCodeValidandInvalid")
 	public void StackoperationsTryingValidAndInvalidCode(String code) throws IOException {
