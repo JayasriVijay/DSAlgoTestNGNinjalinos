@@ -6,9 +6,9 @@
       <class name="testMethodsPackage.LinkedListTest">
         <methods>
           <include name="setup"/>
+          <include name="verifyInsertionPageTitle"/>
           <include name="initPageObjects"/>
           <include name="tearDown"/>
-          <include name="verifytryEditorforValidCode_Intro"/>
         </methods>
       </class> <!-- testMethodsPackage.LinkedListTest -->
     </classes>

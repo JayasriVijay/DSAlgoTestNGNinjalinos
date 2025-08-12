@@ -94,22 +94,10 @@ public class BasePage {
 		return titleName;
 		
 	}
-
-	
 	public void clickTryHere() {
 		action.moveToElement(tryHereButton).click().perform();
 	}
 
-	public void clickRun() {
-		action.moveToElement(runBtn).click().perform();
-	}
-	
-	public String checkOuputMsg() {
-		wait.until(ExpectedConditions.visibilityOf(outputTxt));
-		action.moveToElement(outputTxt).perform();
-		String text = outputTxt.getText();
-		return text;
-	}
 	
 	 public String enterData(String inputData) {
 		 if (inputData != null && !inputData.isEmpty()) {
@@ -143,22 +131,7 @@ public class BasePage {
 	    } catch (NoAlertPresentException e) {
 	        return false;
 	    }
-	}
-	public void invalidCode() {
-		String invalid_data= "hello__world";
-		action.moveToElement(textEditor).sendKeys(textEditor, invalid_data);
-		action.moveToElement(runBtn).click().perform();
-		wait.until(ExpectedConditions.alertIsPresent());
+		
 	}
 	
-	public void handleAlert() throws InterruptedException {
-		alert = driver.switchTo().alert();
-		alert.accept();
-	}
-	
-	public String alert_message() {
-		alert = driver.switchTo().alert();
-		String alertMsg = alert.getText();
-		return alertMsg;
-	}
 }
