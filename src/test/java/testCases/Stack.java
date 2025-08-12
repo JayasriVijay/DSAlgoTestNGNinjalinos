@@ -37,42 +37,42 @@ public class Stack extends BaseTest {
 		
 
 	}
-//
-//	@Test(priority = 1)
-//	public void open_stac_page() {
-//		//base.waitUntilPageLoads("/home");
-//		stack.stack_btn();
-//	}
 
-//	@Test(priority = 2)
-//	public void stackOperations() {
-//		//base.waitUntilPageLoads("/home");
-//		stack.stack_btn();
-//
-//		//base.waitUntilPageLoads("/stack/");
-//		stack.opreations_stack_btn();
-//		//base.waitUntilPageLoads("/operations-in-stack/");
-//		String currentUrl = stack.get_current_url();
-//		assertEquals("https://dsportalapp.herokuapp.com/stack/operations-in-stack/", currentUrl,
-//				"not in operations in stack page");
-//	}
+	@Test(priority = 1)
+	public void open_stac_page() {
+		//base.waitUntilPageLoads("/home");
+		stack.stack_btn();
+	}
+
+	@Test(priority = 2)
+	public void stackOperations() {
+		//base.waitUntilPageLoads("/home");
+		stack.stack_btn();
+
+		//base.waitUntilPageLoads("/stack/");
+		stack.opreations_stack_btn();
+		//base.waitUntilPageLoads("/operations-in-stack/");
+		String currentUrl = stack.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/stack/operations-in-stack/", currentUrl,
+				"not in operations in stack page");
+	}
 
 
 	
-//	@Test(priority = 3)
-//	public void StackoperationsTryingEmptyEditor() {
-//		stack.stack_btn();
-//		stack.opreations_stack_btn();
-//		stack.tryhere_stack();
-//		base.clickRunBtn();
-//		//Assert.assertEquals("Code editor is empty", base.alert_message());
-//		log.error("Alert message for no code entered in editor is not displayed");
-//		Assert.fail("Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
-//		
-//	}
-//	private String normalize(String s) {
-//	    return s == null ? "" : s.replaceAll("\\s+", " ").trim();
-//	}
+	@Test(priority = 3)
+	public void StackoperationsTryingEmptyEditor() {
+		stack.stack_btn();
+		stack.opreations_stack_btn();
+		stack.tryhere_stack();
+		base.clickRunBtn();
+		//Assert.assertEquals("Code editor is empty", base.alert_message());
+		log.error("Alert message for no code entered in editor is not displayed");
+		Assert.fail("Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
+		
+	}
+	private String normalize(String s) {
+	    return s == null ? "" : s.replaceAll("\\s+", " ").trim();
+	}
 	
 	@Test(priority = 4, dataProvider = "pythonCodeValidandInvalid")
 	public void StackoperationsTryingValidAndInvalidCode(String code) throws IOException {
@@ -80,18 +80,18 @@ public class Stack extends BaseTest {
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
 		base.validAndInvalidCode(code);
-		String validCodedata = base.validCode().trim();
-		String invalidCodedata = base.inValidCode().trim();
-		String expectedOutput = base.validOutput().trim();
-		String alertexpected = base.expectedAlert().trim();
+		String validCodedata = base.validCode();
+		String invalidCodedata = base.inValidCode();
+		String expectedOutput = base.validOutput();
+		String alertexpected = base.expectedAlert();
 		
 		
-		if(code.trim().equals(validCodedata)) 
+		if(code.equals(validCodedata)) 
 		{
 		Assert.assertEquals(base.output_text(),expectedOutput, "did not get the expected output");
 			
 			}
-		else if(code.trim().equals(invalidCodedata))
+		else if(code.equals(invalidCodedata))
 		{
 		String alertmsg = base.alert_message();
 		base.handle_alert();
@@ -100,7 +100,7 @@ public class Stack extends BaseTest {
 		
 		}
 		else {
-		    Assert.fail("Provided code did not match valid or invalid test data.");
+		    Assert.fail("Provided code did not match valid or invalid test data");
 		}
 		
 	}
