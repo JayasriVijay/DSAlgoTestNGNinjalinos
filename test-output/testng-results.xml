@@ -1,82 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="9" ignored="0" total="33" passed="21" failed="3" skipped="0">
+<testng-results retried="6" ignored="0" total="8" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T00:37:14 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-11T00:38:47 GMT-04:00" duration-ms="93564">
+  <suite started-at="2025-08-12T01:04:30 GMT-04:00" name="Suite_dsAlgo" finished-at="2025-08-12T01:05:00 GMT-04:00" duration-ms="30229">
     <groups>
     </groups>
-    <test started-at="2025-08-11T00:37:14 GMT-04:00" name="Test_All_Modules_chrome" finished-at="2025-08-11T00:38:14 GMT-04:00" duration-ms="60564">
+    <test started-at="2025-08-12T01:04:30 GMT-04:00" name="Test_All_Modules_chrome" finished-at="2025-08-12T01:05:00 GMT-04:00" duration-ms="30229">
       <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:14 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:17 GMT-04:00" duration-ms="3687" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:17 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:17 GMT-04:00" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:17 GMT-04:00" name="open_stac_page" finished-at="2025-08-11T00:37:18 GMT-04:00" duration-ms="345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:18 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:18 GMT-04:00" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:22 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:26 GMT-04:00" duration-ms="3214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:26 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:26 GMT-04:00" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:26 GMT-04:00" name="stackOperations" finished-at="2025-08-11T00:37:27 GMT-04:00" duration-ms="767" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:27 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:27 GMT-04:00" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:32 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:36 GMT-04:00" duration-ms="4284" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:36 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:36 GMT-04:00" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:36 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="1862" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:30 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:05:00 GMT-04:00" duration-ms="30031" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
+              <![CDATA[unexpected alert open: {Alert text : NameError: name 'DsAlgoNew' is not defined on line 1}
+  (Session info: chrome=138.0.7204.185): NameError: name 'DsAlgoNew' is not defined on line 1
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [507f59f2cf298a608dbf856b7ab8a11b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49271/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 507f59f2cf298a608dbf856b7ab8a11b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name 'DsAlgoNew' is not defined on line 1}
+  (Session info: chrome=138.0.7204.185): NameError: name 'DsAlgoNew' is not defined on line 1
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [507f59f2cf298a608dbf856b7ab8a11b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49271/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 507f59f2cf298a608dbf856b7ab8a11b
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
+at testCases.BaseTest.failed_screenshot(BaseTest.java:60)
+at testCases.CustomListener.onTestFailure(CustomListener.java:18)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:99)
+at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:764)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:30 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:32 GMT-04:00" duration-ms="2784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:32 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:33 GMT-04:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:33 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:34 GMT-04:00" duration-ms="1122" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[print("Hello World")]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -99,15 +118,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:38 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="496" status="PASS">
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:34 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:34 GMT-04:00" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:38 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:42 GMT-04:00" duration-ms="3586" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:34 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:36 GMT-04:00" duration-ms="1634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,173 +137,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:42 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:42 GMT-04:00" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:36 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:36 GMT-04:00" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:42 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:44 GMT-04:00" duration-ms="1797" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:44 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:44 GMT-04:00" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:44 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:48 GMT-04:00" duration-ms="4196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:48 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:49 GMT-04:00" duration-ms="178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:49 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:50 GMT-04:00" duration-ms="1393" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:50 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:50 GMT-04:00" duration-ms="189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:50 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:54 GMT-04:00" duration-ms="3500" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:54 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:54 GMT-04:00" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:54 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:56 GMT-04:00" duration-ms="2071" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:37:56 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:57 GMT-04:00" duration-ms="278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:02 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:06 GMT-04:00" duration-ms="3819" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:06 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:06 GMT-04:00" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:06 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:08 GMT-04:00" duration-ms="1885" status="PASS">
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:36 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:37 GMT-04:00" duration-ms="1630" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -292,14 +149,46 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:08 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:09 GMT-04:00" duration-ms="399" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:37 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:38 GMT-04:00" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:09 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:12 GMT-04:00" duration-ms="3673" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:38 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:40 GMT-04:00" duration-ms="2165" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -310,11 +199,135 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:12 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:12 GMT-04:00" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:40 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:40 GMT-04:00" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:12 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:14 GMT-04:00" duration-ms="1556" status="PASS">
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:40 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:41 GMT-04:00" duration-ms="1183" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[print("Hello World")]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:41 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:41 GMT-04:00" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:41 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:43 GMT-04:00" duration-ms="2208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:43 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:43 GMT-04:00" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:43 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:45 GMT-04:00" duration-ms="1269" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[print("Hello World")]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:45 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:45 GMT-04:00" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:45 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:47 GMT-04:00" duration-ms="2120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:47 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:47 GMT-04:00" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:47 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:48 GMT-04:00" duration-ms="1115" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -322,879 +335,185 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@18acfe88]" started-at="2025-08-11T00:38:14 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:14 GMT-04:00" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:48 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:49 GMT-04:00" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:49 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:51 GMT-04:00" duration-ms="2226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:51 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:51 GMT-04:00" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:51 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:52 GMT-04:00" duration-ms="1224" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DsAlgoNew]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:52 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:52 GMT-04:00" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:52 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:55 GMT-04:00" duration-ms="2316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:55 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:55 GMT-04:00" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
+        <test-method retried="true" signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:55 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-12T01:04:56 GMT-04:00" duration-ms="1199" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DsAlgoNew]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+at utils.ExcelReader.getData(ExcelReader.java:86)
+at pageFactory.BasePage.inValidCode(BasePage.java:121)
+at testCases.Stack.StackoperationsTryingValidAndInvalidCode(Stack.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:56 GMT-04:00" name="teardownDriver" finished-at="2025-08-12T01:04:56 GMT-04:00" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:56 GMT-04:00" name="open_website" finished-at="2025-08-12T01:04:58 GMT-04:00" duration-ms="2397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@53ed09e8]" started-at="2025-08-12T01:04:58 GMT-04:00" name="stack_page" finished-at="2025-08-12T01:04:59 GMT-04:00" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_page -->
       </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:18 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="3524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:22 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:22 GMT-04:00" name="open_queue_page" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:22 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="263" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:27 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:30 GMT-04:00" duration-ms="3434" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:30 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:31 GMT-04:00" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:31 GMT-04:00" name="queueImplementation" finished-at="2025-08-11T00:37:31 GMT-04:00" duration-ms="789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:31 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:32 GMT-04:00" duration-ms="374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:37:57 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:01 GMT-04:00" duration-ms="3924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:38:01 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:38:01 GMT-04:00" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:38:01 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-11T00:38:02 GMT-04:00" duration-ms="1310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@1640190a]" started-at="2025-08-11T00:38:02 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:02 GMT-04:00" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Queue -->
     </test> <!-- Test_All_Modules_chrome -->
-    <test started-at="2025-08-11T00:37:14 GMT-04:00" name="Test_All_Modules_edge" finished-at="2025-08-11T00:38:15 GMT-04:00" duration-ms="61431">
-      <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:14 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:17 GMT-04:00" duration-ms="3507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:17 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:17 GMT-04:00" duration-ms="183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:17 GMT-04:00" name="open_stac_page" finished-at="2025-08-11T00:37:18 GMT-04:00" duration-ms="444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:18 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:18 GMT-04:00" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:22 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:26 GMT-04:00" duration-ms="3507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:26 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:26 GMT-04:00" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:26 GMT-04:00" name="stackOperations" finished-at="2025-08-11T00:37:27 GMT-04:00" duration-ms="841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:27 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:27 GMT-04:00" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:32 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:36 GMT-04:00" duration-ms="4180" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:36 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:36 GMT-04:00" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:36 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="1719" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:38 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:38 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:42 GMT-04:00" duration-ms="3834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:42 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:42 GMT-04:00" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:42 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:44 GMT-04:00" duration-ms="2137" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:44 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:45 GMT-04:00" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:45 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:49 GMT-04:00" duration-ms="4098" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:49 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:49 GMT-04:00" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:49 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:51 GMT-04:00" duration-ms="1569" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:51 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:51 GMT-04:00" duration-ms="363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:51 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:55 GMT-04:00" duration-ms="4263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:55 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:55 GMT-04:00" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:55 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:37:58 GMT-04:00" duration-ms="2141" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:37:58 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:58 GMT-04:00" duration-ms="395" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:04 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:07 GMT-04:00" duration-ms="3656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:07 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:07 GMT-04:00" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:07 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:10 GMT-04:00" duration-ms="2212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[print("Hello World")]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:10 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:10 GMT-04:00" duration-ms="443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:10 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:13 GMT-04:00" duration-ms="3166" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:13 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:13 GMT-04:00" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:13 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:15 GMT-04:00" duration-ms="1461" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DsAlgoNew]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@14b7786]" started-at="2025-08-11T00:38:15 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:15 GMT-04:00" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:18 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:21 GMT-04:00" duration-ms="3409" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:21 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:22 GMT-04:00" name="open_queue_page" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:22 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:27 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:30 GMT-04:00" duration-ms="3412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:30 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:31 GMT-04:00" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:31 GMT-04:00" name="queueImplementation" finished-at="2025-08-11T00:37:31 GMT-04:00" duration-ms="908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:31 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:32 GMT-04:00" duration-ms="351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:37:58 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:02 GMT-04:00" duration-ms="3376" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:38:02 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:38:02 GMT-04:00" duration-ms="89" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:38:02 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-11T00:38:03 GMT-04:00" duration-ms="1530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@54cf7c6a]" started-at="2025-08-11T00:38:03 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:04 GMT-04:00" duration-ms="410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Queue -->
-    </test> <!-- Test_All_Modules_edge -->
-    <test started-at="2025-08-11T00:37:14 GMT-04:00" name="Test_All_Modules_firefox" finished-at="2025-08-11T00:38:47 GMT-04:00" duration-ms="93564">
-      <class name="testCases.Stack">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:14 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:21 GMT-04:00" duration-ms="6961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:21 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:21 GMT-04:00" duration-ms="264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="open_stac_page()[pri:1, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:21 GMT-04:00" name="open_stac_page" finished-at="2025-08-11T00:37:21 GMT-04:00" duration-ms="256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_stac_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:21 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:22 GMT-04:00" duration-ms="899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:30 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="7456" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:38 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="stackOperations()[pri:2, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:38 GMT-04:00" name="stackOperations" finished-at="2025-08-11T00:37:38 GMT-04:00" duration-ms="712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackOperations -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:38 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:41 GMT-04:00" duration-ms="2095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:52 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:59 GMT-04:00" duration-ms="6984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:59 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:37:59 GMT-04:00" duration-ms="160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:37:59 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:38:01 GMT-04:00" duration-ms="1751" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:01 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:02 GMT-04:00" duration-ms="1308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:02 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:10 GMT-04:00" duration-ms="8508" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:10 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:11 GMT-04:00" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:11 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:38:13 GMT-04:00" duration-ms="1889" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:13 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:14 GMT-04:00" duration-ms="1896" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:14 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:19 GMT-04:00" duration-ms="4337" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:19 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:19 GMT-04:00" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method retried="true" signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:19 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:38:20 GMT-04:00" duration-ms="1250" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:20 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:21 GMT-04:00" duration-ms="833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:21 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:25 GMT-04:00" duration-ms="4123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:25 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:25 GMT-04:00" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingEmptyEditor()[pri:3, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:25 GMT-04:00" name="StackoperationsTryingEmptyEditor" finished-at="2025-08-11T00:38:26 GMT-04:00" duration-ms="1314" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
-at org.testng.Assert.fail(Assert.java:110)
-at testCases.Stack.StackoperationsTryingEmptyEditor(Stack.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingEmptyEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:26 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:27 GMT-04:00" duration-ms="826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:33 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:37 GMT-04:00" duration-ms="3982" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:37 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:37 GMT-04:00" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:37 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:39 GMT-04:00" duration-ms="1272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[print("Hello World")]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:39 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:40 GMT-04:00" duration-ms="851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:40 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:45 GMT-04:00" duration-ms="4927" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="stack_page()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:45 GMT-04:00" name="stack_page" finished-at="2025-08-11T00:38:45 GMT-04:00" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stack_page -->
-        <test-method signature="StackoperationsTryingValidAndInvalidCode(java.lang.String)[pri:4, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:45 GMT-04:00" name="StackoperationsTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-11T00:38:46 GMT-04:00" duration-ms="1674" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DsAlgoNew]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StackoperationsTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Stack@26b95b0b]" started-at="2025-08-11T00:38:46 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:47 GMT-04:00" duration-ms="832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Stack -->
-      <class name="testCases.Queue">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:22 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:28 GMT-04:00" duration-ms="6370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:28 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:28 GMT-04:00" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="open_queue_page()[pri:1, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:28 GMT-04:00" name="open_queue_page" finished-at="2025-08-11T00:37:29 GMT-04:00" duration-ms="393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_queue_page -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:29 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:30 GMT-04:00" duration-ms="1244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:41 GMT-04:00" name="open_website" finished-at="2025-08-11T00:37:48 GMT-04:00" duration-ms="7891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:48 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:37:49 GMT-04:00" duration-ms="163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:49 GMT-04:00" name="queueImplementation" finished-at="2025-08-11T00:37:49 GMT-04:00" duration-ms="714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:37:49 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:37:52 GMT-04:00" duration-ms="2403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:38:27 GMT-04:00" name="open_website" finished-at="2025-08-11T00:38:31 GMT-04:00" duration-ms="4153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:38:31 GMT-04:00" name="queue_page" finished-at="2025-08-11T00:38:32 GMT-04:00" duration-ms="46" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementationCodeEditor()[pri:3, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:38:32 GMT-04:00" name="queueImplementationCodeEditor" finished-at="2025-08-11T00:38:33 GMT-04:00" duration-ms="1051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueImplementationCodeEditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.Queue@245ec1a6]" started-at="2025-08-11T00:38:33 GMT-04:00" name="teardownDriver" finished-at="2025-08-11T00:38:33 GMT-04:00" duration-ms="871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.Queue -->
-    </test> <!-- Test_All_Modules_firefox -->
   </suite> <!-- Suite_dsAlgo -->
 </testng-results>

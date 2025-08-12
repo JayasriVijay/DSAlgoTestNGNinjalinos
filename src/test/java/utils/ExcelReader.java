@@ -8,6 +8,7 @@ import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -23,6 +24,7 @@ public class ExcelReader {
 	ConfigReader config;
 	String xlfilePath;
 	HashMap<String, Integer> colNums = null;
+	HashMap<String, Integer> rowNums = null;
 
 	public ExcelReader() throws IOException {
 		this.config = new ConfigReader();
@@ -34,7 +36,7 @@ public class ExcelReader {
 
 	public void populateColumNums() {
 		colNums = new HashMap<String, Integer>();
-		int colIndex = 0;
+		int colIndex = 1;
 		row = sheet.getRow(0);
 		Iterator<Cell> cells = row.cellIterator();
 		while (cells.hasNext()) {
@@ -44,17 +46,44 @@ public class ExcelReader {
 			colIndex++;
 		}
 	}
+	
+
+	
+	public void populateRowNums() {
+		rowNums = new HashMap<String, Integer>();
+		int rowIndex = 1;
+		int i = 1;
+		while (i<=sheet.getLastRowNum()) {
+			
+			
+			Row row = sheet.getRow(i);
+			if (row != null) {
+			    Cell cell = row.getCell(0);
+			    if (cell != null) {
+			        DataFormatter formatter = new DataFormatter();
+			        String rowName = formatter.formatCellValue(cell); 
+			        rowNums.put(rowName, rowIndex);
+			    }
+			}
+			 
+			i++;
+			rowIndex++;
+		}
+		
+	}
 
 //	public int getColNumber(String cellName) {
 //		return colNums.get(cellName);
 //	}
 
-	public String getData(String sheetName, int rowNum, String cellName) throws IOException {
+	public String getData(String sheetName, String rowName, String cellName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		populateColumNums();
+		populateRowNums();
 		String cellData = "";
 		//int cellNum = getColNumber(cellName);
 		int cellNum = colNums.get(cellName);
+		int rowNum = rowNums.get(rowName);
 		cellData = getData_UsingColNum(sheetName, rowNum, cellNum);
 		return cellData;
 
@@ -81,7 +110,7 @@ public class ExcelReader {
 		sheet = wb.getSheet(sheetName);
 		Object[] data = new Object[sheet.getLastRowNum()];
 		for(int i=0; i<sheet.getLastRowNum(); i++) {
-			data[i]= sheet.getRow(i+1).getCell(0).toString();
+			data[i]= sheet.getRow(i+1).getCell(1).toString();
 		}
 		
         return data;
@@ -90,7 +119,7 @@ public class ExcelReader {
 	public Object[] getCode_arrayPractice(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		Object[] data = new Object[sheet.getRow(1).getLastCellNum()];
-		for(int j=0; j<sheet.getRow(1).getLastCellNum(); j++) {
+		for(int j=1; j<sheet.getRow(1).getLastCellNum(); j++) {
 			data[j]= sheet.getRow(1).getCell(j).toString();
 		}
 		
@@ -101,7 +130,7 @@ public class ExcelReader {
 		sheet = wb.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][2];
 		for(int i=0; i<sheet.getLastRowNum(); i++) {
-			for(int j=0 ; j<2;j++) {
+			for(int j=1 ; j<=2;j++) {
 				data[i][j]= sheet.getRow(i+1).getCell(j).toString();
 				
 			}
@@ -115,7 +144,7 @@ public class ExcelReader {
 		sheet = wb.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][3];
 		for(int i=0; i<sheet.getLastRowNum(); i++) {
-			for(int j=0;j<3;j++) {
+			for(int j=1;j<=3;j++) {
 				data[i][j]= sheet.getRow(i+1).getCell(j).toString();
 			}
 			
