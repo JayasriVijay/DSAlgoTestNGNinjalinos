@@ -14,9 +14,10 @@ import pageObjects.BasePage;
 
 public class BaseTest {
 	
-	@BeforeMethod
 	@Parameters("browser")
-	public void setup(@Optional("chrome") String browser) throws IOException, InterruptedException {
+	@BeforeMethod
+	
+	public void setup(@Optional("chrome")String browser) throws IOException, InterruptedException {
 		DriverFactory driverFact = new DriverFactory();
 		driverFact.initDriver(browser);//initialize the driver
 		BasePage basePg = new BasePage();
@@ -28,9 +29,7 @@ public class BaseTest {
 		 basePg.clickLogin();
 	}
 	
-	
-	
-	
+
 	   @AfterMethod
 	    public void tearDown() {
 	        DriverFactory.quitDriver();

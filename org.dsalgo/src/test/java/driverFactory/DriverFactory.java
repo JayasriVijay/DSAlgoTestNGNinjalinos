@@ -9,8 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	
-	public WebDriver driver;
+
 	
 	//ThreadLocal Driver 
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();

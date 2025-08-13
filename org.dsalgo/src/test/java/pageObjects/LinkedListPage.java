@@ -1,9 +1,8 @@
 package pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class LinkedListPage extends BasePage {
-
+ 
 	public LinkedListPage() {
 	    super();
 		
@@ -42,6 +41,9 @@ public class LinkedListPage extends BasePage {
 	 public void clickOnIntroLink(){
 		 introPageLink.click();     	
 	}
+	 public void clickTryHere(){
+		 tryHereButton.click();     	
+	}
 	 
 	 public void clickOnPracticeQuestion() {
 		 practicePageLink.click();
@@ -65,6 +67,37 @@ public class LinkedListPage extends BasePage {
 	 public void clickOndeletionLink() {
 		 deletionLink.click();
 	 }
+	 public void navigateToIntroTryEditor() {
+	        clickOnIntroLink();
+	        clickTryHere();
+	    }
+	 public void navigateToCreateLinkedListTryEditor() {
+	       clickOncreateLinkedListLink();
+	       clickTryHere();
+	    }
+	 public void navigateToTypesofLinkedListTryEditor() {
+	       clickOntypesofLinkedList();
+	       clickTryHere();
+	    }
+	 public void navigateToImplementLinkedListTryEditor() {
+	       clickOnimplementLinkedList();
+	       clickTryHere();
+	    }
+	 public void navigateTonavigateToTraversalTryEditor() {
+	       clickOntraversal();
+	       clickTryHere();
+	    }
+	 public void navigateTonavigateToInsertionTryEditor() {
+	       clickOninsertion();
+	       clickTryHere();
+	    }
+	 public void navigateTonavigateToDeletionTryEditor() {
+	        clickOndeletionLink();
+	        clickTryHere();
+	    }
+	 
+	    
+	    
 	 
 	 
 
