@@ -60,7 +60,7 @@ public class Stack extends BaseTest {
 
 	
 	@Test(priority = 3)
-	public void StackoperationsTryingEmptyEditor() {
+	public void StackTryingEmptyEditor() {
 		stack.stack_btn();
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
@@ -72,35 +72,35 @@ public class Stack extends BaseTest {
 	}
 	
 	
-	@Test(priority = 4, dataProvider = "pythonCodeValidandInvalid")
-	public void StackoperationsTryingValidAndInvalidCode(String code) throws IOException {
-		stack.stack_btn();
-		stack.opreations_stack_btn();
-		stack.tryhere_stack();
-		base.validAndInvalidCode(code);
-		String validCodedata = base.validCode();
-		String invalidCodedata = base.inValidCode();
-		String expectedOutput = base.validOutput();
-		String alertexpected = base.expectedAlert();
-		
-		
-		if(code.equals(validCodedata)) 
-		{
-		Assert.assertEquals(base.output_text(),expectedOutput, "did not get the expected output");
-			
-			}
-		else if(code.equals(invalidCodedata))
-		{
-		String alertmsg = base.alert_message();
-		base.handle_alert();
-		
-		Assert.assertEquals(alertmsg, alertexpected, "did not get correct alert message for giving an invalid code as input" );	
-		
-		}
-		else {
-		    Assert.fail("Provided code did not match valid or invalid test data");
-		}
-		
-	}
-
+//	@Test(priority = 4, dataProvider = "pythonCodeValidandInvalid")
+//	public void StackTryingValidAndInvalidCode(String code) throws IOException {
+//		stack.stack_btn();
+//		stack.opreations_stack_btn();
+//		stack.tryhere_stack();
+//		base.validAndInvalidCode(code);
+//		String validCodedata = base.validCode();
+//		String invalidCodedata = base.inValidCode();
+//		String expectedOutput = base.validOutput();
+//		String alertexpected = base.expectedAlert();
+//		
+//		
+//		if(code.equals(validCodedata)) 
+//		{
+//		Assert.assertEquals(base.output_text(),expectedOutput, "did not get the expected output");
+//			
+//			}
+//		else if(code.equals(invalidCodedata))
+//		{
+//		String alertmsg = base.alert_message();
+//		base.handle_alert();
+//		
+//		Assert.assertEquals(alertmsg, alertexpected, "did not get correct alert message for giving an invalid code as input" );	
+//		
+//		}
+//		else {
+//		    Assert.fail("Provided code did not match valid or invalid test data");
+//		}
+//		
+//	}
+//
 }

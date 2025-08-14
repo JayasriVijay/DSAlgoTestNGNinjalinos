@@ -12,7 +12,7 @@
       <class name="testCases.Stack">
         <methods>
           <include name="stack_page"/>
-          <include name="StackoperationsTryingEmptyEditor"/>
+          <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>
@@ -24,8 +24,8 @@
     <classes>
       <class name="testCases.Stack">
         <methods>
-          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="stack_page"/>
+          <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>
@@ -37,8 +37,8 @@
     <classes>
       <class name="testCases.Stack">
         <methods>
-          <include name="StackoperationsTryingEmptyEditor"/>
           <include name="stack_page"/>
+          <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
         </methods>
