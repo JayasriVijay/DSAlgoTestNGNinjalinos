@@ -6,19 +6,6 @@
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     <listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test_All_Modules_chrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="testCases.Stack">
-        <methods>
-          <include name="stack_page"/>
-          <include name="StackTryingEmptyEditor"/>
-          <include name="teardownDriver"/>
-          <include name="open_website"/>
-        </methods>
-      </class> <!-- testCases.Stack -->
-    </classes>
-  </test> <!-- Test_All_Modules_chrome(failed) -->
   <test thread-count="5" parallel="tests" name="Test_All_Modules_edge(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
@@ -32,6 +19,19 @@
       </class> <!-- testCases.Stack -->
     </classes>
   </test> <!-- Test_All_Modules_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Test_All_Modules_chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.Stack">
+        <methods>
+          <include name="stack_page"/>
+          <include name="StackTryingEmptyEditor"/>
+          <include name="teardownDriver"/>
+          <include name="open_website"/>
+        </methods>
+      </class> <!-- testCases.Stack -->
+    </classes>
+  </test> <!-- Test_All_Modules_chrome(failed) -->
   <test thread-count="5" parallel="tests" name="Test_All_Modules_firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>

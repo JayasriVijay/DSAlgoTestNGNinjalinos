@@ -17,7 +17,7 @@ public class Queue extends BaseTest {
 
 	public Queue() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	Queue_pf queue;
@@ -35,33 +35,24 @@ public class Queue extends BaseTest {
 	@Test(priority = 1)
 	public void open_queue_page() {
 
-		//base.waitUntilPageLoads("/home");
 		queue.queue_btn();
 
 	}
 
 	@Test(priority = 2)
 	public void queueImplementation() {
-		//base.waitUntilPageLoads("/home");
 		queue.queue_btn();
-		//base.waitUntilPageLoads("/queue/");
 		queue.implementation_queue_python_btn();
-		//base.waitUntilPageLoads("/implementation-lists/");
 		String currentUrl = queue.get_current_url();
 		assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-lists/", currentUrl,
 				"not in implementation of queue in python page");
 	}
 
-	// @Test(priority=2, dependsOnMethods = { "queueImplementation" })
 	@Test(priority = 3)
 	public void queueImplementationCodeEditor() {
-		//base.waitUntilPageLoads("/home");
 		queue.queue_btn();
-		//base.waitUntilPageLoads("/queue/");
 		queue.implementation_queue_python_btn();
-		//base.waitUntilPageLoads("/implementation-lists/");
 		queue.tryhere_queue();
-		//base.waitUntilPageLoads("/tryEditor");
 		String currentUrl = queue.get_current_url();
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
 				"not in try here page of implemetation of queue in python page");

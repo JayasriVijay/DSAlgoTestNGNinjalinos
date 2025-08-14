@@ -1,6 +1,7 @@
 package pageFactory;
 
 import java.io.IOException;
+
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -18,7 +19,7 @@ import utils.ConfigReader;
 import utils.ExcelReader;
 
 public class BasePage {
-	
+
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
@@ -26,9 +27,7 @@ public class BasePage {
 	Alert alert;
 	JavascriptExecutor js;
 	ExcelReader excelReader;
-	
-	
-	
+
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereQueue;
 	@FindBy(className = "btn")
@@ -48,14 +47,13 @@ public class BasePage {
 
 	@FindBy(xpath = "//*[text()='Sign out']")
 	WebElement signOut;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'Run')]")
 	WebElement runBtn;
-	
+
 	@FindBy(id = "output")
 	WebElement outputTxt;
-	
-	
+
 	public BasePage() throws IOException {
 
 		this.config = new ConfigReader();
@@ -66,9 +64,7 @@ public class BasePage {
 		js = (JavascriptExecutor) tldriver;
 
 	}
-	
-	
-	
+
 	public void launch_webpage() throws IOException {
 		tldriver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
@@ -79,15 +75,11 @@ public class BasePage {
 		pwd.sendKeys(password);
 		logInBtn.click();
 	}
-	
-//	public void waitUntilPageLoads(String partialUrl) {
-//		wait.until(ExpectedConditions.urlContains(partialUrl));
-//	}
-	
+
 	public void clickRunBtn() {
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
-	
+
 	public String alert_message() {
 		wait.until(ExpectedConditions.alertIsPresent());
 		alert = tldriver.switchTo().alert();
@@ -101,37 +93,37 @@ public class BasePage {
 		alert.accept();
 
 	}
-	
+
 	public void validAndInvalidCode(String code) {
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".CodeMirror")));
 		js.executeScript(
 				"let editor = document.querySelector('.CodeMirror').CodeMirror;" + "editor.setValue(arguments[0]);",
 				code);
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
-	
+
 	public String validCode() throws IOException {
-		String validCodeData = excelReader.inputTestData("ValidCode","testdata" , "PythonCode");
-	
+		String validCodeData = excelReader.inputTestData("ValidCode", "testdata", "PythonCode");
+
 		return validCodeData;
 	}
-	
+
 	public String inValidCode() throws IOException {
-		String inValidCodeData = excelReader.inputTestData("InvalidCode","testdata" , "PythonCode");
+		String inValidCodeData = excelReader.inputTestData("InvalidCode", "testdata", "PythonCode");
 		return inValidCodeData;
 	}
-	
+
 	public String validOutput() throws IOException {
 		String validOutputData = excelReader.inputTestData("ValidCode", "testdata", "RunResult");
 		return validOutputData;
 	}
-	
+
 	public String expectedAlert() throws IOException {
-		String alert = excelReader.inputTestData("InvalidCode","testdata", "RunResult");
+		String alert = excelReader.inputTestData("InvalidCode", "testdata", "RunResult");
 		return alert;
 	}
-	
+
 	public String output_text() {
 		wait.until(ExpectedConditions.visibilityOf(outputTxt));
 		String outputText = outputTxt.getText();
@@ -139,4 +131,4 @@ public class BasePage {
 
 	}
 
-	}
+}

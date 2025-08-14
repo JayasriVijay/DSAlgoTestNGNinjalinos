@@ -2,7 +2,6 @@ package pageFactory;
 
 import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,8 +17,7 @@ public class Stack_pf {
 	private Actions action;
 	String browser;
 	WebDriverWait wait;
-	
-	
+
 	@FindBy(xpath = "//h5[text()='Stack']/../../..//a[text()='Get Started']")
 	WebElement stackBtn;
 
@@ -38,32 +36,22 @@ public class Stack_pf {
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereStack;
 
-
-	
 	public Stack_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
-		
-		//this.tldriver = driver;
 		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
 
 	}
 
-
 	public void stack_btn() {
-		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", stackBtn);
-		//action.scrollToElement(stackBtn).perform();
-		//action.click(stackBtn).perform();
+
 		wait.until(ExpectedConditions.elementToBeClickable(stackBtn)).click();
 
 	}
 
 	public void opreations_stack_btn() {
-		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", operationsStackBtn);
 
-		//action.scrollToElement(operationsStackBtn).perform();
-		//action.click(operationsStackBtn).perform();
 		wait.until(ExpectedConditions.elementToBeClickable(operationsStackBtn)).click();
 
 	}
@@ -83,9 +71,7 @@ public class Stack_pf {
 	}
 
 	public void tryhere_stack() {
-		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", tryHereStack);
-		//action.scrollToElement(tryHereStack).perform();
-		//action.click(tryHereStack).perform();
+
 		wait.until(ExpectedConditions.elementToBeClickable(tryHereStack)).click();
 	}
 
