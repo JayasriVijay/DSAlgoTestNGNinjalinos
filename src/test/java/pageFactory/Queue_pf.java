@@ -48,10 +48,6 @@ public class Queue_pf {
 
 	}
 
-	public void waitUntilPageLoads(String partialUrl) {
-		wait.until(ExpectedConditions.urlContains(partialUrl));
-	}
-
 	public void queue_btn() {
 
 		wait.until(ExpectedConditions.elementToBeClickable(QueueBtn)).click();
