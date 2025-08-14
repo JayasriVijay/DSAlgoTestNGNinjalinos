@@ -58,18 +58,22 @@ public class Queue_pf {
 	}
 
 	public void implementation_collection_btn() {
+		wait.until(ExpectedConditions.elementToBeClickable(implementationUseCollectionBtn)).click();
 
 	}
 
 	public void implementation_array_btn() {
+		wait.until(ExpectedConditions.elementToBeClickable(implementationUseArrayBtn)).click();
 
 	}
 
 	public void queue_operations_btn() {
+		wait.until(ExpectedConditions.elementToBeClickable(queueOperationsBtn)).click();
 
 	}
 
 	public void practice_queue() {
+		wait.until(ExpectedConditions.elementToBeClickable(queuePracticeQ)).click();
 
 	}
 
@@ -78,9 +82,5 @@ public class Queue_pf {
 		wait.until(ExpectedConditions.elementToBeClickable(tryHereQueue)).click();
 	}
 
-	public String get_current_url() {
-		String current_url = tldriver.getCurrentUrl();
-		return current_url;
-	}
-
+	
 }

@@ -130,5 +130,11 @@ public class BasePage {
 		return outputText;
 
 	}
+	
+	public String get_current_url() {
+		String current_url = tldriver.getCurrentUrl();
+		return current_url;
+	}
+
 
 }

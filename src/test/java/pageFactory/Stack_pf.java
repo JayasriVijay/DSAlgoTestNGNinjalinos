@@ -57,17 +57,18 @@ public class Stack_pf {
 	}
 
 	public void implementation_stack_btn() {
+		wait.until(ExpectedConditions.elementToBeClickable(implementationStackBtn)).click();
 
 	}
 
 	public void application_stack_btn() {
+		wait.until(ExpectedConditions.elementToBeClickable(applicationStackBtn)).click();
 
 	}
 
 	public void practice_stack() {
 
-		action.scrollToElement(stackPracticeQ).perform();
-		action.click(stackPracticeQ).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(stackPracticeQ)).click();
 	}
 
 	public void tryhere_stack() {
@@ -75,9 +76,5 @@ public class Stack_pf {
 		wait.until(ExpectedConditions.elementToBeClickable(tryHereStack)).click();
 	}
 
-	public String get_current_url() {
-		String current_url = tldriver.getCurrentUrl();
-		return current_url;
-	}
-
+	
 }

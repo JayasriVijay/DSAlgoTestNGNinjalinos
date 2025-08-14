@@ -44,14 +44,24 @@ public class Stack extends BaseTest {
 	public void stackOperations() {
 		stack.stack_btn();
         stack.opreations_stack_btn();
-		String currentUrl = stack.get_current_url();
+        String currentUrl = base.get_current_url();
 		assertEquals("https://dsportalapp.herokuapp.com/stack/operations-in-stack/", currentUrl,
 				"not in operations in stack page");
 	}
-
-
 	
 	@Test(priority = 3)
+	public void stackoperationsCodeEditor() {
+		stack.stack_btn();
+		stack.opreations_stack_btn();
+		stack.tryhere_stack();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in try here page of implemetation of queue in python page");
+
+	}
+
+
+	@Test(priority = 4)
 	public void StackTryingEmptyEditor() {
 		stack.stack_btn();
 		stack.opreations_stack_btn();
@@ -64,7 +74,7 @@ public class Stack extends BaseTest {
 	}
 	
 	
-	@Test(priority = 4, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
 	public void StackTryingValidAndInvalidCode(String code) throws IOException {
 		stack.stack_btn();
 		stack.opreations_stack_btn();
@@ -92,6 +102,59 @@ public class Stack extends BaseTest {
 		else {
 		    Assert.fail("Provided code did not match valid or invalid test data");
 		}
+		
+	}
+	
+	@Test(priority = 6)
+	public void stackimplementation() {
+		stack.stack_btn();
+		stack.implementation_stack_btn();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/stack/implementation/", currentUrl,
+				"not in implementation in stack page");
+		
+	}
+	
+	@Test(priority = 7)
+	public void stackimplementationCodeEditor() {
+		stack.stack_btn();
+		stack.implementation_stack_btn();
+		stack.tryhere_stack();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in implementation in stack page");
+		
+	}
+	
+	@Test(priority = 8)
+	public void stackapplication() {
+		stack.stack_btn();
+		stack.application_stack_btn();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/stack/stack-applications/", currentUrl,
+				"not in implementation in stack page");
+		
+	}
+	
+	@Test(priority = 9)
+	public void stackapplicationCodeEditor() {
+		stack.stack_btn();
+		stack.application_stack_btn();
+		stack.tryhere_stack();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in implementation in stack page");
+		
+	}
+	
+	@Test(priority = 10)
+	public void StackopenPracticeQuestions() {
+		stack.stack_btn();
+		stack.application_stack_btn();
+		stack.practice_stack();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/stack/practice", currentUrl,
+				"not in implementation in stack page");
 		
 	}
 
