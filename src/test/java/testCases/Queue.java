@@ -103,6 +103,76 @@ public class Queue extends BaseTest {
 		
 	}
 	
+	@Test(priority = 6)
+	public void queueImplementationUsingCollection() {
+		queue.queue_btn();
+		queue.implementation_collection_btn();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-collections/", currentUrl,
+				"not in implementation of queue in python page");
+	}
+	
+	@Test(priority = 7)
+	public void queueImplementationUsingCollectionCodeEditor() {
+		queue.queue_btn();
+		queue.implementation_collection_btn();
+		queue.tryhere_queue();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in try here page of implemetation of queue in python page");
+
+	}
+	
+	@Test(priority = 8)
+	public void queueImplementationUsingArray() {
+		queue.queue_btn();
+		queue.implementation_array_btn();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/queue/Implementation-array/", currentUrl,
+				"not in implementation of queue in python page");
+	}
+	
+	@Test(priority = 9)
+	public void queueImplementationUsingArrayCodeEditor() {
+		queue.queue_btn();
+		queue.implementation_array_btn();
+		queue.tryhere_queue();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in try here page of implemetation of queue in python page");
+
+	}
+	
+	@Test(priority = 10)
+	public void queueOperations() {
+		queue.queue_btn();
+		queue.queue_operations_btn();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/queue/QueueOp/", currentUrl,
+				"not in implementation of queue in python page");
+	}
+	
+	@Test(priority = 11)
+	public void queueOperationsCodeEditor() {
+		queue.queue_btn();
+		queue.queue_operations_btn();
+		queue.tryhere_queue();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+				"not in try here page of implemetation of queue in python page");
+
+	}
+	
+	@Test(priority = 12)
+	public void queueOpenPracticeQuestions() {
+		queue.queue_btn();
+		queue.queue_operations_btn();
+		queue.practice_queue();
+		String currentUrl = base.get_current_url();
+		assertEquals("https://dsportalapp.herokuapp.com/queue/practice", currentUrl,
+				"not in implementation of queue in python page");
+	}
+	
 	
 	
 	
