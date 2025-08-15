@@ -69,9 +69,9 @@ public class BasePage {
 		tldriver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
 		signinBtn.click();
-		String username = excelReader.inputTestData("ValidCredential", "testdata", "UserName");
+		String username = excelReader.inputTestData("testdata", "ValidCredential", "UserName");
 		userName.sendKeys(username);
-		String password = excelReader.inputTestData("ValidCredential", "testdata", "Password");
+		String password = excelReader.inputTestData("testdata", "ValidCredential", "Password");
 		pwd.sendKeys(password);
 		logInBtn.click();
 	}
@@ -104,23 +104,23 @@ public class BasePage {
 	}
 
 	public String validCode() throws IOException {
-		String validCodeData = excelReader.inputTestData("ValidCode", "testdata", "PythonCode");
+		String validCodeData = excelReader.inputTestData("testdata", "ValidCode", "PythonCode");
 
 		return validCodeData;
 	}
 
 	public String inValidCode() throws IOException {
-		String inValidCodeData = excelReader.inputTestData("InvalidCode", "testdata", "PythonCode");
+		String inValidCodeData = excelReader.inputTestData("testdata", "InvalidCode", "PythonCode");
 		return inValidCodeData;
 	}
 
 	public String validOutput() throws IOException {
-		String validOutputData = excelReader.inputTestData("ValidCode", "testdata", "RunResult");
+		String validOutputData = excelReader.inputTestData("testdata", "ValidCode", "RunResult");
 		return validOutputData;
 	}
 
 	public String expectedAlert() throws IOException {
-		String alert = excelReader.inputTestData("InvalidCode", "testdata", "RunResult");
+		String alert = excelReader.inputTestData("testdata", "InvalidCode", "RunResult");
 		return alert;
 	}
 

@@ -1,1 +1,0 @@
-{"uuid":"9b042272-52f5-4d0e-8397-864f9c417891","name":"testCases.Queue.queue_page","children":["bc1f95ce-0ecc-4d21-9de2-03443c0a7d19"],"description":"","befores":[{"name":"queue_page","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1755207019642,"stop":1755207019664}],"afters":[],"start":1755207019642,"stop":1755207019664}

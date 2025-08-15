@@ -30,7 +30,7 @@ public class ExcelReader {
 
 	}
 
-	public HashMap<String, String> readExcelRow(String ScenarioName, String sheetName) {
+	public HashMap<String, String> readExcelRow(String sheetName, String ScenarioName) {
 		HashMap<String, String> testData = new HashMap<>();
 		DataFormatter formatter = new DataFormatter();
 
@@ -54,9 +54,9 @@ public class ExcelReader {
 		return testData;
 	}
 
-	public String inputTestData(String ScenarioName, String sheetName, String key) {
+	public String inputTestData(String sheetName, String ScenarioName, String key) {
 		HashMap<String, String> testData = new HashMap<>();
-		testData = readExcelRow(ScenarioName, sheetName);
+		testData = readExcelRow(sheetName, ScenarioName);
 		return testData.get(key);
 
 	}
@@ -64,8 +64,8 @@ public class ExcelReader {
 	public Object[] getCode(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		Object[] data = new Object[2];
-		data[0] = inputTestData("ValidCode", "testdata", "PythonCode");
-		data[1] = inputTestData("InvalidCode", "testdata", "PythonCode");
+		data[0] = inputTestData("testdata", "ValidCode", "PythonCode");
+		data[1] = inputTestData("testdata", "InvalidCode", "PythonCode");
 		return data;
 	}
 

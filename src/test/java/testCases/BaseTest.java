@@ -1,5 +1,6 @@
 package testCases;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import com.aventstack.chaintest.plugins.ChainTestListener;
 
 import driverFactory.DriverFactory_TestNG;
 import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
 import pageFactory.BasePage;
 import utils.ExcelReader;
 
@@ -44,17 +46,28 @@ public class BaseTest {
 		DriverFactory_TestNG.tear_driver();
 
 	}
-
+    
+	
 	public void failed_screenshot(String testMethodName) throws IOException {
 
 		File screenshot = ((TakesScreenshot) DriverFactory_TestNG.getDriver()).getScreenshotAs(OutputType.FILE);
 		File savedScreenshot = new File("target/screenshots/" + "screenshot_" + testMethodName + ".jpg");
 		FileUtils.copyFile(screenshot, savedScreenshot);
-		try (InputStream is = new FileInputStream(savedScreenshot)) {
-			Allure.addAttachment("Screenshot", "image/jpg", is, "jpg");
-		}
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
+		
+	}
+	
+	public void allureScreenshot() {
+	try {
+		byte[] screenshotBytes = ((TakesScreenshot) DriverFactory_TestNG.getDriver())
+				.getScreenshotAs(OutputType.BYTES);
 
+		
+		Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), "png");
+
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 	}
 
 	@DataProvider(name = "pythonCodeValidandInvalid")

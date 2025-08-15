@@ -15,11 +15,13 @@
           <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
+          <include name="StackopenPracticeQuestions"/>
         </methods>
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
         <methods>
           <include name="queue_page"/>
+          <include name="queueOpenPracticeQuestions"/>
           <include name="teardownDriver"/>
           <include name="queueTryingEmptyEditor"/>
           <include name="open_website"/>
@@ -36,11 +38,13 @@
           <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
+          <include name="StackopenPracticeQuestions"/>
         </methods>
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
         <methods>
           <include name="queue_page"/>
+          <include name="queueOpenPracticeQuestions"/>
           <include name="teardownDriver"/>
           <include name="queueTryingEmptyEditor"/>
           <include name="open_website"/>
@@ -57,11 +61,13 @@
           <include name="StackTryingEmptyEditor"/>
           <include name="teardownDriver"/>
           <include name="open_website"/>
+          <include name="StackopenPracticeQuestions"/>
         </methods>
       </class> <!-- testCases.Stack -->
       <class name="testCases.Queue">
         <methods>
           <include name="queue_page"/>
+          <include name="queueOpenPracticeQuestions"/>
           <include name="teardownDriver"/>
           <include name="queueTryingEmptyEditor"/>
           <include name="open_website"/>
