@@ -174,3 +174,39 @@
 [ERROR] 2025-08-14 17:30:35.264 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
 [ERROR] 2025-08-14 17:30:41.498 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
 [ERROR] 2025-08-14 17:30:41.554 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[WARN] 2025-08-14 23:52:08.104 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-14 23:52:08.148 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-14 23:52:08.148 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-14 23:52:09.296 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\DSAlgoTestNGNinjalinos\testng.xml
+
+[ERROR] 2025-08-14 23:52:44.748 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:52:45.356 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:52:50.260 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:52:50.909 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:52:55.979 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:52:57.369 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:01.704 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:02.002 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-14 23:53:02.744 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:03.025 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-14 23:53:07.219 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:08.926 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:12.938 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:14.389 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:18.011 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:20.084 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:24.078 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:24.313 [TestNG-tests-1] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-14 23:53:25.232 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:25.561 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:25.771 [TestNG-tests-2] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-14 23:53:37.461 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:53:49.417 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:01.723 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:01.865 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running
+[ERROR] 2025-08-14 23:54:13.298 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:25.600 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:37.571 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:48.251 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-14 23:54:48.299 [TestNG-tests-3] AllureLifecycle - Could not add attachment: no test is running

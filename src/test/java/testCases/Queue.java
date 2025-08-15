@@ -169,8 +169,11 @@ public class Queue extends BaseTest {
 		queue.queue_operations_btn();
 		queue.practice_queue();
 		String currentUrl = base.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/queue/practice", currentUrl,
-				"not in implementation of queue in python page");
+		//assertEquals("https://dsportalapp.herokuapp.com/queue/practice", currentUrl,
+				//"not in implementation of queue in python page");
+		log.error("Practice questions page is empty in queue module");
+		Assert.fail("Failing this test case to show the bug which is,there are no practice questions available for queue module");
+	
 	}
 	
 	
