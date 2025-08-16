@@ -30,6 +30,7 @@ public class Stack extends BaseTest {
 		this.base = new BasePage();
 		this.stack = new Stack_pf();
 		this.log = new LoggerLoad();
+		base.launch_webpage();
 
 	}
 

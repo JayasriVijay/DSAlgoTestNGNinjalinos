@@ -30,6 +30,7 @@ public class Queue extends BaseTest {
 		this.base = new BasePage();
 		this.queue = new Queue_pf();
 		this.log = new LoggerLoad();
+		base.launch_webpage();
 
 	}
 

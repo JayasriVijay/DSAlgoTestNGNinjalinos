@@ -64,8 +64,8 @@ public class ExcelReader {
 	public Object[] getCode(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		Object[] data = new Object[2];
-		data[0] = inputTestData("testdata", "ValidCode", "PythonCode");
-		data[1] = inputTestData("testdata", "InvalidCode", "PythonCode");
+		data[0] = inputTestData("testdata", "PracticeQ3validcode", "PythonCode");
+		data[1] = inputTestData("testdata", "PracticeQ4validcode", "PythonCode");
 		return data;
 	}
 
