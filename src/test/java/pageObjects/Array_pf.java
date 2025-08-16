@@ -24,7 +24,7 @@ public class Array_pf {
 	ExcelReaderFile excelReader;
 	private Base_pf base_pf;
 
-	
+
 	public Array_pf() throws IOException {
 		this.driver = DriverFactory.getDriver();
 
@@ -35,7 +35,7 @@ public class Array_pf {
 		this.excelReader = new ExcelReaderFile();
 	}
 
-	
+
 	// ========== Elements ==========
 
 	@FindBy(xpath = "//h5[text()='Array']/../../..//a[text()='Get Started']")
@@ -82,8 +82,8 @@ public class Array_pf {
 
 
 	private void safeClick(WebElement element) {
-	    wait.until(ExpectedConditions.visibilityOf(element));
-	    wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 
 
@@ -91,15 +91,15 @@ public class Array_pf {
 
 	public void background_array() throws IOException {
 		base_pf.launch_webpage();
-//		launchBtn.click();
-//		signinBtn.click();
-//		String data1 = excelReader.getData("Credentials", 1, 0);
-//		String data2 = excelReader.getData("Credentials", 1, 1);
-//		String data1 = "ninjalinos@work.com";
-//		String data2 = "sdet218920@";
-//		userName.sendKeys(data1);
-//		pwd.sendKeys(data2);
-//		logInBtn.click();
+		//		launchBtn.click();
+		//		signinBtn.click();
+		//		String data1 = excelReader.getData("Credentials", 1, 0);
+		//		String data2 = excelReader.getData("Credentials", 1, 1);
+		//		String data1 = "ninjalinos@work.com";
+		//		String data2 = "sdet218920@";
+		//		userName.sendKeys(data1);
+		//		pwd.sendKeys(data2);
+		//		logInBtn.click();
 
 	}
 
@@ -150,13 +150,13 @@ public class Array_pf {
 	}
 
 	public void enterValidCodeInPracticeEditor(String code) {
-		
+
 		safeClick(practiceQuestionEditor);
 
 		// Use Actions to clear and type code like a user
 		Actions actions = new Actions(driver);
 		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
-				.sendKeys(Keys.DELETE).sendKeys(code).perform();
+		.sendKeys(Keys.DELETE).sendKeys(code).perform();
 	}
 
 	public void tryEditor_validCode_practiceQ1() throws IOException {
@@ -186,18 +186,18 @@ public class Array_pf {
 		safeClick(practiceQuestionEditor);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
-				.sendKeys(Keys.DELETE).sendKeys(data).perform();
+		.sendKeys(Keys.DELETE).sendKeys(data).perform();
 		//practiceQuestionEditor.sendKeys(data);
 	}
 
 	public void clickSubmit() {
 		safeClick(submitBtn);
 	}
-	
-	 public void waitForUrlToContain(String partialUrl) {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        wait.until(ExpectedConditions.urlContains(partialUrl));
-	    }
+
+	public void waitForUrlToContain(String partialUrl) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.urlContains(partialUrl));
+	}
 
 	public String getURL() {
 		return driver.getCurrentUrl();

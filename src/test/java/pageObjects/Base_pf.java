@@ -19,7 +19,7 @@ import utils.ConfigReader;
 import utils.ExcelReaderFile;
 
 public class Base_pf {
-	
+
 	private WebDriver driver;
 	private Actions action;
 	String browser;
@@ -28,22 +28,22 @@ public class Base_pf {
 	WebDriverWait wait;
 	ConfigReader config;
 	ExcelReaderFile excelReader;
-//	String path;
-	
-	
+	//	String path;
+
+
 	public Base_pf() throws IOException {
 		this.driver = DriverFactory.getDriver();
-        PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		
+
 		this.action = new Actions(driver);
 		this.config = new ConfigReader();
 		this.excelReader = new ExcelReaderFile();
-		
+
 	}
 
 	// =========== LOGIN ELEMENTS ============
-	
+
 	@FindBy(className = "btn")
 	WebElement launchBtn;
 
@@ -63,45 +63,45 @@ public class Base_pf {
 	WebElement signOut;
 
 	//Common elements
-	
+
 	@FindBy(xpath = "//form[@id='answer_form']/div/div/div[6]/div")
 	WebElement textEditor;
 	@FindBy(xpath = "//button[contains(text(),'Run')]")
 	WebElement runBtn;
 	@FindBy(id = "output")
 	WebElement outputTxt;
-	
+
 	// Helper methods
 
-	
+
 
 	private void safeType(WebElement element, String code) {
-	    wait.until(ExpectedConditions.visibilityOf(element));
-	    wait.until(ExpectedConditions.elementToBeClickable(element));
-	    action.moveToElement(element)
-	    .click()
-	    .sendKeys(code).perform();
+		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		action.moveToElement(element)
+		.click()
+		.sendKeys(code).perform();
 	}
-	
+
 	private void safeClick(WebElement element) {
-	    wait.until(ExpectedConditions.visibilityOf(element));
-	    wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
-	
+
 	// Actions
-	
+
 	public void launch_webpage() throws IOException {
 		driver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
 		signinBtn.click();
 		//String data1 = excelReader.getData("Credentials", 1, 0);
-	   // String data2 = excelReader.getData("Credentials", 1, 1);
+		// String data2 = excelReader.getData("Credentials", 1, 1);
 		//String data1 = "ninjalinos@work.com";
 		//String data2 = "sdet218920@";
 		//FOR NEW EXCEL SHEET
 		String data1 = excelReader.inputTestData("Sheet1", "Valid credential", "UserName");
 		String data2 = excelReader.inputTestData("Sheet1", "Valid credential", "Password");
-		
+
 		userName.sendKeys(data1);
 		pwd.sendKeys(data2);
 		logInBtn.click();
@@ -109,10 +109,10 @@ public class Base_pf {
 
 	}
 
-//	public void get_testUrl() {
-//		driver.get(config.get_prop_value("testurl"));
-//	}
-	
+	//	public void get_testUrl() {
+	//		driver.get(config.get_prop_value("testurl"));
+	//	}
+
 	public void tryEditor_validCode() throws IOException {
 		String data = excelReader.inputTestData("Sheet1", "Try Here Valid Code", "PythonCode");
 		//String data = "print(\"Hello World\")";
@@ -163,17 +163,17 @@ public class Base_pf {
 		return driver.getTitle();
 	}
 
-	
 
-//	// This method is to read the expected output from the excel reader
-//	public String getExcelExpOutput(String sheetName, String scenarioName ,String key ) throws IOException {
-//		//String sheet = sheetName;
-//		//String scenario = scenarioName;
-//		//String cell = key;
-//		String data = excelReader.inputTestData(sheetName, scenarioName, key);
-//		return data;
-//
-//	}
+
+	//	// This method is to read the expected output from the excel reader
+	//	public String getExcelExpOutput(String sheetName, String scenarioName ,String key ) throws IOException {
+	//		//String sheet = sheetName;
+	//		//String scenario = scenarioName;
+	//		//String cell = key;
+	//		String data = excelReader.inputTestData(sheetName, scenarioName, key);
+	//		return data;
+	//
+	//	}
 
 
 }
