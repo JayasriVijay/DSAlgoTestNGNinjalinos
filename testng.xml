@@ -8,9 +8,7 @@
 			<listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
 			
 	</listeners>
-	<!--<listeners>
-            <listener class-name="testCases.CustomListener"/>
-        </listeners>-->
+	
 	<test thread-count="5" name="Test_All_Modules_chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
