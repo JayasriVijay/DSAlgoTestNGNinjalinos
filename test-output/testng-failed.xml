@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+    <listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testMethods.ArrayTest">
+        <methods>
+          <include name="array_page"/>
+          <include name="testQ4ValidCode_Run"/>
+          <include name="testEnterWebsite"/>
+          <include name="testQ2ValidCode_Run"/>
+          <include name="testQ1ValidCode_Run"/>
+          <include name="testQ3ValidCode_Run"/>
+          <include name="testTryEditorPageWithNoInput"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testMethods.ArrayTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="testMethods.ArrayTest">
         <methods>
           <include name="array_page"/>
           <include name="testEnterWebsite"/>
-          <include name="testQ1ValidCode_Run"/>
+          <include name="testTryEditorPageWithNoInput"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- testMethods.ArrayTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -162,11 +162,6 @@ public class Base_pf {
 		return driver.getTitle();
 	}
 
-   
-
-	
-	
-	
 	//	// This method is to read the expected output from the excel reader
 	//	public String getExcelExpOutput(String sheetName, String scenarioName ,String key ) throws IOException {
 	//		//String sheet = sheetName;

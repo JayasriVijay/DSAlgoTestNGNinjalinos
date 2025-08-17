@@ -37,7 +37,7 @@ public class Array_pf {
 
 		this.excelReader = new ExcelReaderFile();
 		this.PQtestData = new HashMap<>();
-		PQtestData = excelReader.readExcelRow("ValidCode", "practiceQ");
+		PQtestData = excelReader.readExcelRow("Code", "practiceQ");
 	}
 
 
@@ -199,13 +199,13 @@ public class Array_pf {
 		return driver.getCurrentUrl();
 	}
 	
-	@DataProvider(name = "InvalidDataForEditor")   //USING THIS
-	public String[] invalidDataTryEditor() throws IOException {
-		String[] data = new String[2];
-		data[0] = PQtestData.get("InvalidCode");
-	    data[1] = PQtestData.get("InvalidCode2");
-		return data;    	
-    }
+//	@DataProvider(name = "InvalidDataForEditor")   //USING THIS
+//	public String[] invalidDataTryEditor() throws IOException {
+//		String[] data = new String[2];
+//		data[0] = PQtestData.get("InvalidCode");
+//	    data[1] = PQtestData.get("InvalidCode2");
+//		return data;    	
+//    }
 	
 	
 }
