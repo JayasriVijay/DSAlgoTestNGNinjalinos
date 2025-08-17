@@ -1121,3 +1121,57 @@
 [ERROR] 2025-08-17 00:11:27.894 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
 [ERROR] 2025-08-17 00:11:35.392 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
 [ERROR] 2025-08-17 00:11:43.161 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
+[WARN] 2025-08-17 00:34:05.852 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-17 00:34:05.854 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[WARN] 2025-08-17 00:34:05.854 [main] TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+[INFO] 2025-08-17 00:34:07.029 [main] Utils - [TestNG] Running:
+  C:\Users\HP\git\DSAlgoTestNGNinjalinos\testng.xml
+
+[ERROR] 2025-08-17 00:34:47.336 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:34:47.648 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:34:54.076 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:34:54.253 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:00.921 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:00.957 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:07.722 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:07.732 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:15.312 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:15.382 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:22.144 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:22.247 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:22.746 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:28.527 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:28.733 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:34.932 [TestNG-tests-1] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:34.958 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:35.101 [TestNG-tests-2] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:47.652 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:35:59.557 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:36:11.870 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:36:24.330 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:36:38.254 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:36:51.458 [TestNG-tests-3] LoggerLoad - Alert message for no code entered in editor is not displayed
+[ERROR] 2025-08-17 00:36:52.231 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:36:54.548 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:36:57.940 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:00.893 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:04.020 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:06.954 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:09.601 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:12.822 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:37:27.020 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:29.633 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:32.520 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:35.018 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:38.245 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:41.795 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:43.777 [TestNG-tests-2] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:37:46.050 [TestNG-tests-1] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:38:36.599 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:38:42.254 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:38:47.732 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:38:53.341 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in stack module
+[ERROR] 2025-08-17 00:39:10.186 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:39:15.764 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:39:21.209 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module
+[ERROR] 2025-08-17 00:39:26.690 [TestNG-tests-3] LoggerLoad - Practice questions page is empty in queue module

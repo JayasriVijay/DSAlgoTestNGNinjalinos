@@ -78,7 +78,7 @@ public class QueueTest extends BaseTest {
 		allureScreenshot();
 		log.error("Alert message for no code entered in editor is not displayed");
 		Assert.fail(
-				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it");
+				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it");
 
 	}
 
