@@ -8,24 +8,459 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,990</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite_dsAlgo</th></tr>
+<tr><td><a href="#t0">Test_All_Modules_chrome</a></td><td class="num">20</td><td class="num">0</td><td class="num attn">12</td><td class="num attn">4</td><td class="num">256,209</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test_All_Modules_edge</a></td><td class="num">20</td><td class="num">0</td><td class="num attn">12</td><td class="num attn">4</td><td class="num">257,511</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test_All_Modules_firefox</a></td><td class="num">20</td><td class="num">0</td><td class="num attn">12</td><td class="num attn">4</td><td class="num">396,510</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">60</th><th class="num">0</th><th class="num attn">36</th><th class="num attn">12</th><th class="num">910,230</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.Stack</td><td><a href="#m0">StackTryingValidAndInvalidCode</a></td><td rowspan="2">1755375621656</td><td rowspan="2">1596</td></tr><tr class="passedeven"><td><a href="#m1">StackTryingValidAndInvalidCode</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite_dsAlgo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_All_Modules_chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.Queue</td><td><a href="#m0">queueOpenPracticeQuestions</a></td><td rowspan="1">1755403761994</td><td rowspan="1">1401</td></tr><tr class="failedeven"><td><a href="#m1">queueTryingEmptyEditor</a></td><td rowspan="1">1755403616083</td><td rowspan="1">2381</td></tr><tr class="failedodd"><td rowspan="2">testCases.Stack</td><td><a href="#m2">StackTryingEmptyEditor</a></td><td rowspan="1">1755403586377</td><td rowspan="1">2129</td></tr><tr class="failedodd"><td><a href="#m3">StackopenPracticeQuestions</a></td><td rowspan="1">1755403722625</td><td rowspan="1">1664</td></tr><tr><th colspan="4">Test_All_Modules_chrome &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="6">testCases.Queue</td><td><a href="#m4">queueOpenPracticeQuestions</a></td><td rowspan="3">1755403748559</td><td rowspan="3">1637</td></tr><tr class="retriedeven"><td><a href="#m5">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m6">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m7">queueTryingEmptyEditor</a></td><td rowspan="3">1755403593598</td><td rowspan="3">2330</td></tr><tr class="retriedeven"><td><a href="#m8">queueTryingEmptyEditor</a></td></tr><tr class="retriedeven"><td><a href="#m9">queueTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td rowspan="6">testCases.Stack</td><td><a href="#m10">StackTryingEmptyEditor</a></td><td rowspan="3">1755403571565</td><td rowspan="3">1934</td></tr><tr class="retriedodd"><td><a href="#m11">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m12">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m13">StackopenPracticeQuestions</a></td><td rowspan="3">1755403708925</td><td rowspan="3">2041</td></tr><tr class="retriedodd"><td><a href="#m14">StackopenPracticeQuestions</a></td></tr><tr class="retriedodd"><td><a href="#m15">StackopenPracticeQuestions</a></td></tr><tr><th colspan="4">Test_All_Modules_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">testCases.Queue</td><td><a href="#m16">open_queue_page</a></td><td rowspan="1">1755403524658</td><td rowspan="1">594</td></tr><tr class="passedeven"><td><a href="#m17">queueImplementation</a></td><td rowspan="1">1755403540154</td><td rowspan="1">1296</td></tr><tr class="passedeven"><td><a href="#m18">queueImplementationCodeEditor</a></td><td rowspan="1">1755403556176</td><td rowspan="1">1785</td></tr><tr class="passedeven"><td><a href="#m19">queueImplementationUsingArray</a></td><td rowspan="1">1755403683766</td><td rowspan="1">1539</td></tr><tr class="passedeven"><td><a href="#m20">queueImplementationUsingArrayCodeEditor</a></td><td rowspan="1">1755403695439</td><td rowspan="1">2206</td></tr><tr class="passedeven"><td><a href="#m21">queueImplementationUsingCollection</a></td><td rowspan="1">1755403659135</td><td rowspan="1">1020</td></tr><tr class="passedeven"><td><a href="#m22">queueImplementationUsingCollectionCodeEditor</a></td><td rowspan="1">1755403672171</td><td rowspan="1">1675</td></tr><tr class="passedeven"><td><a href="#m23">queueOperations</a></td><td rowspan="1">1755403728847</td><td rowspan="1">1459</td></tr><tr class="passedeven"><td><a href="#m24">queueOperationsCodeEditor</a></td><td rowspan="1">1755403735044</td><td rowspan="1">1891</td></tr><tr class="passedeven"><td><a href="#m25">queueTryingValidAndInvalidCode</a></td><td rowspan="2">1755403645228</td><td rowspan="2">2419</td></tr><tr class="passedeven"><td><a href="#m26">queueTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td rowspan="9">testCases.Stack</td><td><a href="#m27">StackTryingValidAndInvalidCode</a></td><td rowspan="2">1755403623542</td><td rowspan="2">2118</td></tr><tr class="passedodd"><td><a href="#m28">StackTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td><a href="#m29">open_stac_page</a></td><td rowspan="1">1755403515691</td><td rowspan="1">849</td></tr><tr class="passedodd"><td><a href="#m30">stackOperations</a></td><td rowspan="1">1755403531666</td><td rowspan="1">1395</td></tr><tr class="passedodd"><td><a href="#m31">stackapplication</a></td><td rowspan="1">1755403677736</td><td rowspan="1">1595</td></tr><tr class="passedodd"><td><a href="#m32">stackapplicationCodeEditor</a></td><td rowspan="1">1755403689492</td><td rowspan="1">1497</td></tr><tr class="passedodd"><td><a href="#m33">stackimplementation</a></td><td rowspan="1">1755403652931</td><td rowspan="1">1349</td></tr><tr class="passedodd"><td><a href="#m34">stackimplementationCodeEditor</a></td><td rowspan="1">1755403665101</td><td rowspan="1">2085</td></tr><tr class="passedodd"><td><a href="#m35">stackoperationsCodeEditor</a></td><td rowspan="1">1755403547561</td><td rowspan="1">2136</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test_All_Modules_edge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.Queue</td><td><a href="#m36">queueOpenPracticeQuestions</a></td><td rowspan="1">1755403763075</td><td rowspan="1">1869</td></tr><tr class="failedeven"><td><a href="#m37">queueTryingEmptyEditor</a></td><td rowspan="1">1755403615887</td><td rowspan="1">2095</td></tr><tr class="failedodd"><td rowspan="2">testCases.Stack</td><td><a href="#m38">StackTryingEmptyEditor</a></td><td rowspan="1">1755403585761</td><td rowspan="1">2297</td></tr><tr class="failedodd"><td><a href="#m39">StackopenPracticeQuestions</a></td><td rowspan="1">1755403722640</td><td rowspan="1">2087</td></tr><tr><th colspan="4">Test_All_Modules_edge &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="6">testCases.Queue</td><td><a href="#m40">queueOpenPracticeQuestions</a></td><td rowspan="3">1755403749675</td><td rowspan="3">1896</td></tr><tr class="retriedeven"><td><a href="#m41">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m42">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m43">queueTryingEmptyEditor</a></td><td rowspan="3">1755403608421</td><td rowspan="3">2147</td></tr><tr class="retriedeven"><td><a href="#m44">queueTryingEmptyEditor</a></td></tr><tr class="retriedeven"><td><a href="#m45">queueTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td rowspan="6">testCases.Stack</td><td><a href="#m46">StackTryingEmptyEditor</a></td><td rowspan="3">1755403563988</td><td rowspan="3">2414</td></tr><tr class="retriedodd"><td><a href="#m47">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m48">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m49">StackopenPracticeQuestions</a></td><td rowspan="3">1755403709042</td><td rowspan="3">2129</td></tr><tr class="retriedodd"><td><a href="#m50">StackopenPracticeQuestions</a></td></tr><tr class="retriedodd"><td><a href="#m51">StackopenPracticeQuestions</a></td></tr><tr><th colspan="4">Test_All_Modules_edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">testCases.Queue</td><td><a href="#m52">open_queue_page</a></td><td rowspan="1">1755403524548</td><td rowspan="1">878</td></tr><tr class="passedeven"><td><a href="#m53">queueImplementation</a></td><td rowspan="1">1755403540812</td><td rowspan="1">1149</td></tr><tr class="passedeven"><td><a href="#m54">queueImplementationCodeEditor</a></td><td rowspan="1">1755403556177</td><td rowspan="1">2093</td></tr><tr class="passedeven"><td><a href="#m55">queueImplementationUsingArray</a></td><td rowspan="1">1755403684230</td><td rowspan="1">873</td></tr><tr class="passedeven"><td><a href="#m56">queueImplementationUsingArrayCodeEditor</a></td><td rowspan="1">1755403696520</td><td rowspan="1">1663</td></tr><tr class="passedeven"><td><a href="#m57">queueImplementationUsingCollection</a></td><td rowspan="1">1755403659163</td><td rowspan="1">997</td></tr><tr class="passedeven"><td><a href="#m58">queueImplementationUsingCollectionCodeEditor</a></td><td rowspan="1">1755403671927</td><td rowspan="1">1581</td></tr><tr class="passedeven"><td><a href="#m59">queueOperations</a></td><td rowspan="1">1755403730173</td><td rowspan="1">912</td></tr><tr class="passedeven"><td><a href="#m60">queueOperationsCodeEditor</a></td><td rowspan="1">1755403736221</td><td rowspan="1">1903</td></tr><tr class="passedeven"><td><a href="#m61">queueTryingValidAndInvalidCode</a></td><td rowspan="2">1755403638095</td><td rowspan="2">2645</td></tr><tr class="passedeven"><td><a href="#m62">queueTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td rowspan="9">testCases.Stack</td><td><a href="#m63">StackTryingValidAndInvalidCode</a></td><td rowspan="2">1755403623361</td><td rowspan="2">2299</td></tr><tr class="passedodd"><td><a href="#m64">StackTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td><a href="#m65">open_stac_page</a></td><td rowspan="1">1755403515084</td><td rowspan="1">714</td></tr><tr class="passedodd"><td><a href="#m66">stackOperations</a></td><td rowspan="1">1755403533244</td><td rowspan="1">1163</td></tr><tr class="passedodd"><td><a href="#m67">stackapplication</a></td><td rowspan="1">1755403678346</td><td rowspan="1">1173</td></tr><tr class="passedodd"><td><a href="#m68">stackapplicationCodeEditor</a></td><td rowspan="1">1755403689861</td><td rowspan="1">1737</td></tr><tr class="passedodd"><td><a href="#m69">stackimplementation</a></td><td rowspan="1">1755403652637</td><td rowspan="1">1115</td></tr><tr class="passedodd"><td><a href="#m70">stackimplementationCodeEditor</a></td><td rowspan="1">1755403664943</td><td rowspan="1">1644</td></tr><tr class="passedodd"><td><a href="#m71">stackoperationsCodeEditor</a></td><td rowspan="1">1755403547731</td><td rowspan="1">1737</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test_All_Modules_firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.Queue</td><td><a href="#m72">queueOpenPracticeQuestions</a></td><td rowspan="1">1755403902239</td><td rowspan="1">922</td></tr><tr class="failedeven"><td><a href="#m73">queueTryingEmptyEditor</a></td><td rowspan="1">1755403714424</td><td rowspan="1">2078</td></tr><tr class="failedodd"><td rowspan="2">testCases.Stack</td><td><a href="#m74">StackTryingEmptyEditor</a></td><td rowspan="1">1755403655145</td><td rowspan="1">2727</td></tr><tr class="failedodd"><td><a href="#m75">StackopenPracticeQuestions</a></td><td rowspan="1">1755403855939</td><td rowspan="1">863</td></tr><tr><th colspan="4">Test_All_Modules_firefox &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="6">testCases.Queue</td><td><a href="#m76">queueOpenPracticeQuestions</a></td><td rowspan="3">1755403886925</td><td rowspan="3">970</td></tr><tr class="retriedeven"><td><a href="#m77">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m78">queueOpenPracticeQuestions</a></td></tr><tr class="retriedeven"><td><a href="#m79">queueTryingEmptyEditor</a></td><td rowspan="3">1755403684562</td><td rowspan="3">2361</td></tr><tr class="retriedeven"><td><a href="#m80">queueTryingEmptyEditor</a></td></tr><tr class="retriedeven"><td><a href="#m81">queueTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td rowspan="6">testCases.Stack</td><td><a href="#m82">StackTryingEmptyEditor</a></td><td rowspan="3">1755403629222</td><td rowspan="3">2391</td></tr><tr class="retriedodd"><td><a href="#m83">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m84">StackTryingEmptyEditor</a></td></tr><tr class="retriedodd"><td><a href="#m85">StackopenPracticeQuestions</a></td><td rowspan="3">1755403848052</td><td rowspan="3">874</td></tr><tr class="retriedodd"><td><a href="#m86">StackopenPracticeQuestions</a></td></tr><tr class="retriedodd"><td><a href="#m87">StackopenPracticeQuestions</a></td></tr><tr><th colspan="4">Test_All_Modules_firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">testCases.Queue</td><td><a href="#m88">open_queue_page</a></td><td rowspan="1">1755403536711</td><td rowspan="1">1796</td></tr><tr class="passedeven"><td><a href="#m89">queueImplementation</a></td><td rowspan="1">1755403568771</td><td rowspan="1">1516</td></tr><tr class="passedeven"><td><a href="#m90">queueImplementationCodeEditor</a></td><td rowspan="1">1755403598075</td><td rowspan="1">2967</td></tr><tr class="passedeven"><td><a href="#m91">queueImplementationUsingArray</a></td><td rowspan="1">1755403809902</td><td rowspan="1">606</td></tr><tr class="passedeven"><td><a href="#m92">queueImplementationUsingArrayCodeEditor</a></td><td rowspan="1">1755403824940</td><td rowspan="1">1132</td></tr><tr class="passedeven"><td><a href="#m93">queueImplementationUsingCollection</a></td><td rowspan="1">1755403780481</td><td rowspan="1">552</td></tr><tr class="passedeven"><td><a href="#m94">queueImplementationUsingCollectionCodeEditor</a></td><td rowspan="1">1755403794617</td><td rowspan="1">1186</td></tr><tr class="passedeven"><td><a href="#m95">queueOperations</a></td><td rowspan="1">1755403863561</td><td rowspan="1">586</td></tr><tr class="passedeven"><td><a href="#m96">queueOperationsCodeEditor</a></td><td rowspan="1">1755403871150</td><td rowspan="1">1181</td></tr><tr class="passedeven"><td><a href="#m97">queueTryingValidAndInvalidCode</a></td><td rowspan="2">1755403756300</td><td rowspan="2">1836</td></tr><tr class="passedeven"><td><a href="#m98">queueTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td rowspan="9">testCases.Stack</td><td><a href="#m99">StackTryingValidAndInvalidCode</a></td><td rowspan="2">1755403728870</td><td rowspan="2">1809</td></tr><tr class="passedodd"><td><a href="#m100">StackTryingValidAndInvalidCode</a></td></tr><tr class="passedodd"><td><a href="#m101">open_stac_page</a></td><td rowspan="1">1755403521709</td><td rowspan="1">889</td></tr><tr class="passedodd"><td><a href="#m102">stackOperations</a></td><td rowspan="1">1755403553630</td><td rowspan="1">1566</td></tr><tr class="passedodd"><td><a href="#m103">stackapplication</a></td><td rowspan="1">1755403802366</td><td rowspan="1">597</td></tr><tr class="passedodd"><td><a href="#m104">stackapplicationCodeEditor</a></td><td rowspan="1">1755403817038</td><td rowspan="1">1196</td></tr><tr class="passedodd"><td><a href="#m105">stackimplementation</a></td><td rowspan="1">1755403774266</td><td rowspan="1">482</td></tr><tr class="passedodd"><td><a href="#m106">stackimplementationCodeEditor</a></td><td rowspan="1">1755403787122</td><td rowspan="1">1049</td></tr><tr class="passedodd"><td><a href="#m107">stackoperationsCodeEditor</a></td><td rowspan="1">1755403583007</td><td rowspan="1">2787</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>def findNumbers(nums):
-  count = 0
-  for num in nums:
-    if len(str(num)) % 2 == 0:
-      count += 1
-      return count
-numsArr1 = [12, 345, 2, 6, 7896]
-print(&quot;Even number of digits in given array&quot;)
-print (findNumbers(numsArr1))</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>def sortedSquares(nums):
-  return sorted([x * x for x in nums])
-# Test cases
-print(sortedSquares([-4, -1, 0, 3, 10]))
-print(sortedSquares([-7, -3, 2, 3, 11]))</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_All_Modules_chrome</h2><h3 id="m0">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.Queue#open_queue_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testCases.Queue#queueImplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testCases.Queue#queueImplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">testCases.Queue#queueImplementationUsingArray</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">testCases.Queue#queueImplementationUsingArrayCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">testCases.Queue#queueImplementationUsingCollection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">testCases.Queue#queueImplementationUsingCollectionCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">testCases.Queue#queueOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">testCases.Queue#queueOperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">testCases.Stack#open_stac_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">testCases.Stack#stackOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">testCases.Stack#stackapplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">testCases.Stack#stackapplicationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">testCases.Stack#stackimplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">testCases.Stack#stackimplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">testCases.Stack#stackoperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_All_Modules_edge</h2><h3 id="m36">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">testCases.Queue#open_queue_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">testCases.Queue#queueImplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">testCases.Queue#queueImplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">testCases.Queue#queueImplementationUsingArray</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">testCases.Queue#queueImplementationUsingArrayCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">testCases.Queue#queueImplementationUsingCollection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">testCases.Queue#queueImplementationUsingCollectionCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">testCases.Queue#queueOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">testCases.Queue#queueOperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">testCases.Stack#open_stac_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">testCases.Stack#stackOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m67">testCases.Stack#stackapplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m68">testCases.Stack#stackapplicationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m69">testCases.Stack#stackimplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m70">testCases.Stack#stackimplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m71">testCases.Stack#stackoperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_All_Modules_firefox</h2><h3 id="m72">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m73">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m74">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m75">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m76">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m77">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m78">testCases.Queue#queueOpenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for queue module
+	at testCases.Queue.queueOpenPracticeQuestions(Queue.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m79">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m80">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m81">testCases.Queue#queueTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Queue.queueTryingEmptyEditor(Queue.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m82">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m83">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m84">testCases.Stack#StackTryingEmptyEditor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering anhy code in it
+	at testCases.Stack.StackTryingEmptyEditor(Stack.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m85">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m86">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m87">testCases.Stack#StackopenPracticeQuestions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is,there are no practice questions available for stack module
+	at testCases.Stack.StackopenPracticeQuestions(Stack.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m88">testCases.Queue#open_queue_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m89">testCases.Queue#queueImplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m90">testCases.Queue#queueImplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m91">testCases.Queue#queueImplementationUsingArray</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m92">testCases.Queue#queueImplementationUsingArrayCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m93">testCases.Queue#queueImplementationUsingCollection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m94">testCases.Queue#queueImplementationUsingCollectionCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m95">testCases.Queue#queueOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m96">testCases.Queue#queueOperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m97">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m98">testCases.Queue#queueTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m99">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m100">testCases.Stack#StackTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m101">testCases.Stack#open_stac_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m102">testCases.Stack#stackOperations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m103">testCases.Stack#stackapplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m104">testCases.Stack#stackapplicationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m105">testCases.Stack#stackimplementation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m106">testCases.Stack#stackimplementationCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m107">testCases.Stack#stackoperationsCodeEditor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

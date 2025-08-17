@@ -19,8 +19,7 @@ public class ExcelReader {
 	public XSSFCell cell;
 	ConfigReader config;
 	String xlfilePath;
-	HashMap<String, Integer> colNums = null;
-	HashMap<String, Integer> rowNums = null;
+	
 
 	public ExcelReader() throws IOException {
 		this.config = new ConfigReader();
@@ -30,7 +29,7 @@ public class ExcelReader {
 
 	}
 
-	public HashMap<String, String> readExcelRow(String sheetName, String ScenarioName) {
+	public HashMap<String, String> readExcelRow(String ScenarioName, String sheetName) {
 		HashMap<String, String> testData = new HashMap<>();
 		DataFormatter formatter = new DataFormatter();
 
@@ -54,18 +53,22 @@ public class ExcelReader {
 		return testData;
 	}
 
-	public String inputTestData(String sheetName, String ScenarioName, String key) {
-		HashMap<String, String> testData = new HashMap<>();
-		testData = readExcelRow(sheetName, ScenarioName);
-		return testData.get(key);
-
-	}
+//	public String inputTestData(String sheetName, String ScenarioName, String key) {
+//		HashMap<String, String> testData = new HashMap<>();
+//		testData = readExcelRow(sheetName, ScenarioName);
+//		return testData.get(key);
+//
+//	}
 
 	public Object[] getCode(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);
 		Object[] data = new Object[2];
-		data[0] = inputTestData("testdata", "PracticeQ3validcode", "PythonCode");
-		data[1] = inputTestData("testdata", "PracticeQ4validcode", "PythonCode");
+		HashMap<String, String> testDataValid = new HashMap<>();
+		HashMap<String, String> testDataInValid = new HashMap<>();
+		testDataValid = readExcelRow("ValidCode", "testdata");
+		testDataInValid = readExcelRow("InvalidCode", "testdata");
+		data[0] = testDataValid.get("PythonCode");
+		data[1] = testDataInValid.get("PythonCode");
 		return data;
 	}
 

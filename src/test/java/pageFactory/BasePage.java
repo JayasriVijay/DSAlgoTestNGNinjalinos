@@ -3,6 +3,7 @@ package pageFactory;
 import java.io.IOException;
 
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -27,6 +28,19 @@ public class BasePage {
 	Alert alert;
 	JavascriptExecutor js;
 	ExcelReader excelReader;
+	HashMap<String, String> testData;
+
+	public BasePage() throws IOException {
+
+		this.config = new ConfigReader();
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		PageFactory.initElements(tldriver, this);
+		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
+		this.excelReader = new ExcelReader();
+		this.js = (JavascriptExecutor) tldriver;
+		this.testData = new HashMap<>();
+
+	}
 
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereQueue;
@@ -54,24 +68,15 @@ public class BasePage {
 	@FindBy(id = "output")
 	WebElement outputTxt;
 
-	public BasePage() throws IOException {
-
-		this.config = new ConfigReader();
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-		this.excelReader = new ExcelReader();
-		js = (JavascriptExecutor) tldriver;
-
-	}
-
 	public void launch_webpage() throws IOException {
 		tldriver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
 		signinBtn.click();
-		String username = excelReader.inputTestData("testdata", "ValidCredential", "UserName");
+		testData = excelReader.readExcelRow("ValidCredential", "testdata");
+		String username = testData.get("UserName");
 		userName.sendKeys(username);
-		String password = excelReader.inputTestData("testdata", "ValidCredential", "Password");
+		testData = excelReader.readExcelRow("ValidCredential", "testdata");
+		String password = testData.get("Password");
 		pwd.sendKeys(password);
 		logInBtn.click();
 	}
@@ -103,38 +108,16 @@ public class BasePage {
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
 
-	public String validCode() throws IOException {
-		String validCodeData = excelReader.inputTestData("testdata", "ValidCode", "PythonCode");
-
-		return validCodeData;
-	}
-
-	public String inValidCode() throws IOException {
-		String inValidCodeData = excelReader.inputTestData("testdata", "InvalidCode", "PythonCode");
-		return inValidCodeData;
-	}
-
-	public String validOutput() throws IOException {
-		String validOutputData = excelReader.inputTestData("testdata", "ValidCode", "RunResult");
-		return validOutputData;
-	}
-
-	public String expectedAlert() throws IOException {
-		String alert = excelReader.inputTestData("testdata", "InvalidCode", "RunResult");
-		return alert;
-	}
-
 	public String output_text() {
 		wait.until(ExpectedConditions.visibilityOf(outputTxt));
 		String outputText = outputTxt.getText();
 		return outputText;
 
 	}
-	
+
 	public String get_current_url() {
 		String current_url = tldriver.getCurrentUrl();
 		return current_url;
 	}
-
 
 }

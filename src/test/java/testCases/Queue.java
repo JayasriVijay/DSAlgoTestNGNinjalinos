@@ -3,6 +3,7 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
+import utils.ExcelReader;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -24,12 +26,18 @@ public class Queue extends BaseTest {
 	Queue_pf queue;
 	BasePage base;
 	LoggerLoad log;
+	ExcelReader excelReader;
+	HashMap<String, String> testDataValid;
+	HashMap<String, String> testDataInValid;
 
 	@BeforeMethod
 	public void queue_page() throws IOException {
 		this.base = new BasePage();
 		this.queue = new Queue_pf();
 		this.log = new LoggerLoad();
+		this.excelReader = new ExcelReader();
+		this.testDataValid = new HashMap<>();
+		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 
 	}
@@ -79,11 +87,13 @@ public class Queue extends BaseTest {
 		queue.queue_btn();
 		queue.implementation_queue_python_btn();
 		queue.tryhere_queue();
+		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
+		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
-		String validCodedata = base.validCode();
-		String invalidCodedata = base.inValidCode();
-		String expectedOutput = base.validOutput();
-		String alertexpected = base.expectedAlert();
+		String validCodedata = testDataValid.get("PythonCode");
+		String invalidCodedata = testDataInValid.get("PythonCode");
+		String expectedOutput = testDataValid.get("RunResult");
+		String alertexpected = testDataInValid.get("RunResult");
 
 		if (code.equals(validCodedata)) {
 			Assert.assertEquals(base.output_text(), expectedOutput, "did not get the expected output");

@@ -4,7 +4,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,9 +13,15 @@ import driverFactory.DriverFactory_TestNG;
 
 public class Stack_pf {
 	private WebDriver tldriver;
-	private Actions action;
 	String browser;
 	WebDriverWait wait;
+	
+	public Stack_pf() {
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		PageFactory.initElements(tldriver, this);
+		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
+
+	}
 
 	@FindBy(xpath = "//h5[text()='Stack']/../../..//a[text()='Get Started']")
 	WebElement stackBtn;
@@ -36,13 +41,7 @@ public class Stack_pf {
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereStack;
 
-	public Stack_pf() {
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		this.action = new Actions(tldriver);
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-
-	}
+	
 
 	public void stack_btn() {
 

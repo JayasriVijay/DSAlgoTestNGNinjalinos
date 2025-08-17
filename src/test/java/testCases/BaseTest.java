@@ -2,9 +2,7 @@ package testCases;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -19,8 +17,6 @@ import com.aventstack.chaintest.plugins.ChainTestListener;
 
 import driverFactory.DriverFactory_TestNG;
 import io.qameta.allure.Allure;
-import io.qameta.allure.Attachment;
-import pageFactory.BasePage;
 import utils.ExcelReader;
 
 public class BaseTest {
@@ -37,8 +33,6 @@ public class BaseTest {
 		DriverFactory_TestNG df = new DriverFactory_TestNG();
 		df.init_browser(br);
 		
-		
-
 	}
 
 	@AfterMethod
