@@ -115,6 +115,7 @@ public class StackTest extends BaseTest {
 		stack.stack_btn();
 		stack.implementation_stack_btn();
 		String currentUrl = base.get_current_url();
+		log.info("opening stack implementation page");
 		assertEquals("https://dsportalapp.herokuapp.com/stack/implementation/", currentUrl,
 				"not in implementation in stack page");
 
@@ -126,6 +127,7 @@ public class StackTest extends BaseTest {
 		stack.implementation_stack_btn();
 		stack.tryhere_stack();
 		String currentUrl = base.get_current_url();
+		log.info("opening code editor from stack implementation page");
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
 
 	}
@@ -135,6 +137,7 @@ public class StackTest extends BaseTest {
 		stack.stack_btn();
 		stack.application_stack_btn();
 		String currentUrl = base.get_current_url();
+		log.info("opening stack application page");
 		assertEquals("https://dsportalapp.herokuapp.com/stack/stack-applications/", currentUrl,
 				"not in implementation in stack page");
 
@@ -146,6 +149,7 @@ public class StackTest extends BaseTest {
 		stack.application_stack_btn();
 		stack.tryhere_stack();
 		String currentUrl = base.get_current_url();
+		log.info("opening code editor from stack implementation page");
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
 
 	}
@@ -157,6 +161,7 @@ public class StackTest extends BaseTest {
 		stack.practice_stack();
 		allureScreenshot();
 		log.error("Practice questions page is empty in stack module");
+		log.info("opening practice questions in stack page");
 		Assert.fail(
 				"Failing this test case to show the bug which is,there are no practice questions available for stack module");
 
