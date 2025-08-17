@@ -15,8 +15,8 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
@@ -25,8 +25,8 @@
 		<parameter name="browser" value="edge" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
@@ -35,8 +35,8 @@
 		<parameter name="browser" value="firefox" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
