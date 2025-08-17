@@ -16,9 +16,9 @@ import utils.ExcelReader;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
-public class Stack extends BaseTest {
+public class StackTest extends BaseTest {
 
-	public Stack() throws IOException {
+	public StackTest() throws IOException {
 		super();
 
 	}

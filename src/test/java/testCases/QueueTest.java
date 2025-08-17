@@ -16,9 +16,9 @@ import utils.ExcelReader;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
-public class Queue extends BaseTest {
+public class QueueTest extends BaseTest {
 
-	public Queue() throws IOException {
+	public QueueTest() throws IOException {
 		super();
 
 	}

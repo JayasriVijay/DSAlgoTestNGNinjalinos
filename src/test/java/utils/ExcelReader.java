@@ -53,12 +53,7 @@ public class ExcelReader {
 		return testData;
 	}
 
-//	public String inputTestData(String sheetName, String ScenarioName, String key) {
-//		HashMap<String, String> testData = new HashMap<>();
-//		testData = readExcelRow(sheetName, ScenarioName);
-//		return testData.get(key);
-//
-//	}
+
 
 	public Object[] getCode(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);
