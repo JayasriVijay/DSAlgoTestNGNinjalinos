@@ -2,12 +2,12 @@
 <testng-results ignored="39" total="40" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-17T11:19:42 CDT" name="Default suite" finished-at="2025-08-17T11:19:49 CDT" duration-ms="6511">
+  <suite started-at="2025-08-17T12:32:22 CDT" name="Default suite" finished-at="2025-08-17T12:32:27 CDT" duration-ms="5441">
     <groups>
     </groups>
-    <test started-at="2025-08-17T11:19:42 CDT" name="Default test" finished-at="2025-08-17T11:19:49 CDT" duration-ms="6511">
+    <test started-at="2025-08-17T12:32:22 CDT" name="Default test" finished-at="2025-08-17T12:32:27 CDT" duration-ms="5441">
       <class name="testMethods.ArrayTest">
-        <test-method is-config="true" signature="testEnterWebsite(java.lang.String)[pri:0, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T11:19:42 CDT" name="testEnterWebsite" finished-at="2025-08-17T11:19:44 CDT" duration-ms="1878" status="PASS">
+        <test-method is-config="true" signature="testEnterWebsite(java.lang.String)[pri:0, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T12:32:22 CDT" name="testEnterWebsite" finished-at="2025-08-17T12:32:24 CDT" duration-ms="1863" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,14 +18,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterWebsite -->
-        <test-method is-config="true" signature="array_page()[pri:0, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T11:19:44 CDT" name="array_page" finished-at="2025-08-17T11:19:46 CDT" duration-ms="1709" status="PASS">
+        <test-method is-config="true" signature="array_page()[pri:0, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T12:32:24 CDT" name="array_page" finished-at="2025-08-17T12:32:26 CDT" duration-ms="1926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- array_page -->
-        <test-method signature="testQ2ValidCode_Submit()[pri:32, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T11:19:46 CDT" name="testQ2ValidCode_Submit" finished-at="2025-08-17T11:19:49 CDT" duration-ms="2875" status="PASS">
+        <test-method signature="testTryEditorPageWithInvalidInput()[pri:10, instance:testMethods.ArrayTest@6fc3e1a4]" started-at="2025-08-17T12:32:26 CDT" name="testTryEditorPageWithInvalidInput" finished-at="2025-08-17T12:32:27 CDT" duration-ms="1611" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQ2ValidCode_Submit -->
+        </test-method> <!-- testTryEditorPageWithInvalidInput -->
       </class> <!-- testMethods.ArrayTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -141,15 +141,17 @@ public class ArrayTest extends BaseTest {
 
 	}
 
-	@Test (priority = 10 ,dataProvider = "InvalidDataForEditor")
-	public void testTryEditorPageWithInvalidInput(String code) throws IOException, InterruptedException {
+	@Test (priority = 10)
+	public void testTryEditorPageWithInvalidInput() throws IOException, InterruptedException {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
-		base_pf.tryEditor_invalidCode(code);
-		base_pf.clickRun();
-		base_pf.handle_alert();
-
+		base_pf.tryEditor_invalidCode();
+	    base_pf.clickRun();
+	    base_pf.handle_alert();
+	   
 	}
+	
+
 
 	@Test (priority = 11)
 	public void testTryEditorWithValidInput() throws IOException {

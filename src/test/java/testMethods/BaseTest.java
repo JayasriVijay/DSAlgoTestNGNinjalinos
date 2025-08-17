@@ -54,12 +54,7 @@ public class BaseTest {
 
 	}
 	
-//	 @DataProvider(name = "InvalidDataForEditor")
-//		public Object[] invalidDataTryEditor() throws IOException {
-//	    	Object[] data = excelReader.getCode("Sheet1");
-//	    	return data;
-//	    	
-//	    }
+
 	
 //	@DataProvider(name = "InvalidDataForEditor")   //USING THIS
 //	public String[] invalidDataTryEditor() throws IOException {
@@ -68,6 +63,7 @@ public class BaseTest {
 //		data[1] = excelReader.inputTestData("Sheet1", "Invalid credential", "UserName");
 //		return data;    	
 //    }
+	
 
 
 }

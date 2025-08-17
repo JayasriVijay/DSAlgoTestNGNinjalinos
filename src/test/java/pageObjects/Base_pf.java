@@ -32,6 +32,7 @@ public class Base_pf {
 	ExcelReaderFile excelReader;
 	HashMap<String, String> testData;
 	HashMap<String, String> testData2;
+	HashMap<String, String> testData3;
 	//	String path;
 
 
@@ -117,12 +118,12 @@ public class Base_pf {
 		safeType(textEditor, data);
 	}
 
-	public void tryEditor_invalidCode(String code) throws IOException {
-		//String data = excelReader.inputTestData("Sheet1", "Try here Invalid code", "PythonCode");
-		String data = code;
+	public void tryEditor_invalidCode() throws IOException {
+		testData3 = excelReader.readExcelRow("InvalidCode", "testdata");
+		String data = testData3.get("PythonCode");
+		
 		safeType(textEditor, data);
 	}
-
 	public void clickRun() {
 		safeClick(runBtn);
 	}

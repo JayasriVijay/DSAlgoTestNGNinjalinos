@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
 import driverManager.DriverFactory;
 import utils.ExcelReaderFile;
@@ -95,16 +96,7 @@ public class Array_pf {
 
 	public void background_array() throws IOException {
 		base_pf.launch_webpage();
-		//		launchBtn.click();
-		//		signinBtn.click();
-		//		String data1 = excelReader.getData("Credentials", 1, 0);
-		//		String data2 = excelReader.getData("Credentials", 1, 1);
-		//		String data1 = "ninjalinos@work.com";
-		//		String data2 = "sdet218920@";
-		//		userName.sendKeys(data1);
-		//		pwd.sendKeys(data2);
-		//		logInBtn.click();
-
+	
 	}
 
 	public void clickArrayGetStarted() {
@@ -206,4 +198,14 @@ public class Array_pf {
 	public String getURL() {
 		return driver.getCurrentUrl();
 	}
+	
+	@DataProvider(name = "InvalidDataForEditor")   //USING THIS
+	public String[] invalidDataTryEditor() throws IOException {
+		String[] data = new String[2];
+		data[0] = PQtestData.get("InvalidCode");
+	    data[1] = PQtestData.get("InvalidCode2");
+		return data;    	
+    }
+	
+	
 }
