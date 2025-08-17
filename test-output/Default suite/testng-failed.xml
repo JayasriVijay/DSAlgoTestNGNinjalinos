@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Stack">
+      <class name="testCases.DatastructuresTest">
         <methods>
-          <include name="stackOperations"/>
-          <include name="stack_page"/>
+          <include name="tryeditornocode"/>
+          <include name="queue_page"/>
+          <include name="teardownDriver"/>
+          <include name="practiceQ"/>
           <include name="open_website"/>
+          <include name="queueTryingValidAndInvalidCode"/>
         </methods>
-      </class> <!-- testCases.Stack -->
+      </class> <!-- testCases.DatastructuresTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
