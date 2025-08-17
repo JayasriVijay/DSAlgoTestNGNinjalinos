@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-17T17:22:42 CDT" name="Default suite" finished-at="2025-08-17T17:23:07 CDT" duration-ms="25643">
+  <suite started-at="2025-08-17T17:36:36 CDT" name="Default suite" finished-at="2025-08-17T17:36:42 CDT" duration-ms="5598">
     <groups>
     </groups>
-    <test started-at="2025-08-17T17:22:42 CDT" name="Default test" finished-at="2025-08-17T17:23:07 CDT" duration-ms="25643">
-      <class name="testCases.DatastructuresTest">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:42 CDT" name="open_website" finished-at="2025-08-17T17:22:43 CDT" duration-ms="1070" status="PASS">
+    <test started-at="2025-08-17T17:36:36 CDT" name="Default test" finished-at="2025-08-17T17:36:42 CDT" duration-ms="5598">
+      <class name="testCases.LaunchTest">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:36 CDT" name="open_website" finished-at="2025-08-17T17:36:37 CDT" duration-ms="1312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:43 CDT" name="queue_page" finished-at="2025-08-17T17:22:45 CDT" duration-ms="2390" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:37 CDT" name="setup" finished-at="2025-08-17T17:36:38 CDT" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="Timecomplexity()[pri:1, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:45 CDT" name="Timecomplexity" finished-at="2025-08-17T17:22:46 CDT" duration-ms="334" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="checkmsg()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:38 CDT" name="checkmsg" finished-at="2025-08-17T17:36:38 CDT" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Timecomplexity -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:46 CDT" name="teardownDriver" finished-at="2025-08-17T17:22:46 CDT" duration-ms="171" status="PASS">
+        </test-method> <!-- checkmsg -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:38 CDT" name="teardownDriver" finished-at="2025-08-17T17:36:38 CDT" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:46 CDT" name="open_website" finished-at="2025-08-17T17:22:47 CDT" duration-ms="714" status="PASS">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:38 CDT" name="open_website" finished-at="2025-08-17T17:36:40 CDT" duration-ms="1593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,230 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:47 CDT" name="queue_page" finished-at="2025-08-17T17:22:48 CDT" duration-ms="1914" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:40 CDT" name="setup" finished-at="2025-08-17T17:36:40 CDT" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="practiceQ()[pri:2, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:48 CDT" name="practiceQ" finished-at="2025-08-17T17:22:49 CDT" duration-ms="644" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[user is not able to see practice questions, the page is empty expected [https://dsportalapp.herokuapp.com/data-structures-introduction/practic] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/practice]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user is not able to see practice questions, the page is empty expected [https://dsportalapp.herokuapp.com/data-structures-introduction/practic] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/practice]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testCases.DatastructuresTest.practiceQ(DatastructuresTest.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setup -->
+        <test-method signature="clickgetstarted()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:40 CDT" name="clickgetstarted" finished-at="2025-08-17T17:36:41 CDT" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- practiceQ -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:49 CDT" name="teardownDriver" finished-at="2025-08-17T17:22:49 CDT" duration-ms="177" status="PASS">
+        </test-method> <!-- clickgetstarted -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LaunchTest@656d10a4]" started-at="2025-08-17T17:36:41 CDT" name="teardownDriver" finished-at="2025-08-17T17:36:42 CDT" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:49 CDT" name="open_website" finished-at="2025-08-17T17:22:50 CDT" duration-ms="762" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:50 CDT" name="queue_page" finished-at="2025-08-17T17:22:52 CDT" duration-ms="1869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="tryeditor()[pri:3, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:52 CDT" name="tryeditor" finished-at="2025-08-17T17:22:53 CDT" duration-ms="973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tryeditor -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:53 CDT" name="teardownDriver" finished-at="2025-08-17T17:22:53 CDT" duration-ms="200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:53 CDT" name="open_website" finished-at="2025-08-17T17:22:54 CDT" duration-ms="738" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:54 CDT" name="queue_page" finished-at="2025-08-17T17:22:57 CDT" duration-ms="3314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="tryeditornocode()[pri:4, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:57 CDT" name="tryeditornocode" finished-at="2025-08-17T17:22:58 CDT" duration-ms="1076" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=139.0.7258.128)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9d3531eee16ffdddfbc23be2d9d445f, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53590/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9d3531eee16ffdddfbc23be2d9d445f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=139.0.7258.128)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d9d3531eee16ffdddfbc23be2d9d445f, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53590/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d9d3531eee16ffdddfbc23be2d9d445f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1175)
-at pageFactory.Datastructure_pf.alert_message(Datastructure_pf.java:84)
-at testCases.DatastructuresTest.tryeditornocode(DatastructuresTest.java:102)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tryeditornocode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:58 CDT" name="teardownDriver" finished-at="2025-08-17T17:22:58 CDT" duration-ms="152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:58 CDT" name="open_website" finished-at="2025-08-17T17:22:59 CDT" duration-ms="766" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:22:59 CDT" name="queue_page" finished-at="2025-08-17T17:23:02 CDT" duration-ms="2310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueTryingValidAndInvalidCode(java.lang.String)[pri:5, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:02 CDT" name="queueTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-17T17:23:03 CDT" duration-ms="1206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[print("hello")]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:03 CDT" name="teardownDriver" finished-at="2025-08-17T17:23:03 CDT" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:03 CDT" name="open_website" finished-at="2025-08-17T17:23:04 CDT" duration-ms="908" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:04 CDT" name="queue_page" finished-at="2025-08-17T17:23:06 CDT" duration-ms="2238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueTryingValidAndInvalidCode(java.lang.String)[pri:5, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:06 CDT" name="queueTryingValidAndInvalidCode" data-provider="pythonCodeValidandInvalid" finished-at="2025-08-17T17:23:07 CDT" duration-ms="1177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hello]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueTryingValidAndInvalidCode -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.DatastructuresTest@7b7b3edb]" started-at="2025-08-17T17:23:07 CDT" name="teardownDriver" finished-at="2025-08-17T17:23:07 CDT" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.DatastructuresTest -->
+      </class> <!-- testCases.LaunchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
