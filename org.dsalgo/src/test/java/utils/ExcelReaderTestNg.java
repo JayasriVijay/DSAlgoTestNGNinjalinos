@@ -15,12 +15,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReaderTestNg {
 	
-		private static final String STRING = null;
+		private final String STRING = null;
 		public static String filePath = "src/test/resources/testData (1).xlsx";
 		
 
 
-		public static Map<String, String> readExcelRow(String ScenarioName, String sheetName) {
+		public Map<String, String> readExcelRow(String ScenarioName, String sheetName) {
 		    Map<String, String> testData = new HashMap<>();
 		    DataFormatter formatter = new DataFormatter();
 

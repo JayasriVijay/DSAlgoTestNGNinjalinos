@@ -20,12 +20,14 @@ public class LinkedListTest extends BaseTest {
     String Input;
     String actualOutput;
     String expectedOutput;
+    ExcelReaderTestNg excelReader;
    
     
     @BeforeMethod
     public void initPageObjects() {
         linkedListPg = new LinkedListPage();
-        linkedListPg.getToLinkedList();
+        linkedListPg.getToLinkedList(); 
+        this.excelReader = new ExcelReaderTestNg();
         log = new LoggerLoad();
     }
     
@@ -77,7 +79,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_Intro() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateToIntroTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -85,7 +87,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_Intro() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateToIntroTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -93,7 +95,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_Intro() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateToIntroTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     }
@@ -123,7 +125,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_CreateLinkedList() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateToCreateLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -131,7 +133,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_CreateLinkedList() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateToCreateLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -139,7 +141,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_CreateLinkedList() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateToCreateLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 
@@ -169,7 +171,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_TypesofLinkedList() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateToTypesofLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -177,7 +179,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_TypesofLinkedList() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateToTypesofLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -185,7 +187,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_TypesofLinkedList() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateToTypesofLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 
@@ -215,7 +217,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_ImplementLinkedList() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateToImplementLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -223,7 +225,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_ImplementLinkedList() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateToImplementLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -231,7 +233,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_ImplementLinkedList() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateToImplementLinkedListTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 
@@ -261,7 +263,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_TraversalPage() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateTonavigateToTraversalTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -269,7 +271,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_TraversalPage() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateTonavigateToTraversalTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -277,7 +279,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_TraversalPage() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateTonavigateToTraversalTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 
@@ -307,7 +309,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_InsertionPage() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateTonavigateToInsertionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -315,7 +317,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_InsertionPage() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateTonavigateToInsertionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData =excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -323,7 +325,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_InsertionPagee() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateTonavigateToInsertionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 
@@ -353,7 +355,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforValidCode_DeletionPage() throws InterruptedException {
     	log.info("Checking for Valid Code...");
         linkedListPg.navigateTonavigateToDeletionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("ValidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();
         
     }
@@ -361,7 +363,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforInvalidCode_DeletionPage() throws InterruptedException {
     	log.info("Checking for InValid Code...");
         linkedListPg.navigateTonavigateToDeletionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("InvalidInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();     
         
     }
@@ -369,7 +371,7 @@ public class LinkedListTest extends BaseTest {
     public void verifytryEditorforEmptyInput_DeletionPage() throws InterruptedException {
     	log.info("Checking for EmptyInput...");
         linkedListPg.navigateTonavigateToDeletionTryEditor();
-        testData = ExcelReaderTestNg.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
+        testData = excelReader.readExcelRow("EmptyInput", "Sheet1");// This is taking the rowName and SheetName
         passingCodetoTryEditer();   
         
     } 

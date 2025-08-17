@@ -1,13 +1,18 @@
 package pageObjects;
 
+import java.io.File;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.function.Function;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +30,7 @@ public class BasePage {
 	ConfigReaderTest config;
 	private WebDriverWait wait;
 	Alert alert;
+	
 	
 	
 	//constructor
@@ -98,6 +104,14 @@ public class BasePage {
 		action.moveToElement(tryHereButton).click().perform();
 	}
 
+	public void failed_screenshot(String testMethodName) throws IOException {
+
+		File screenshot = ((TakesScreenshot) DriverFactory.getdriver()).getScreenshotAs(OutputType.FILE);
+		File savedScreenshot = new File("target/screenshots/" + "screenshot_" + testMethodName + ".jpg");
+		FileUtils.copyFile(screenshot, savedScreenshot);
+	
+		
+	}
 	
 	 public String enterData(String inputData) {
 		 if (inputData != null && !inputData.isEmpty()) {
