@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -23,6 +24,7 @@ public class Array_pf {
 	private WebDriverWait wait;
 	ExcelReaderFile excelReader;
 	private Base_pf base_pf;
+	HashMap<String, String> PQtestData;
 
 
 	public Array_pf() throws IOException {
@@ -33,6 +35,8 @@ public class Array_pf {
 		this.base_pf = new Base_pf();
 
 		this.excelReader = new ExcelReaderFile();
+		this.PQtestData = new HashMap<>();
+		PQtestData = excelReader.readExcelRow("ValidCode", "practiceQ");
 	}
 
 
@@ -160,29 +164,29 @@ public class Array_pf {
 	}
 
 	public void tryEditor_validCode_practiceQ1() throws IOException {
-
-		String validCode1 = excelReader.inputTestData("Sheet1", "Practice Q1 valid code", "PythonCode");
+		String validCode1 = PQtestData.get("PracticeQ1validcode");
+		//String validCode1 = excelReader.readExcelRow("Sheet1", "Practice Q1 valid code", "PythonCode");
 
 		enterValidCodeInPracticeEditor(validCode1);
 	}
 
 	public void tryEditor_validCode_practiceQ2() throws IOException {
-		String validCode2 = excelReader.inputTestData("Sheet1", "Practice Q2 valid code", "PythonCode");
+		String validCode2 = PQtestData.get("PracticeQ2validcode");
 		enterValidCodeInPracticeEditor(validCode2);
 	}
 
 	public void tryEditor_validCode_practiceQ3() throws IOException {
-		String validCode3 = excelReader.inputTestData("Sheet1", "Practice Q3 valid code", "PythonCode");
+		String validCode3 = PQtestData.get("PracticeQ3validcode");
 		enterValidCodeInPracticeEditor(validCode3);
 	}
 
 	public void tryEditor_validCode_practiceQ4() throws IOException {
-		String validCode4 = excelReader.inputTestData("Sheet1", "Practice Q4 valid code", "PythonCode");
+		String validCode4 = PQtestData.get("PracticeQ4validcode");
 		enterValidCodeInPracticeEditor(validCode4);
 	}
 
 	public void tryEditor_invalidCode_practiceQ() throws IOException {
-		String data = excelReader.inputTestData("Sheet1", "Try here Invalid code", "PythonCode");
+		String data = PQtestData.get("InvalidCode");
 		safeClick(practiceQuestionEditor);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)

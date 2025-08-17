@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -13,6 +14,7 @@ import org.testng.annotations.AfterMethod;
 
 import pageObjects.Array_pf;
 import pageObjects.Base_pf;
+import utils.ExcelReaderFile;
 import utils.LoggerLoad;
 import driverManager.DriverFactory;
 
@@ -25,9 +27,14 @@ import org.openqa.selenium.WebDriver;
 @Listeners(CustomListener.class)
 public class ArrayTest extends BaseTest {
 
+	public ArrayTest() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	Array_pf array_pf;
 	Base_pf base_pf;
 	LoggerLoad log;
+	
 
 	//WebDriver driver;
 
@@ -35,7 +42,9 @@ public class ArrayTest extends BaseTest {
 	public void array_page() throws IOException {
 		base_pf = new Base_pf();
 		array_pf = new Array_pf();
+		
 		this.log = new LoggerLoad();
+		base_pf.launch_webpage();
 		array_pf.clickArrayGetStarted();
 
 	}
@@ -85,7 +94,6 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickTryHere();
 		array_pf.waitForUrlToContain("/tryEditor");
 		String currentUrl = array_pf.getURL();
-		//log.info("Message1");
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor",currentUrl);
 
 	}
@@ -133,11 +141,11 @@ public class ArrayTest extends BaseTest {
 
 	}
 
-	@Test (priority = 10)
-	public void testTryEditorPageWithInvalidInput() throws IOException, InterruptedException {
+	@Test (priority = 10 ,dataProvider = "InvalidDataForEditor")
+	public void testTryEditorPageWithInvalidInput(String code) throws IOException, InterruptedException {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
-		base_pf.tryEditor_invalidCode();
+		base_pf.tryEditor_invalidCode(code);
 		base_pf.clickRun();
 		base_pf.handle_alert();
 
@@ -336,7 +344,7 @@ public class ArrayTest extends BaseTest {
 	//27
 	@Test (priority = 27)
 	public void testQ1ValidCode_Run() throws IOException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
-		array_pf.clickArraysInPython();
+		array_pf.clickArraysInPython();                     //RAN SUCCESSFULLY IN FIREFOX
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSearchTheArray();
 		array_pf.tryEditor_validCode_practiceQ1();
@@ -347,8 +355,8 @@ public class ArrayTest extends BaseTest {
 	}
 
 	//28
-	@Test (priority = 28)
-	public void testQ1ValidCode_Submit() throws IOException {
+	@Test (priority = 28)                                  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
+	public void testQ1ValidCode_Submit() throws IOException {      //RAN SUCCESSFULLY IN FIREFOX
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSearchTheArray();
@@ -516,6 +524,6 @@ public class ArrayTest extends BaseTest {
 
 	}
 
-
+	
 
 }

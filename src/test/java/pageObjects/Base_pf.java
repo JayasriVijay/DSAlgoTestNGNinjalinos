@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
 import driverManager.DriverFactory;
 import utils.ConfigReader;
@@ -28,6 +30,8 @@ public class Base_pf {
 	WebDriverWait wait;
 	ConfigReader config;
 	ExcelReaderFile excelReader;
+	HashMap<String, String> testData;
+	HashMap<String, String> testData2;
 	//	String path;
 
 
@@ -39,6 +43,8 @@ public class Base_pf {
 		this.action = new Actions(driver);
 		this.config = new ConfigReader();
 		this.excelReader = new ExcelReaderFile();
+		this.testData = new HashMap<>();
+		this.testData2 = new HashMap<>();
 
 	}
 
@@ -94,34 +100,26 @@ public class Base_pf {
 		driver.get(config.get_prop_value("testurl"));
 		launchBtn.click();
 		signinBtn.click();
-		//String data1 = excelReader.getData("Credentials", 1, 0);
-		// String data2 = excelReader.getData("Credentials", 1, 1);
-		//String data1 = "ninjalinos@work.com";
-		//String data2 = "sdet218920@";
-		//FOR NEW EXCEL SHEET
-		String data1 = excelReader.inputTestData("Sheet1", "Valid credential", "UserName");
-		String data2 = excelReader.inputTestData("Sheet1", "Valid credential", "Password");
+		testData = excelReader.readExcelRow("ValidCredential", "testdata");
+		String data1 = testData.get("UserName");
+		String data2 = testData.get("Password");
 
 		userName.sendKeys(data1);
 		pwd.sendKeys(data2);
 		logInBtn.click();
 
-
 	}
 
-	//	public void get_testUrl() {
-	//		driver.get(config.get_prop_value("testurl"));
-	//	}
-
+	
 	public void tryEditor_validCode() throws IOException {
-		String data = excelReader.inputTestData("Sheet1", "Try Here Valid Code", "PythonCode");
-		//String data = "print(\"Hello World\")";
+		testData2 = excelReader.readExcelRow("ValidCode", "testdata");
+		String data = testData2.get("PythonCode");
 		safeType(textEditor, data);
 	}
 
-	public void tryEditor_invalidCode() throws IOException {
-		String data = excelReader.inputTestData("Sheet1", "Try here Invalid code", "PythonCode");
-		//String data = "ABC";
+	public void tryEditor_invalidCode(String code) throws IOException {
+		//String data = excelReader.inputTestData("Sheet1", "Try here Invalid code", "PythonCode");
+		String data = code;
 		safeType(textEditor, data);
 	}
 
@@ -163,8 +161,11 @@ public class Base_pf {
 		return driver.getTitle();
 	}
 
+   
 
-
+	
+	
+	
 	//	// This method is to read the expected output from the excel reader
 	//	public String getExcelExpOutput(String sheetName, String scenarioName ,String key ) throws IOException {
 	//		//String sheet = sheetName;

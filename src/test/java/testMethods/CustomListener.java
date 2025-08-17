@@ -8,6 +8,11 @@ import testMethods.BaseTest;
 
 public class CustomListener extends BaseTest implements ITestListener {
 	
+	public CustomListener() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void onTestFailure(ITestResult result) {
 		try {
