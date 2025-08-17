@@ -10,7 +10,6 @@
           <include name="teardownDriver"/>
           <include name="practiceQ"/>
           <include name="open_website"/>
-          <include name="queueTryingValidAndInvalidCode"/>
         </methods>
       </class> <!-- testCases.DatastructuresTest -->
     </classes>
