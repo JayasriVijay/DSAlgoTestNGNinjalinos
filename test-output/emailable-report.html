@@ -8,40 +8,90 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,423</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite_dsAlgo</th></tr>
+<tr><td><a href="#t0">Test_All_Modules_firefox</a></td><td class="num">16</td><td class="num">0</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">208,245</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TreeTest</td><td><a href="#m0">practQuestion</a></td><td rowspan="1">1755341516715</td><td rowspan="1">2220</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite_dsAlgo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_All_Modules_firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.TreeTest</td><td><a href="#m0">practQuestion</a></td><td rowspan="1">1755446816059</td><td rowspan="1">1062</td></tr><tr class="failedeven"><td><a href="#m1">runWithoutCode</a></td><td rowspan="1">1755446764524</td><td rowspan="1">1519</td></tr><tr><th colspan="4">Test_All_Modules_firefox &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="6">testCases.TreeTest</td><td><a href="#m2">practQuestion</a></td><td rowspan="3">1755446790695</td><td rowspan="3">900</td></tr><tr class="retriedeven"><td><a href="#m3">practQuestion</a></td></tr><tr class="retriedeven"><td><a href="#m4">practQuestion</a></td></tr><tr class="retriedeven"><td><a href="#m5">runWithoutCode</a></td><td rowspan="3">1755446739096</td><td rowspan="3">1507</td></tr><tr class="retriedeven"><td><a href="#m6">runWithoutCode</a></td></tr><tr class="retriedeven"><td><a href="#m7">runWithoutCode</a></td></tr><tr><th colspan="4">Test_All_Modules_firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">testCases.TreeTest</td><td><a href="#m8">Traversals_Illus</a></td><td rowspan="1">1755446618664</td><td rowspan="1">1097</td></tr><tr class="passedeven"><td><a href="#m9">appBinaryTree</a></td><td rowspan="1">1755446627823</td><td rowspan="1">786</td></tr><tr class="passedeven"><td><a href="#m10">binarySearch</a></td><td rowspan="1">1755446637202</td><td rowspan="1">860</td></tr><tr class="passedeven"><td><a href="#m11">binaryTreTraver</a></td><td rowspan="1">1755446645880</td><td rowspan="1">689</td></tr><tr class="passedeven"><td><a href="#m12">binary_Tree</a></td><td rowspan="1">1755446654260</td><td rowspan="1">773</td></tr><tr class="passedeven"><td><a href="#m13">clickOverview</a></td><td rowspan="1">1755446662948</td><td rowspan="1">1608</td></tr><tr class="passedeven"><td><a href="#m14">clickTerminology</a></td><td rowspan="1">1755446673027</td><td rowspan="1">1283</td></tr><tr class="passedeven"><td><a href="#m15">impOfBst</a></td><td rowspan="1">1755446682095</td><td rowspan="1">738</td></tr><tr class="passedeven"><td><a href="#m16">impl_OfBinaryTrees</a></td><td rowspan="1">1755446690529</td><td rowspan="1">618</td></tr><tr class="passedeven"><td><a href="#m17">implement_OfPython</a></td><td rowspan="1">1755446698672</td><td rowspan="1">803</td></tr><tr class="passedeven"><td><a href="#m18">treeTryingValidAndInvalidCode</a></td><td rowspan="2">1755446773343</td><td rowspan="2">1377</td></tr><tr class="passedeven"><td><a href="#m19">treeTryingValidAndInvalidCode</a></td></tr><tr class="passedeven"><td><a href="#m20">tree_Traversals</a></td><td rowspan="1">1755446707594</td><td rowspan="1">665</td></tr><tr class="passedeven"><td><a href="#m21">typesTree</a></td><td rowspan="1">1755446715003</td><td rowspan="1">1387</td></tr><tr class="passedeven"><td><a href="#m22">types_OfBinaryTree</a></td><td rowspan="1">1755446723711</td><td rowspan="1">697</td></tr><tr class="passedeven"><td><a href="#m23">verifyTreeLinks</a></td><td rowspan="1">1755446731401</td><td rowspan="1">642</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testCases.TreeTest#practQuestion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Practice Question is blank and failed the testcases to show the bug
-	at org.testng.Assert.fail(Assert.java:110)
-	at testCases.TreeTest.practQuestion(TreeTest.java:217)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>Test_All_Modules_firefox</h2><h3 id="m0">testCases.TreeTest#practQuestion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Practice Question is blank and failed the testcases to show the bug
+	at testCases.TreeTest.practQuestion(TreeTest.java:235)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TreeTest#runWithoutCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it
+	at testCases.TreeTest.runWithoutCode(TreeTest.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TreeTest#practQuestion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Practice Question is blank and failed the testcases to show the bug
+	at testCases.TreeTest.practQuestion(TreeTest.java:235)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TreeTest#practQuestion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Practice Question is blank and failed the testcases to show the bug
+	at testCases.TreeTest.practQuestion(TreeTest.java:235)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TreeTest#practQuestion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Practice Question is blank and failed the testcases to show the bug
+	at testCases.TreeTest.practQuestion(TreeTest.java:235)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TreeTest#runWithoutCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it
+	at testCases.TreeTest.runWithoutCode(TreeTest.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TreeTest#runWithoutCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it
+	at testCases.TreeTest.runWithoutCode(TreeTest.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.TreeTest#runWithoutCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it
+	at testCases.TreeTest.runWithoutCode(TreeTest.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.TreeTest#Traversals_Illus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.TreeTest#appBinaryTree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.TreeTest#binarySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.TreeTest#binaryTreTraver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.TreeTest#binary_Tree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.TreeTest#clickOverview</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.TreeTest#clickTerminology</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.TreeTest#impOfBst</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.TreeTest#impl_OfBinaryTrees</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testCases.TreeTest#implement_OfPython</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testCases.TreeTest#treeTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>print(&quot;hello&quot;)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">testCases.TreeTest#treeTryingValidAndInvalidCode</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">testCases.TreeTest#tree_Traversals</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">testCases.TreeTest#typesTree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">testCases.TreeTest#types_OfBinaryTree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">testCases.TreeTest#verifyTreeLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

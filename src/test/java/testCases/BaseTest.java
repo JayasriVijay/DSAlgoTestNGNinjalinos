@@ -33,12 +33,12 @@ public class BaseTest {
 
 	@Parameters({ "browser" })
 	@BeforeMethod
-		public void setup(@Optional("chrome") String br) throws IOException, InterruptedException {
+		public void setup(@Optional("firefox") String br) throws IOException, InterruptedException {
 		DriverFactory_TestNG df = new DriverFactory_TestNG();
 		df.init_browser(br);
 		BasePage base;
 		base = new BasePage();
-		base.launch_webpage();
+		
 
 	}
 

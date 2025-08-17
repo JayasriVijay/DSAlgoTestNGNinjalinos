@@ -1,6 +1,7 @@
 package testCases;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +10,7 @@ import org.testng.annotations.Test;
 import driverFactory.DriverFactory_TestNG;
 import pageFactory.BasePage;
 import pageFactory.TreePage;
+import utils.ExcelReader;
 import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
@@ -21,12 +23,19 @@ public class TreeTest extends BaseTest{
 	TreePage treePg;
 	BasePage base;	
     LoggerLoad log;
+    ExcelReader excelReader;
+	HashMap<String, String> testDataValid;
+	HashMap<String, String> testDataInValid;
 	
 	@BeforeMethod
 	public void graphPage() throws InterruptedException, IOException {
 		this.base = new BasePage();
 		this.treePg = new TreePage();
 		this.log = new LoggerLoad();
+		this.excelReader= new ExcelReader();
+		this.testDataValid = new HashMap<>();
+		this.testDataInValid = new HashMap<>();
+		base.launch_webpage();
 	}
 	
 	@Test
@@ -34,6 +43,7 @@ public class TreeTest extends BaseTest{
 		log.info("Verifying the links in Tree Page");
 		treePg.getToTree();
 		treePg.verifyLinks();
+	
 	}
 	@Test
 	public void clickOverview() throws InterruptedException, IOException {		
@@ -181,11 +191,13 @@ public class TreeTest extends BaseTest{
 		treePg.getToTree();
 		treePg.click_Overview();
 		treePg.click_TryHere();
+		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
+		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
-		String validCodedata = base.validCode();
-		String invalidCodedata = base.inValidCode();
-		String expectedOutput = base.validOutput();
-		String alertexpected = base.expectedAlert();
+		String validCodedata = testDataValid.get("PythonCode");
+		String invalidCodedata = testDataInValid.get("PythonCode");
+		String expectedOutput = testDataValid.get("RunResult");
+		String alertexpected = testDataInValid.get("RunResult");
 	
 		if(code.equals(validCodedata)) 
 		{
@@ -203,17 +215,26 @@ public class TreeTest extends BaseTest{
 		
 	}
 	
+	
+	@Test(priority = 3)
+	public void runWithoutCode() throws InterruptedException, IOException {
+		treePg.getToTree();
+		treePg.click_Overview();
+		treePg.click_TryHere();
+		base.clickRunBtn();
+		log.error("Alert message for no code entered in editor is not displayed");
+		Assert.fail(
+				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it");
+	}
 		
 	@Test(priority = 6)
 	public void practQuestion() throws InterruptedException, IOException {
 		treePg.getToTree();
 		treePg.click_Overview();
         treePg.practice_Tree();
-		String actualTitle = treePg.getTitle();
-		String expectedTitle = "Practice Questions";
-		Assert.assertEquals(actualTitle, expectedTitle, "Title not matched");
+    	log.error("Practice Question Page is blank, log the bug in JIRA");
 		Assert.fail("Practice Question is blank and failed the testcases to show the bug");
-		log.error("Practice Question Page is blank, log the bug in JIRA");
+	
 	}
 	
 }

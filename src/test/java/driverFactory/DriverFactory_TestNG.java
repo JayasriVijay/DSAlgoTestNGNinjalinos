@@ -49,7 +49,6 @@ public class DriverFactory_TestNG {
 		if (Objects.isNull(tldriver.get())) {
 			throw new IllegalStateException("WebDriver is not initialized");
 		}
-
 		return tldriver.get();
 
 	}

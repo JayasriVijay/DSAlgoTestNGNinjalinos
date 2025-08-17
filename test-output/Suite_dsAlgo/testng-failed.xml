@@ -6,48 +6,18 @@
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     <listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test_All_Modules_chrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="testCases.GraphTest">
-        <methods>
-          <include name="practQuestion"/>
-          <include name="teardownDriver"/>
-          <include name="runWithoutCode"/>
-          <include name="setup"/>
-          <include name="graphPage"/>
-        </methods>
-      </class> <!-- testCases.GraphTest -->
-    </classes>
-  </test> <!-- Test_All_Modules_chrome(failed) -->
-  <test thread-count="5" parallel="tests" name="Test_All_Modules_edge(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="testCases.GraphTest">
-        <methods>
-          <include name="practQuestion"/>
-          <include name="teardownDriver"/>
-          <include name="runWithoutCode"/>
-          <include name="graphPage"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.GraphTest -->
-    </classes>
-  </test> <!-- Test_All_Modules_edge(failed) -->
   <test thread-count="5" parallel="tests" name="Test_All_Modules_firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testCases.GraphTest">
+      <class name="testCases.TreeTest">
         <methods>
-          <include name="graphTryingValidAndInvalidCode" invocation-numbers="0 1"/>
-          <include name="practQuestion"/>
+          <include name="runWithoutCode"/>
           <include name="teardownDriver"/>
-          <include name="getClick_GraphRepre"/>
           <include name="graphPage"/>
           <include name="setup"/>
-          <include name="runWithoutCode"/>
+          <include name="practQuestion"/>
         </methods>
-      </class> <!-- testCases.GraphTest -->
+      </class> <!-- testCases.TreeTest -->
     </classes>
   </test> <!-- Test_All_Modules_firefox(failed) -->
 </suite> <!-- Failed suite [Suite_dsAlgo] -->

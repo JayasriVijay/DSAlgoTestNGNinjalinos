@@ -6,9 +6,9 @@
       <class name="testCases.TreeTest">
         <methods>
           <include name="teardownDriver"/>
+          <include name="Traversals_Illus"/>
           <include name="graphPage"/>
           <include name="setup"/>
-          <include name="practQuestion"/>
         </methods>
       </class> <!-- testCases.TreeTest -->
     </classes>

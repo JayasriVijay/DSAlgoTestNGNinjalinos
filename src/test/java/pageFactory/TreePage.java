@@ -88,27 +88,22 @@ public class TreePage extends BasePage{
 
 	
 	public void getToTree() throws InterruptedException, IOException {
-		
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", treegetStartedButton);
-		wait.until(ExpectedConditions.elementToBeClickable(treegetStartedButton));
-		action.moveToElement(treegetStartedButton).click().perform();
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", treegetStartedButton);
+		wait.until(ExpectedConditions.elementToBeClickable(treegetStartedButton)).click();
+		//action.moveToElement(treegetStartedButton).click().perform();
 	
 	}
 	
 	
 	//action methods
 	public void practice_Tree() {
-		((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", practQuestTree);
-		action.scrollToElement(practQuestTree).perform();
-		action.click(practQuestTree).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(practQuestTree)).click();
+		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", practQuestTree);
+		//action.scrollToElement(practQuestTree).perform();
+		//action.click(practQuestTree).perform();
 	}
 	
-	public void scrollDownTree() throws InterruptedException {
-		((JavascriptExecutor) tldriver).executeScript("window.scrollTo(0, 600);");
-		Thread.sleep(3000);
-	}
 	
-		
 	public void verifyLinks() {
 		List<String> expectedLinks = Arrays.asList(
 			"Overview of trees", "Terminologies", "Types of Tree", "Tree Traversals",
@@ -129,9 +124,7 @@ public class TreePage extends BasePage{
 	
 
 	public void click_Overview() throws InterruptedException {
-		action.scrollToElement(overviewOfTree).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(overviewOfTree));
-		action.click(overviewOfTree).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(overviewOfTree)).click();
 	}
 	
 	public String outputText() {
@@ -141,52 +134,31 @@ public class TreePage extends BasePage{
 	}
 	
 	public void click_Terminilogy() {
-		action.scrollToElement(terminologies).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(terminologies));
-		action.click(terminologies).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/terminologies/"));
+		wait.until(ExpectedConditions.elementToBeClickable(terminologies)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/terminologies/"));
 	}
 	public void typesOfTrees() throws InterruptedException {
-		wait.until(ExpectedConditions.visibilityOf(typeofTrees));
-		action.scrollToElement(typeofTrees).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(typeofTrees));
-		action.click(typeofTrees).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/types-of-trees/"));
+		wait.until(ExpectedConditions.elementToBeClickable(typeofTrees)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/types-of-trees/"));
 	}
 	
 	public void tree_Trav() {
-		wait.until(ExpectedConditions.visibilityOf(traversals));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traversals);
-		action.scrollToElement(traversals).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(traversals));
-		action.click(traversals).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/tree-traversals/"));
 
-	}
-	public String navigation_treeTrav() {
-		String afterNavigation = tldriver.getCurrentUrl();
-		System.out.println("check after click" + afterNavigation);
-		return afterNavigation;
+		wait.until(ExpectedConditions.elementToBeClickable(traversals)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/tree-traversals/"));
+
 	}
 
 	public void Traversal_Illustra() {
-		wait.until(ExpectedConditions.visibilityOf(traIllustration));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", traIllustration);
-		action.scrollToElement(traIllustration).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(traIllustration));
-		action.click(traIllustration).perform();
-		// wait.until(ExpectedConditions.urlContains("/tree/traversals-illustration/"));
+		wait.until(ExpectedConditions.elementToBeClickable(traIllustration)).click();
+		
 
 	}
 
 	
 	public void binary_Tree() {
-		wait.until(ExpectedConditions.visibilityOf(binaryTrees));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binaryTrees);
-		action.scrollToElement(binaryTrees).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(binaryTrees));
-		action.click(binaryTrees).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/binary-trees/"));
+		wait.until(ExpectedConditions.elementToBeClickable(binaryTrees)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/binary-trees/"));
 	}
 
 	public String navigate_binaryTree() {
@@ -196,94 +168,44 @@ public class TreePage extends BasePage{
 	}
 
 	public void types_ofBinary() {
-		wait.until(ExpectedConditions.visibilityOf(typofBinary));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", typofBinary);
-		action.scrollToElement(typofBinary).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(typofBinary));
-		action.click(typofBinary).perform();
-		wait.until(ExpectedConditions.urlContains("tree/types-of-binary-trees/"));
+		wait.until(ExpectedConditions.elementToBeClickable(typofBinary)).click();
+		//wait.until(ExpectedConditions.urlContains("tree/types-of-binary-trees/"));
 	}
 
-	public String navigate_typesOfBinary() {
-		String afterNavigation = tldriver.getCurrentUrl();
-		System.out.println("check after click" + afterNavigation);
-		return afterNavigation;
-	}
+
 
 	public void Impl_in_Python() {
-		wait.until(ExpectedConditions.visibilityOf(impPython));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impPython);
-		action.scrollToElement(impPython).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(impPython));
-		action.click(impPython).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/implementation-in-python/"));
+		wait.until(ExpectedConditions.elementToBeClickable(impPython)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/implementation-in-python/"));
 	}
 
-	public void navigat_Imp_in_Python() {
-		String afterNavigation = tldriver.getCurrentUrl();
-		System.out.println("check after click" + afterNavigation);
-	}
 
 	public void binary_Tree_Travers() {
-		wait.until(ExpectedConditions.visibilityOf(binaryTraversal));
-		action.scrollToElement(binaryTraversal).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(binaryTraversal));
-		action.click(binaryTraversal).perform();
-		wait.until(ExpectedConditions.urlContains("/tree/binary-tree-traversals/"));
+		wait.until(ExpectedConditions.elementToBeClickable(binaryTraversal)).click();
+		//wait.until(ExpectedConditions.urlContains("/tree/binary-tree-traversals/"));
 	}
 	public void app_of_binaryTrees() {
-		wait.until(ExpectedConditions.visibilityOf(appofBinary));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appofBinary);
-		action.scrollToElement(appofBinary).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(appofBinary));
-		action.click(appofBinary).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(appofBinary)).click();
 
 	}
 
 	public void imp_of_binaryTrees() {
-		wait.until(ExpectedConditions.visibilityOf(impOfBinary));
-//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBinary);
-		action.scrollToElement(impOfBinary).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(impOfBinary));
-		action.click(impOfBinary).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(impOfBinary)).click();
 
 	}
 
 	public void binary_Search() {
-		wait.until(ExpectedConditions.visibilityOf(binarySearch));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", binarySearch);
-		action.scrollToElement(binarySearch).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(binarySearch));
-		action.click(binarySearch).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(binarySearch)).click();
 
 	}
 
 	public void Implement_OfBst() {
-		wait.until(ExpectedConditions.visibilityOf(impOfBST));
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", impOfBST);
-		action.scrollToElement(impOfBST).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(impOfBST));
-		action.click(impOfBST).perform();
+		wait.until(ExpectedConditions.elementToBeClickable(impOfBST)).click();
 
 	}
 	
 
 public void click_TryHere() {
-	wait.until(ExpectedConditions.elementToBeClickable(tryHereButton));
-	if(tryHereButton.isDisplayed() && tryHereButton.isEnabled()) {
-		@Nullable
-		String currentTitle = tldriver.getTitle();
-	System.out.println("The Try Here Button is enabled and displayed on " + currentTitle +" Tree Page");
-	action.scrollToElement(tryHereButton).perform();
-	action.click(tryHereButton).perform();
-	wait.until(ExpectedConditions.urlContains("https://dsportalapp.herokuapp.com/tryEditor"));
-	String currentUrl = tldriver.getCurrentUrl();
-	if(currentUrl.contains("https://dsportalapp.herokuapp.com/tryEditor")) {
-		System.out.println("Sucessfully navigated to Try here page");
-	}else System.out.println("Naviagtion failed to Try Here Page");
-  }else System.out.println("Try Here button not enabled");
-	
+	wait.until(ExpectedConditions.elementToBeClickable(tryHereButton)).click();
 }
-
-
 }
