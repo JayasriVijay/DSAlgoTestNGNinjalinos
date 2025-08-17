@@ -1,9 +1,9 @@
-package pageObjects;
+package pageFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-public class LinkedListPage extends BasePage {
+public class LinkedList_pf extends BasePage {
  
-	public LinkedListPage() {
+	public LinkedList_pf() {
 	    super();
 		
     }
@@ -95,6 +95,7 @@ public class LinkedListPage extends BasePage {
 	        clickOndeletionLink();
 	        clickTryHere();
 	    }
+	 
 	 
 	    
 	    

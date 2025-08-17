@@ -1,4 +1,4 @@
-package testMethodsPackage;
+package testCases;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import driverFactory.DriverFactory;
-import pageObjects.BasePage;
+import pageFactory.BasePage;
 
 
 

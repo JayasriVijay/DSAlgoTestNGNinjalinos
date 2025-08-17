@@ -1,12 +1,14 @@
-package testMethodsPackage;
+package testCases;
 
 import org.testng.annotations.Test;
+
+import pageFactory.LinkedList_pf;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import java.util.Map;
 import org.testng.Assert;
-import pageObjects.LinkedListPage;
 
 import utils.ExcelReaderTestNg;
 import utils.LoggerLoad;
@@ -15,7 +17,7 @@ import utils.LoggerLoad;
 public class LinkedListTest extends BaseTest {
 	
 
-    LinkedListPage linkedListPg;
+    LinkedList_pf linkedListPg;
     LoggerLoad log;
     private Map<String, String> testData;
     String Input;
@@ -26,7 +28,7 @@ public class LinkedListTest extends BaseTest {
     
     @BeforeMethod
     public void initPageObjects() {
-        linkedListPg = new LinkedListPage();
+        linkedListPg = new LinkedList_pf();
         linkedListPg.getToLinkedList(); 
         this.excelReader = new ExcelReaderTestNg();
         log = new LoggerLoad();
