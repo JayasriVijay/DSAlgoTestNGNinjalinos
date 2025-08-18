@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest{
  
 	public LoginTest() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	Launch_pf Launchpf;

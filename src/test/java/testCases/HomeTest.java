@@ -168,7 +168,7 @@ LoggerLoad log;
 			Homepf.clickDropdownStack();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Stack ");
+			log.info("click on Dropdown Stack ");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}
@@ -179,7 +179,7 @@ LoggerLoad log;
 			Homepf.clickDropdownQueue();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Queue ");
+			log.info("click on Dropdown Queue ");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}
@@ -190,7 +190,7 @@ LoggerLoad log;
 			Homepf.clickDropdownTree();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Tree ");
+			log.info("click on Dropdown Tree ");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}
@@ -201,7 +201,7 @@ LoggerLoad log;
 			Homepf.clickDropdownGraph();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Graph ");
+			log.info("click on Dropdown Graph ");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}

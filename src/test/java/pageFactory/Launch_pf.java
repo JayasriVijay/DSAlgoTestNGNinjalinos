@@ -13,21 +13,17 @@ import driverFactory.DriverFactory_TestNG;
 import utils.ConfigReader;
 
 public class Launch_pf {
-	
+
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
 
-
-	public Launch_pf()
-	{
+	public Launch_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-		
-	}
-	
 
+	}
 
 	@FindBy(xpath = "//*[text()='You are at the right place']")
 	WebElement message;
@@ -40,8 +36,6 @@ public class Launch_pf {
 	WebElement numpyNinja;
 	private ConfigReader config;
 
-
-
 	public void clickgetstarted() {
 		btn_getstarted.click();
 	}
@@ -51,13 +45,10 @@ public class Launch_pf {
 
 	}
 
-
 	public void get_testUrl() throws IOException {
 		config = new ConfigReader();
 		tldriver.get(config.get_prop_value("testurl"));
 	}
-
-
 
 	public String gettextmsg() {
 		String text = message.getText();
@@ -68,8 +59,8 @@ public class Launch_pf {
 		String title = tldriver.getTitle();
 		return title;
 	}
- public  void quitdriver()
- {
-	 tldriver.quit();
- }
+
+	public void quitdriver() {
+		tldriver.quit();
+	}
 }

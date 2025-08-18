@@ -1,14 +1,12 @@
 package pageFactory;
 
 import java.io.IOException;
-
 import java.time.Duration;
 import java.util.HashMap;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -118,34 +116,7 @@ public class BasePage {
 
 	}
 
-	public String enterData(String inputData) {
-		if (inputData != null && !inputData.isEmpty()) {
-			JavascriptExecutor js = (JavascriptExecutor) tldriver;
-			js.executeScript("document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0]);", inputData);
-		}
-		runBtn.click();
-
-		if (isAlertPresent()) {
-			Alert alert = tldriver.switchTo().alert();
-			String alertText = alert.getText();
-			alert.accept();
-			return alertText;
-		} else {
-
-			String text = outputTxt.getText();
-			System.out.println("text" + text);
-			return text;
-		}
-	}
-
-	private boolean isAlertPresent() {
-		try {
-			tldriver.switchTo().alert();
-			return true;
-		} catch (NoAlertPresentException e) {
-			return false;
-		}
-	}
+	
 
 	public String get_current_url() {
 		String current_url = tldriver.getCurrentUrl();

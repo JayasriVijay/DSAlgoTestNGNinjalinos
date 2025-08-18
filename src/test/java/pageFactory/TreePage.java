@@ -21,13 +21,11 @@ public class TreePage extends BasePage{
 	
 	public TreePage() throws IOException {
 		this.tldriver = DriverFactory_TestNG.getDriver();
-		this.action = new Actions(tldriver);
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));	
 	}
 	
 	private WebDriver tldriver;
-	private Actions action;
 	String browser;
 	WebDriverWait wait;
 	
@@ -93,12 +91,10 @@ public class TreePage extends BasePage{
 	}
 	
 	
-	//action methods
+	
 	public void practice_Tree() {
 		wait.until(ExpectedConditions.elementToBeClickable(practQuestTree)).click();
-		//((JavascriptExecutor) tldriver).executeScript("arguments[0].scrollIntoView(true);", practQuestTree);
-		//action.scrollToElement(practQuestTree).perform();
-		//action.click(practQuestTree).perform();
+		
 	}
 	
 	
@@ -133,17 +129,17 @@ public class TreePage extends BasePage{
 	
 	public void click_Terminilogy() {
 		wait.until(ExpectedConditions.elementToBeClickable(terminologies)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/terminologies/"));
+		
 	}
 	public void typesOfTrees() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(typeofTrees)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/types-of-trees/"));
+		
 	}
 	
 	public void tree_Trav() {
 
 		wait.until(ExpectedConditions.elementToBeClickable(traversals)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/tree-traversals/"));
+		
 
 	}
 
@@ -156,7 +152,7 @@ public class TreePage extends BasePage{
 	
 	public void binary_Tree() {
 		wait.until(ExpectedConditions.elementToBeClickable(binaryTrees)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/binary-trees/"));
+		
 	}
 
 	public String navigate_binaryTree() {
@@ -167,20 +163,20 @@ public class TreePage extends BasePage{
 
 	public void types_ofBinary() {
 		wait.until(ExpectedConditions.elementToBeClickable(typofBinary)).click();
-		//wait.until(ExpectedConditions.urlContains("tree/types-of-binary-trees/"));
+		
 	}
 
 
 
 	public void Impl_in_Python() {
 		wait.until(ExpectedConditions.elementToBeClickable(impPython)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/implementation-in-python/"));
+		
 	}
 
 
 	public void binary_Tree_Travers() {
 		wait.until(ExpectedConditions.elementToBeClickable(binaryTraversal)).click();
-		//wait.until(ExpectedConditions.urlContains("/tree/binary-tree-traversals/"));
+		
 	}
 	public void app_of_binaryTrees() {
 		wait.until(ExpectedConditions.elementToBeClickable(appofBinary)).click();

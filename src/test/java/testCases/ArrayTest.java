@@ -19,7 +19,7 @@ public class ArrayTest extends BaseTest {
 
 	public ArrayTest() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	Array_pf array_pf;
 	BasePage base;
@@ -47,6 +47,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickArraysInPython();
 		array_pf.waitForUrlToContain("/arrays-in-python/");
 		String currentUrl = array_pf.getURL();
+		log.info("Navigating to arryas in python link");
 		assertEquals("https://dsportalapp.herokuapp.com/array/arrays-in-python/",currentUrl);
 	}
 
@@ -65,6 +66,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickBasicOperations();
 		array_pf.waitForUrlToContain("/basic-operations-in-lists/");
 		String currentUrl = array_pf.getURL();
+		log.info("Navigating to basic operations link");
 		assertEquals("https://dsportalapp.herokuapp.com/array/basic-operations-in-lists/",currentUrl);
 
 	}
@@ -86,6 +88,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickTryHere();
 		array_pf.waitForUrlToContain("/tryEditor");
 		String currentUrl = array_pf.getURL();
+		log.info("Navigating to tryhere page");
 		assertEquals("https://dsportalapp.herokuapp.com/tryEditor",currentUrl);
 
 	}
@@ -368,7 +371,6 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickMaxConsecutiveOnes();
 		array_pf.tryEditor_invalidCode_practiceQ();	
-		//Thread.sleep(5000);
 		base.clickRunBtn();
 		base.handle_alert();
 
@@ -390,7 +392,7 @@ public class ArrayTest extends BaseTest {
 
 	//31
 	@Test (priority = 31)
-	public void testQ2ValidCode_Run() throws IOException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
+	public void testQ2ValidCode_Run() throws IOException {   
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickMaxConsecutiveOnes();
@@ -443,7 +445,7 @@ public class ArrayTest extends BaseTest {
 
 	//35
 	@Test (priority = 35)
-	public void testQ3ValidCode_Run() throws IOException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
+	public void testQ3ValidCode_Run() throws IOException {   
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickEvenNumberDigits();
@@ -496,7 +498,7 @@ public class ArrayTest extends BaseTest {
 
 	//39
 	@Test (priority = 39)
-	public void testQ4ValidCode_Run() throws IOException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
+	public void testQ4ValidCode_Run() throws IOException {   
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSquaresOfSortedArray();
