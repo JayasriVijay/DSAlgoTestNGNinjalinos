@@ -120,6 +120,12 @@ public class BasePage {
 		return current_url;
 	}
 	
+	public String getTitle() {
+		String titleName = tldriver.getTitle();
+		return titleName;
+		
+	}
+	
 	
 
 }
