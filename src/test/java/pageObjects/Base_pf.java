@@ -46,7 +46,7 @@ public class Base_pf {
 		this.excelReader = new ExcelReaderFile();
 		this.testData = new HashMap<>();
 		this.testData2 = new HashMap<>();
-
+		this.testData3 = new HashMap<>();
 	}
 
 	// =========== LOGIN ELEMENTS ============

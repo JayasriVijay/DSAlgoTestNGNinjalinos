@@ -30,19 +30,17 @@ public class BaseTest {
 
 	@Parameters({"browser"})
 	@BeforeMethod
-	public void testEnterWebsite(@Optional("firefox")String br) throws IOException, InterruptedException {
+	public void testEnterWebsite(@Optional("chrome")String br) throws IOException, InterruptedException {
 		DriverFactory df = new DriverFactory();
 		df.initDriver(br);
-		//Base_pf base_pf =new Base_pf();
-		//base_pf.launch_webpage();
-
+		
 	}
 
 
-	@AfterMethod
-	public void closeBrowser() {
-		DriverFactory.quitDriver();
-	}
+//	@AfterMethod
+//	public void closeBrowser() {
+//		DriverFactory.quitDriver();
+//	}
 
 	public void takeScreenshot_failedTC(String testMethodName) throws IOException {
 		WebDriver driver = DriverFactory.getDriver();

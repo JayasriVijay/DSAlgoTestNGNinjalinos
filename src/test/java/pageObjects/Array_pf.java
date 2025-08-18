@@ -145,21 +145,27 @@ public class Array_pf {
 		safeClick(squaresOfSortedArrayLink);
 	}
 
+	
 	public void enterValidCodeInPracticeEditor(String code) {
+	    safeClick(practiceQuestionEditor);
 
-		safeClick(practiceQuestionEditor);
-
-		// Use Actions to clear and type code like a user
-		Actions actions = new Actions(driver);
-		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
-		.sendKeys(Keys.DELETE).sendKeys(code).perform();
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    // CodeMirror stores its editor instance in `CodeMirror`
+	    js.executeScript(
+	        "var editor = arguments[0].CodeMirror || arguments[0].closest('.CodeMirror').CodeMirror;" +
+	        "editor.setValue(arguments[1]);",
+	        practiceQuestionEditor, code
+	    );
 	}
 
-	public void tryEditor_validCode_practiceQ1() throws IOException {
+	
+
+	public void tryEditor_validCode_practiceQ1() throws IOException, InterruptedException {
 		String validCode1 = PQtestData.get("PracticeQ1validcode");
 		//String validCode1 = excelReader.readExcelRow("Sheet1", "Practice Q1 valid code", "PythonCode");
 
 		enterValidCodeInPracticeEditor(validCode1);
+		Thread.sleep(300);
 	}
 
 	public void tryEditor_validCode_practiceQ2() throws IOException {

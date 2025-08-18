@@ -6,8 +6,8 @@
       <class name="testMethods.ArrayTest">
         <methods>
           <include name="array_page"/>
+          <include name="testQ4ValidCode_Run"/>
           <include name="testEnterWebsite"/>
-          <include name="testQ1ValidCode_Run"/>
         </methods>
       </class> <!-- testMethods.ArrayTest -->
     </classes>

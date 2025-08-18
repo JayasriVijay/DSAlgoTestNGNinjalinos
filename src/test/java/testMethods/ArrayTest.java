@@ -21,6 +21,7 @@ import driverManager.DriverFactory;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 
@@ -34,19 +35,21 @@ public class ArrayTest extends BaseTest {
 	Array_pf array_pf;
 	Base_pf base_pf;
 	LoggerLoad log;
+	ExcelReaderFile excelReader;
+	HashMap<String, String> resultTestData; 
+    String actualOutput;
+    String expectedOutput;
 	
-
-	//WebDriver driver;
 
 	@BeforeMethod
 	public void array_page() throws IOException {
 		base_pf = new Base_pf();
 		array_pf = new Array_pf();
-		
+		this.excelReader = new ExcelReaderFile();
 		this.log = new LoggerLoad();
 		base_pf.launch_webpage();
 		array_pf.clickArrayGetStarted();
-
+		resultTestData = excelReader.readExcelRow("Result", "practiceQ");
 	}
 
 	@Test (priority = 1)
@@ -160,8 +163,8 @@ public class ArrayTest extends BaseTest {
 		base_pf.tryEditor_validCode();
 		base_pf.clickRun();
 		String outputTxt = base_pf.output_text();
-
-		assertEquals("hello", outputTxt);
+        String expectedOP = resultTestData.get("InvalidCode");
+		assertEquals(expectedOP, outputTxt);
 
 	}
 
@@ -337,7 +340,6 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_invalidCode_practiceQ();	
 		array_pf.clickSubmit();
 		String outputQ1= base_pf.output_text();
-		//String expectedQ1= base_pf.getExcelExpOutput("Sheet1", "Try here Invalid code", "SubmitResult");
 		assertEquals("Error occurred during submission", outputQ1);
 
 
@@ -345,20 +347,22 @@ public class ArrayTest extends BaseTest {
 	}
 	//27
 	@Test (priority = 27)
-	public void testQ1ValidCode_Run() throws IOException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
+	public void testQ1ValidCode_Run() throws IOException, InterruptedException {  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
 		array_pf.clickArraysInPython();                     //RAN SUCCESSFULLY IN FIREFOX
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSearchTheArray();
 		array_pf.tryEditor_validCode_practiceQ1();
 		base_pf.clickRun();
-		String outputQ1= base_pf.output_text(); 
+		String outputQ1= base_pf.output_text();
+		String expectedOP = resultTestData.get("PracticeQ1validcode");
 		System.out.println(outputQ1);
+		assertEquals(expectedOP, outputQ1);
 
 	}
 
 	//28
 	@Test (priority = 28)                                  //CHROME NOT TAKING VALID DATA IN CORRET FORMAT 
-	public void testQ1ValidCode_Submit() throws IOException {      //RAN SUCCESSFULLY IN FIREFOX
+	public void testQ1ValidCode_Submit() throws IOException, InterruptedException {      //RAN SUCCESSFULLY IN FIREFOX
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSearchTheArray();
@@ -391,7 +395,6 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_invalidCode_practiceQ();	
 		array_pf.clickSubmit();
 		String outputQ2= base_pf.output_text();
-		//String expectedQ1= base_pf.getExcelExpOutput("Sheet1", "Try here Invalid code", "SubmitResult");
 		assertEquals("Error occurred during submission", outputQ2);
 
 	}
@@ -405,8 +408,10 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickMaxConsecutiveOnes();
 		array_pf.tryEditor_validCode_practiceQ2();
 		base_pf.clickRun();
-		String outputQ2= base_pf.output_text(); 
+		String outputQ2= base_pf.output_text();
+		String expectedOP = resultTestData.get("PracticeQ2validcode");
 		System.out.println(outputQ2);
+		assertEquals(expectedOP, outputQ2);
 
 	}
 
@@ -419,7 +424,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_validCode_practiceQ2();
 		array_pf.clickSubmit();
 		String outputQ2= base_pf.output_text(); 
+		String expectedOP = resultTestData.get("SubmitResult");
 		System.out.println(outputQ2);
+		assertEquals(expectedOP, outputQ2);
 
 	}
 	//33
@@ -457,7 +464,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_validCode_practiceQ3();
 		base_pf.clickRun();
 		String outputQ3= base_pf.output_text(); 
+		String expectedOP = resultTestData.get("PracticeQ3validcode");
 		System.out.println(outputQ3);
+		assertEquals(expectedOP, outputQ3);
 
 	}
 
@@ -507,10 +516,13 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSquaresOfSortedArray();
-		array_pf.tryEditor_validCode_practiceQ3();
+		array_pf.tryEditor_validCode_practiceQ4();
 		base_pf.clickRun();
 		String outputQ4= base_pf.output_text(); 
+		String expectedOP = resultTestData.get("PracticeQ4validcode");
 		System.out.println(outputQ4);
+		assertEquals(expectedOP, outputQ4);
+
 
 	}
 	//40
@@ -519,13 +531,14 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickArraysInPython();
 		array_pf.clickPracticeQuestionsLink();
 		array_pf.clickSquaresOfSortedArray();
-		array_pf.tryEditor_validCode_practiceQ3();
+		array_pf.tryEditor_validCode_practiceQ4();
 		array_pf.clickSubmit();
 		String outputQ4= base_pf.output_text(); 
 		System.out.println(outputQ4);
 
 	}
 
+	//FOR Q4 even after passing correct code the submission result is No tests were collected
 	
 
 }
