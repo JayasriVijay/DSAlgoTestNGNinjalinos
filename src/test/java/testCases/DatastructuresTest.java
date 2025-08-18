@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
@@ -13,7 +14,7 @@ import pageFactory.Home_pf;
 import utils.ExcelReader;
 import utils.LoggerLoad;
 
-//@Listeners({ CustomListener.class })
+@Listeners({ CustomListener.class })
 public class DatastructuresTest extends BaseTest {
   public DatastructuresTest() throws IOException {
 		super();

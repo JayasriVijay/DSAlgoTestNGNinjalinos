@@ -5,7 +5,6 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

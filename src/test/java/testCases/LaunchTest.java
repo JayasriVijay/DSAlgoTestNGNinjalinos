@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import jdk.internal.org.jline.utils.Log;
@@ -13,7 +14,7 @@ import pageFactory.Launch_pf;
 import utils.LoggerLoad;
 
 
-//@Listeners({ CustomListener.class })
+@Listeners({ CustomListener.class })
 public class LaunchTest extends BaseTest  {
 	
 	public LaunchTest() throws IOException {

@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ import pageFactory.Login_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-//@Listeners({ CustomListener.class })
+@Listeners({ CustomListener.class })
 public class LoginTest extends BaseTest{
  
 	public LoginTest() throws IOException {

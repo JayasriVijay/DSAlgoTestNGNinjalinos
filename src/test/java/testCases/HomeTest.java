@@ -2,8 +2,10 @@ package testCases;
 
 import java.io.IOException;
 
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,7 +14,7 @@ import pageFactory.BasePage;
 import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
 import utils.LoggerLoad;
-//@Listeners({ CustomListener.class })
+@Listeners({ CustomListener.class })
 public class HomeTest extends BaseTest  {
 public HomeTest() throws IOException {
 		super();

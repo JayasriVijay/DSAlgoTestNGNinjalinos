@@ -1,15 +1,9 @@
 package utils;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Map;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
-
-import driverFactory.DriverFactory_TestNG;
 
 public class Dataprovider {
 	ExcelReader excelReader;
@@ -21,7 +15,7 @@ public class Dataprovider {
 	{
 		
 		this.excelReader = new ExcelReader();}
-	//ExcelReader	excelReader = new ExcelReader();
+	
 	private Map<String, String> testData;
 	private Map<String, String> testData1;
 	private Map<String, String> testData2;

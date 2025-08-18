@@ -85,6 +85,8 @@ public class BasePage {
 	public void clickRunBtn() {
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
+	
+	
 
 	public String alert_message() {
 		wait.until(ExpectedConditions.alertIsPresent());

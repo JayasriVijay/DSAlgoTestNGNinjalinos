@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageFactory.Home_pf;
@@ -12,7 +13,7 @@ import pageFactory.Register_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-//@Listeners({ CustomListener.class })
+@Listeners({ CustomListener.class })
 public class RegisterTest extends BaseTest {
 	public RegisterTest() throws IOException {
 		super();
