@@ -4,6 +4,8 @@ import java.io.IOException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 public class LinkedList_pf extends BasePage {
+	
+	
  
 	public LinkedList_pf() throws IOException {
 	    super();
@@ -37,6 +39,7 @@ public class LinkedList_pf extends BasePage {
 	 WebElement deletionLink;
 	 
 	 public void getToLinkedList(){
+		 
 		 linkedListButton.click();     			
 		}
 	 

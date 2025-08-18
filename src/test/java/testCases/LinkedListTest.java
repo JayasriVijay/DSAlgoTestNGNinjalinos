@@ -2,6 +2,7 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+import pageFactory.BasePage;
 import pageFactory.LinkedList_pf;
 
 import org.testng.annotations.BeforeMethod;
@@ -29,11 +30,14 @@ public class LinkedListTest extends BaseTest {
     String actualOutput;
     String expectedOutput;
     ExcelReader excelReader;
+    BasePage base;
    
     
     @BeforeMethod
     public void initPageObjects() throws IOException {
         linkedListPg = new LinkedList_pf();
+        base = new BasePage();
+        base.launch_webpage();
         linkedListPg.getToLinkedList(); 
         this.excelReader = new ExcelReader();
         log = new LoggerLoad();
