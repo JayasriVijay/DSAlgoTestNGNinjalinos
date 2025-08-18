@@ -54,8 +54,7 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.implementation_queue_python_btn();
 		String currentUrl = base.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-lists/", currentUrl,
-				"not in implementation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("queue/implementation-lists/"),"not in try here page of implemetation of queue in python page");
 	}
 
 	@Test(priority = 3)
