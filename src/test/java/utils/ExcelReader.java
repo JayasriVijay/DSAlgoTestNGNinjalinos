@@ -53,18 +53,4 @@ public class ExcelReader {
 		return testData;
 	}
 
-
-
-	public Object[] getCode(String sheetName) throws IOException {
-		sheet = wb.getSheet(sheetName);
-		Object[] data = new Object[2];
-		HashMap<String, String> testDataValid = new HashMap<>();
-		HashMap<String, String> testDataInValid = new HashMap<>();
-		testDataValid = readExcelRow("ValidCode", "testdata");
-		testDataInValid = readExcelRow("InvalidCode", "testdata");
-		data[0] = testDataValid.get("PythonCode");
-		data[1] = testDataInValid.get("PythonCode");
-		return data;
-	}
-
 }

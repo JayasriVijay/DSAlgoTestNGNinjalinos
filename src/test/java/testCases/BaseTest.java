@@ -3,6 +3,7 @@ package testCases;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -65,8 +66,15 @@ public class BaseTest {
 	}
 
 	@DataProvider(name = "pythonCodeValidandInvalid")
-	public Object[] pythonCode() throws IOException {
-		Object data[] = excelReader.getCode("testdata");
+	public Object[] pythonCodeTestData() throws IOException {
+		HashMap<String, String> testDataValid = new HashMap<>();
+		HashMap<String, String> testDataInValid = new HashMap<>();
+		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
+		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
+		String validcode = testDataValid.get("PythonCode");
+		String invalidcode = testDataInValid.get("PythonCode"); 
+		Object[] data = {validcode,invalidcode};
 		return data;
-	}
+	} 
+
 }
