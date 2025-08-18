@@ -8,15 +8,22 @@
 			<listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
 			
 	</listeners>
-	<!--<listeners>
-            <listener class-name="testCases.CustomListener"/>
-        </listeners>-->
+	
 	<test thread-count="5" name="Test_All_Modules_chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+			<class name="testCases.HomeTest" />
+			<class name="testCases.LaunchTest" />
+			<class name="testCases.RegisterTest" />
+			<class name="testCases.LoginTest" />
+			<class name="testCases.DatastructuresTest" />
+			<class name="testCases.ArrayTest" />
+			<class name="testCases.LinkedListTest" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
+			<class name="testCases.GraphTest" />
+			<class name="testCases.TreeTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
@@ -25,8 +32,17 @@
 		<parameter name="browser" value="edge" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+			<class name="testCases.HomeTest" />
+			<class name="testCases.LaunchTest" />
+			<class name="testCases.RegisterTest" />
+			<class name="testCases.LoginTest" />
+			<class name="testCases.DatastructuresTest" />
+			<class name="testCases.ArrayTest" />
+			<class name="testCases.LinkedListTest" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
+			<class name="testCases.GraphTest" />
+			<class name="testCases.TreeTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
@@ -35,8 +51,17 @@
 		<parameter name="browser" value="firefox" />
 		<classes>
 		    
-			<class name="testCases.Stack" />
-			<class name="testCases.Queue" />
+		<class name="testCases.HomeTest" />
+			<class name="testCases.LaunchTest" />
+			<class name="testCases.RegisterTest" />
+			<class name="testCases.LoginTest" />
+			<class name="testCases.DatastructuresTest" />
+			<class name="testCases.ArrayTest" />
+			<class name="testCases.LinkedListTest" />
+			<class name="testCases.StackTest" />
+			<class name="testCases.QueueTest" />
+			<class name="testCases.GraphTest" />
+			<class name="testCases.TreeTest" />
 		</classes>
 	</test><!--
 	Test_All_Modules -->
