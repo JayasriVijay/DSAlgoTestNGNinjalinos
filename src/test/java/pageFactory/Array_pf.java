@@ -1,4 +1,4 @@
-package pageObjects;
+package pageFactory;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -16,27 +16,33 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
-import driverManager.DriverFactory;
-import utils.ExcelReaderFile;
+import driverFactory.DriverFactory_TestNG;
+import utils.ExcelReader;
 
 public class Array_pf {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-	ExcelReaderFile excelReader;
-	private Base_pf base_pf;
+	private Actions action;
+	ExcelReader excelReader;
+	private BasePage base_pf;
 	HashMap<String, String> PQtestData;
+	HashMap<String, String> testData2;
+	HashMap<String, String> testData3;
 
 
 	public Array_pf() throws IOException {
-		this.driver = DriverFactory.getDriver();
+		this.driver = DriverFactory_TestNG.getDriver();
 
 		PageFactory.initElements(driver, this);
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		this.base_pf = new Base_pf();
+		this.action = new Actions(driver);
+		this.base_pf = new BasePage();
 
-		this.excelReader = new ExcelReaderFile();
+		this.excelReader = new ExcelReader();
 		this.PQtestData = new HashMap<>();
+		this.testData2 = new HashMap<>();
+		this.testData3 = new HashMap<>();
 		PQtestData = excelReader.readExcelRow("Code", "practiceQ");
 	}
 
@@ -63,6 +69,9 @@ public class Array_pf {
 
 	@FindBy(xpath = "//a[contains(text(), 'Try here')]")
 	WebElement tryHereLink;
+	
+	@FindBy(xpath = "//form[@id='answer_form']/div/div/div[6]/div")
+	WebElement textEditor;
 
 	// Practice Questions Page
 	@FindBy(xpath = "//a[text()='Search the array']")
@@ -85,6 +94,14 @@ public class Array_pf {
 
 	// ========== Helper ==========
 
+
+	private void safeType(WebElement element, String code) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		action.moveToElement(element)
+		.click()
+		.sendKeys(code).perform();
+	}
 
 	private void safeClick(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -145,6 +162,20 @@ public class Array_pf {
 		safeClick(squaresOfSortedArrayLink);
 	}
 
+	public void tryEditor_validCode() throws IOException {
+		testData2 = excelReader.readExcelRow("ValidCode", "testdata");
+		String data = testData2.get("PythonCode");
+		safeType(textEditor, data);
+	}
+
+	public void tryEditor_invalidCode() throws IOException {
+		testData3 = excelReader.readExcelRow("InvalidCode", "testdata");
+		String data = testData3.get("PythonCode");
+		
+		safeType(textEditor, data);
+	}
+	
+	
 	
 	public void enterValidCodeInPracticeEditor(String code) {
 	    safeClick(practiceQuestionEditor);
@@ -205,13 +236,9 @@ public class Array_pf {
 		return driver.getCurrentUrl();
 	}
 	
-//	@DataProvider(name = "InvalidDataForEditor")   //USING THIS
-//	public String[] invalidDataTryEditor() throws IOException {
-//		String[] data = new String[2];
-//		data[0] = PQtestData.get("InvalidCode");
-//	    data[1] = PQtestData.get("InvalidCode2");
-//		return data;    	
-//    }
-	
+	public void getErrMsg_NoCode() {
+		System.out.println("No Error Alert Found, report bug");
+	}
+
 	
 }

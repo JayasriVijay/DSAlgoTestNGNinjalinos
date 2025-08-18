@@ -1,9 +1,12 @@
-package testMethods;
+package testCases;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import driverFactory.DriverFactory_TestNG;
+
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -12,11 +15,10 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
-import pageObjects.Array_pf;
-import pageObjects.Base_pf;
-import utils.ExcelReaderFile;
+import utils.ExcelReader;
 import utils.LoggerLoad;
-import driverManager.DriverFactory;
+import pageFactory.Array_pf;
+import pageFactory.BasePage;
 
 import static org.testng.Assert.assertEquals;
 
@@ -33,9 +35,9 @@ public class ArrayTest extends BaseTest {
 		// TODO Auto-generated constructor stub
 	}
 	Array_pf array_pf;
-	Base_pf base_pf;
+	BasePage base_pf;
 	LoggerLoad log;
-	ExcelReaderFile excelReader;
+	ExcelReader excelReader;
 	HashMap<String, String> resultTestData; 
     String actualOutput;
     String expectedOutput;
@@ -43,9 +45,9 @@ public class ArrayTest extends BaseTest {
 
 	@BeforeMethod
 	public void array_page() throws IOException {
-		base_pf = new Base_pf();
+		base_pf = new BasePage();
 		array_pf = new Array_pf();
-		this.excelReader = new ExcelReaderFile();
+		this.excelReader = new ExcelReader();
 		this.log = new LoggerLoad();
 		base_pf.launch_webpage();
 		array_pf.clickArrayGetStarted();
@@ -136,7 +138,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
 		base_pf.clickRun();
-		base_pf.getErrMsg_NoCode();
+		array_pf.getErrMsg_NoCode();
 		log.error(
 				"There is no alert message displayed when we click on run button without entering any code in the code editor in array module");
 		String errorMsg = base_pf.alert_message();
@@ -148,7 +150,7 @@ public class ArrayTest extends BaseTest {
 	public void testTryEditorPageWithInvalidInput() throws IOException, InterruptedException {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
-		base_pf.tryEditor_invalidCode();
+		array_pf.tryEditor_invalidCode();
 	    base_pf.clickRun();
 	    base_pf.handle_alert();
 	   
@@ -160,7 +162,7 @@ public class ArrayTest extends BaseTest {
 	public void testTryEditorWithValidInput() throws IOException {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
-		base_pf.tryEditor_validCode();
+		array_pf.tryEditor_validCode();
 		base_pf.clickRun();
 		String outputTxt = base_pf.output_text();
         String expectedOP = resultTestData.get("InvalidCode");
@@ -534,7 +536,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_validCode_practiceQ4();
 		array_pf.clickSubmit();
 		String outputQ4= base_pf.output_text(); 
-		System.out.println(outputQ4);
+		String expectedOP = resultTestData.get("SubmitResult");
+		System.out.println("Submission fails for correct output, It's a bug");
+		assertEquals(expectedOP, outputQ4);
 
 	}
 

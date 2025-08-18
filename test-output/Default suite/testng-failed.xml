@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testMethods.ArrayTest">
+      <class name="testCases.ArrayTest">
         <methods>
+          <include name="teardownDriver"/>
+          <include name="testQ4ValidCode_Submit"/>
           <include name="array_page"/>
-          <include name="testQ4ValidCode_Run"/>
-          <include name="testEnterWebsite"/>
+          <include name="open_website"/>
         </methods>
-      </class> <!-- testMethods.ArrayTest -->
+      </class> <!-- testCases.ArrayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

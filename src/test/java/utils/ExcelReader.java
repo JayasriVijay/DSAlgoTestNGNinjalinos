@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelReaderFile {
+public class ExcelReader {
 	public FileInputStream fis;
 	public XSSFWorkbook wb;
 	public XSSFSheet sheet;
@@ -21,7 +21,7 @@ public class ExcelReaderFile {
 	String xlfilePath;
 	
 
-	public ExcelReaderFile() throws IOException {
+	public ExcelReader() throws IOException {
 		this.config = new ConfigReader();
 		this.xlfilePath = config.get_prop_value("path");
 		this.fis = new FileInputStream(xlfilePath);
@@ -52,8 +52,6 @@ public class ExcelReaderFile {
 
 		return testData;
 	}
-
-
 
 	public Object[] getCode(String sheetName) throws IOException {
 		sheet = wb.getSheet(sheetName);

@@ -1,4 +1,4 @@
-package driverManager;
+package driverFactory;
 
 import java.time.Duration;
 
@@ -11,28 +11,28 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriverFactory {
+public class DriverFactory_TestNG {
 
 
 	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-	public WebDriver initDriver(String br) {
+	public WebDriver init_browser(String br) {
 
 		switch (br.toLowerCase()) {
 		case "chrome":
-//			ChromeOptions optionsChrome = new ChromeOptions();
-//			optionsChrome.addArguments("--headless=new");
-//			tlDriver.set(new ChromeDriver(optionsChrome));
-			tlDriver.set(new ChromeDriver());
+			ChromeOptions optionsChrome = new ChromeOptions();
+			optionsChrome.addArguments("--headless=new");
+			tlDriver.set(new ChromeDriver(optionsChrome));
+			//tlDriver.set(new ChromeDriver());
 			break;
 		case "safari":
 			tlDriver.set(new SafariDriver());
 			break;
 		case "firefox":
-//			FirefoxOptions optionsFirefox = new FirefoxOptions();
-//			optionsFirefox.addArguments("--headless");
-//			tlDriver.set(new FirefoxDriver(optionsFirefox));
-			tlDriver.set(new FirefoxDriver());
+			FirefoxOptions optionsFirefox = new FirefoxOptions();
+			optionsFirefox.addArguments("--headless");
+			tlDriver.set(new FirefoxDriver(optionsFirefox));
+			//tlDriver.set(new FirefoxDriver());
 			break;
 		default:
 			tlDriver.set(new ChromeDriver());
@@ -53,7 +53,7 @@ public class DriverFactory {
 
 
 
-	public static void quitDriver() {
+	public static void tear_driver() {
 		if (tlDriver.get() != null) {
 			tlDriver.get().quit();  // Close browser
 			tlDriver.remove();      // Remove driver from ThreadLocal memory

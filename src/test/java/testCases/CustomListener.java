@@ -1,10 +1,10 @@
-package testMethods;
+package testCases;
 import java.io.IOException;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import testMethods.BaseTest;
+import testCases.BaseTest;
 
 public class CustomListener extends BaseTest implements ITestListener {
 	
@@ -16,7 +16,7 @@ public class CustomListener extends BaseTest implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		try {
-			takeScreenshot_failedTC(result.getMethod().getMethodName());
+			failed_screenshot(result.getMethod().getMethodName());
 		} catch (IOException e) {
 			
 			e.printStackTrace();

@@ -17,7 +17,7 @@
    <test name="chromeTest">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testMethods.ArrayTest"/>
+      <class name="testCases.ArrayTest"/>
 
     </classes>
   </test> <!-- Test -->
@@ -25,7 +25,7 @@
   <test name="firefoxTest">
   <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testMethods.ArrayTest"/>
+      <class name="testCases.ArrayTest"/>
 
     </classes>
      </test> <!-- Test -->
