@@ -150,13 +150,13 @@ public class Array_pf {
 	    safeClick(practiceQuestionEditor);
 
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    // CodeMirror stores its editor instance in `CodeMirror`
+	   
 	    js.executeScript(
 	        "var editor = arguments[0].CodeMirror || arguments[0].closest('.CodeMirror').CodeMirror;" +
 	        "editor.setValue(arguments[1]);",
-	        practiceQuestionEditor, code
-	    );
-	}
+	        practiceQuestionEditor, code);    // arguments[0] = practiceQuestionEditor (the div inside CodeMirror).
+	                                        // .closest('.CodeMirror').CodeMirror ensures we fetch the real CodeMirror editor instance.
+	}                                    //.setValue(code) puts the code into the editor.
 
 	
 
