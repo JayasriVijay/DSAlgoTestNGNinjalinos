@@ -1,15 +1,12 @@
 package testCases;
-
+import java.io.IOException;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.LinkedList_pf;
 import utils.LoggerLoad;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-import java.io.IOException;
-import java.util.Map;
-import org.testng.Assert;
 
 @Listeners({ CustomListener.class })
 public class LinkedListTest extends BaseTest {
@@ -96,7 +93,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Create Linked List Page...");
 		linkedListPg.clickOncreateLinkedListLink();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Creating Linked LIst"; // Update with correct expected title if different
+		String expectedTitle = "Creating Linked LIst"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Create Linked List Page Title did not match!");
 	}
 
@@ -137,7 +134,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Types of Linked List Page...");
 		linkedListPg.clickOntypesofLinkedList();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Types of Linked List"; // Update with correct expected title if different
+		String expectedTitle = "Types of Linked List"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Types of Linked List Page Title did not match!");
 	}
 
@@ -178,7 +175,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Implement Linked List Page...");
 		linkedListPg.clickOnimplementLinkedList();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Implement Linked List in Python"; // Update with correct expected title if different
+		String expectedTitle = "Implement Linked List in Python"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Implement Linked List Page Title did not match!");
 	}
 
@@ -219,7 +216,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Implement Linked List Page...");
 		linkedListPg.clickOntraversal();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Traversal"; // Update with correct expected title if different
+		String expectedTitle = "Traversal"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Implement Linked List Page Title did not match!");
 	}
 
@@ -260,7 +257,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Insertion Page...");
 		linkedListPg.clickOninsertion();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Insertion"; // Update with correct expected title if different
+		String expectedTitle = "Insertion"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Insertion Page Title did not match!");
 	}
 
@@ -301,7 +298,7 @@ public class LinkedListTest extends BaseTest {
 		log.info("Navigating to Deletion Page...");
 		linkedListPg.clickOndeletionLink();
 		String actualTitle = linkedListPg.getTitle();
-		String expectedTitle = "Deletion"; // Update with correct expected title if different
+		String expectedTitle = "Deletion"; 
 		Assert.assertEquals(actualTitle, expectedTitle, "Deletion Page Title did not match!");
 	}
 
