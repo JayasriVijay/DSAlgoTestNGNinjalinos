@@ -37,7 +37,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 1)
-	void ClicksDataStBtn() {
+	public void ClicksDataStBtn() {
 		Homepf.clickgetstartedDatastructures();
 		String actmsg = Homepf.notloggedinmesg();
 		String expmsg = "You are not logged in";
@@ -47,7 +47,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	void ClickArrayBtn() {
+	public void ClickArrayBtn() {
 		Homepf.clickgetstartedArray();
 		String actmsg = Homepf.notloggedinmesg();
 		String expmsg = "You are not logged in";
@@ -57,7 +57,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 3)
-	void ClickLinkedlstBtn() {
+	public void ClickLinkedlstBtn() {
 
 		Homepf.clickgetstartedLinkedList();
 
@@ -69,7 +69,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 4)
-	void ClickStacktBtn() {
+	public void ClickStacktBtn() {
 
 		Homepf.clickgetstartedStack();
 
@@ -81,7 +81,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 5)
-	void ClickQueueBtn() throws InterruptedException {
+	public void ClickQueueBtn() throws InterruptedException {
 
 		Homepf.clickgetstartedQueue();
 
@@ -93,7 +93,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 6)
-	void ClickTreeBtn() {
+	public void ClickTreeBtn() {
 
 		Homepf.clickgetstartedTree();
 
@@ -105,7 +105,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 7)
-	void ClickGraphBtn() {
+	public void ClickGraphBtn() {
 
 		Homepf.clickgetstartedGraph();
 
@@ -117,7 +117,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 8)
-	void DropdownDS() {
+	public void DropdownDS() {
 		Homepf.clickDropdownbox();
 		allureScreenshot();
 		log.error("the user is not able to see mesg your are not logged in because no option in the dropdown");
@@ -129,7 +129,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 9)
-	void DropdownArray() {
+	public void DropdownArray() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownArrays();
 		String actmsg = Homepf.notloggedinmesg();
@@ -140,7 +140,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 10)
-	void DropdownLinkedlst() {
+	public void DropdownLinkedlst() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownLinkedList();
 		String actmsg = Homepf.notloggedinmesg();
@@ -151,7 +151,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 11)
-	void DropdownStack() {
+	public void DropdownStack() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownStack();
 		String actmsg = Homepf.notloggedinmesg();
@@ -162,7 +162,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 12)
-	void DropdownQueue() {
+	public void DropdownQueue() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownQueue();
 		String actmsg = Homepf.notloggedinmesg();
@@ -173,7 +173,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 13)
-	void DropdownTree() {
+	public void DropdownTree() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownTree();
 		String actmsg = Homepf.notloggedinmesg();
@@ -184,7 +184,7 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 14)
-	void DropdownGraph() {
+	public void DropdownGraph() {
 		Homepf.clickDropdownbox();
 		Homepf.clickDropdownGraph();
 		String actmsg = Homepf.notloggedinmesg();
@@ -195,8 +195,10 @@ public class HomeTest extends BaseTest {
 	}
 
 	@Test(priority = 15)
-	void clickregister() {
+	public void clickregister() {
 		Homepf.clickRegister();
+		String currentTitle = Homepf.title();
+		Assert.assertTrue(currentTitle.contains("Registration"));
 	}
 
 }

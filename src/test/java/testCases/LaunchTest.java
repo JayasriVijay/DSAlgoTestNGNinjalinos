@@ -32,7 +32,7 @@ public class LaunchTest extends BaseTest {
 	}
 
 	@Test
-	void checkmsg() {
+	public void checkmsg() {
 
 		String expmsg = "You are at the right place";
 		String actmsg = Launchpf.gettextmsg();
@@ -41,7 +41,7 @@ public class LaunchTest extends BaseTest {
 	}
 
 	@Test
-	void clickgetstarted() {
+	public void clickgetstarted() {
 
 		Launchpf.clickgetstarted();
 		String actmsg = Launchpf.gettitle();

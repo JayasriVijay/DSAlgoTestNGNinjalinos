@@ -165,4 +165,8 @@ public class Home_pf {
 		String text1 = notloggedinmesg.getText();
 		return text1;
 	}
+	public String title() {
+		String title=tldriver.getTitle();
+		return title;
+	}
 }

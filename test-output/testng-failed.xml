@@ -3,33 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LinkedListTest">
+      <class name="testCases.HomeTest">
         <methods>
-          <include name="verifytryEditorforValidandInvalidCode_CreateLinkedList"/>
-          <include name="verifyPracticeQuestionsPageTitle_TypesofLinkedList"/>
-          <include name="verifyPracticeQuestionsPageTitle_InsertionPage"/>
-          <include name="verifytryEditorforValidandInvalidCode_InsertionPage"/>
-          <include name="verifyPracticeQuestionsPageTitle_DeletionPage"/>
-          <include name="verifyPracticeQuestionsPageTitle_TraversalPage"/>
+          <include name="setup"/>
+          <include name="teardownDriver"/>
+          <include name="clickregister"/>
           <include name="open_website"/>
-          <include name="verifytryEditorPageTitle_InsertionPage"/>
-          <include name="verifytryEditorforValidandInvalidCode_ImplementLinkedList"/>
-          <include name="verifytryEditorforValidandInvalidCode_TraversalPage"/>
-          <include name="verifytryEditorPageTitle_ImplementLinkedList"/>
-          <include name="verifytryEditorforValidandInvalidCode_DeletionPage"/>
-          <include name="verifyInsertionPageTitle"/>
-          <include name="verifyTypesofLinkedListPageTitle"/>
-          <include name="verifyTraversalPageTitle"/>
-          <include name="initPageObjects"/>
-          <include name="verifyImplementLinkedListPageTitle"/>
-          <include name="verifytryEditorPageTitle_TraversalPage"/>
-          <include name="verifytryEditorPageTitle_DeletionPage"/>
-          <include name="verifytryEditorPageTitle_TypesofLinkedList"/>
-          <include name="verifyPracticeQuestionsPageTitle_ImplementLinkedList"/>
-          <include name="verifytryEditorforValidandInvalidCode_TypesofLinkedList"/>
-          <include name="verifyDeletionPageTitle"/>
         </methods>
-      </class> <!-- testCases.LinkedListTest -->
+      </class> <!-- testCases.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

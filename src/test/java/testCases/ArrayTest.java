@@ -230,7 +230,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickSearchTheArray();
 		array_pf.clickSubmit();
 		String outputTxt = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputTxt);
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 
 	}
 
@@ -253,7 +254,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickMaxConsecutiveOnes();
 		array_pf.clickSubmit();
 		String outputTxt = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputTxt);
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 
 	}
 
@@ -276,7 +278,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickEvenNumberDigits();
 		array_pf.clickSubmit();
 		String outputTxt = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputTxt);
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 
 	}
 
@@ -323,9 +326,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickSearchTheArray();
 		array_pf.tryEditor_invalidCode_practiceQ();
 		array_pf.clickSubmit();
-		String outputQ1 = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputQ1);
-
+		String outputTxt = base.output_text();
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 	}
 
 	// 27
@@ -376,9 +379,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickMaxConsecutiveOnes();
 		array_pf.tryEditor_invalidCode_practiceQ();
 		array_pf.clickSubmit();
-		String outputQ2 = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputQ2);
-
+		String outputTxt = base.output_text();
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 	}
 
 	// 31
@@ -423,7 +426,6 @@ public class ArrayTest extends BaseTest {
 
 	}
 
-	// 34
 	@Test(priority = 34)
 	public void testQ3InvalidCode_Submit() throws IOException {
 		array_pf.clickArraysInPython();
@@ -431,8 +433,9 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickEvenNumberDigits();
 		array_pf.tryEditor_invalidCode_practiceQ();
 		array_pf.clickSubmit();
-		String outputQ3 = base.output_text();
-		Assert.assertEquals("Error occurred during submission", outputQ3);
+		String outputTxt = base.output_text();
+		String expectedOutput = resultTestData.get("Error Message");
+		Assert.assertEquals(expectedOutput, outputTxt);
 
 	}
 
