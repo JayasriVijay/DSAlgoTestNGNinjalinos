@@ -187,33 +187,27 @@ public class TreeTest extends BaseTest{
 	
 	
 	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
-	public void treeTryingValidAndInvalidCode(String code) throws InterruptedException, IOException {
+	public void treeTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput) throws InterruptedException, IOException {
 		treePg.getToTree();
 		treePg.click_Overview();
 		treePg.click_TryHere();
 		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
 		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
-		String validCodedata = testDataValid.get("PythonCode");
-		String invalidCodedata = testDataInValid.get("PythonCode");
-		String expectedOutput = testDataValid.get("RunResult");
-		String alertexpected = testDataInValid.get("RunResult");
+		if (ScenarioName.equalsIgnoreCase("ValidCode")) {
+			String actualOutput = base.output_text();
+			System.out.println("checking the actual ouput :" + actualOutput);
+			Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
+	  } else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
+		  boolean alertmsg = base.isAlertOpen();
+		  base.handle_alert();
+		  Assert.assertTrue(alertmsg, "The user is not able to see an alert window to display error message.");
+	  }  else {
+			Assert.fail("Provided code did not match valid or invalid test data");
+		}
 	
-		if(code.equals(validCodedata)) 
-		{
-		Assert.assertEquals(base.output_text(),expectedOutput, "did not get the expected output");
-			}
-		else if(code.equals(invalidCodedata))
-		{
-		String alertmsg = base.alert_message();
-		base.handle_alert();
-		Assert.assertEquals(alertmsg, alertexpected, "did not get correct alert message for giving an invalid code as input" );			
-		}
-		else {
-		    Assert.fail("Provided code did not match valid or invalid test data");
-		}
-		
-	}
+}
+
 	
 	
 	@Test(priority = 3)

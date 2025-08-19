@@ -21,11 +21,15 @@ import io.qameta.allure.Allure;
 import utils.ExcelReader;
 
 public class BaseTest {
+	HashMap<String, String> testDataValid ;
+	HashMap<String, String> testDataInValid ;
 
 	ExcelReader excelReader;
 
 	public BaseTest() throws IOException {
 		this.excelReader = new ExcelReader();
+		//this.testDataValid = new HashMap<>();
+		//this.testDataInValid = new HashMap<>();
 	}
 
 	@Parameters({ "browser" })
@@ -55,10 +59,9 @@ public class BaseTest {
 	public void allureScreenshot() {
 	try {
 		byte[] screenshotBytes = ((TakesScreenshot) DriverFactory_TestNG.getDriver())
-				.getScreenshotAs(OutputType.BYTES);
-
-		
-		Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), "png");
+				.getScreenshotAs(OutputType.BYTES);	
+	//	Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), "png");
+		Allure.getLifecycle().addAttachment("Screenshot on Failure", "image/png", "png", screenshotBytes);
 
 	} catch (Exception e) {
 		e.printStackTrace();
@@ -67,14 +70,12 @@ public class BaseTest {
 
 	@DataProvider(name = "pythonCodeValidandInvalid")
 	public Object[] pythonCodeTestData() throws IOException {
-		HashMap<String, String> testDataValid = new HashMap<>();
-		HashMap<String, String> testDataInValid = new HashMap<>();
 		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
 		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
-		String validcode = testDataValid.get("PythonCode");
-		String invalidcode = testDataInValid.get("PythonCode"); 
-		Object[] data = {validcode,invalidcode};
+		Object[][] data = { { "ValidCode", testDataValid.get("PythonCode"), testDataValid.get("RunResult") },
+				{ "InvalidCode", testDataInValid.get("PythonCode"), testDataInValid.get("RunResult") } };
 		return data;
-	} 
+		
+	}
 
 }

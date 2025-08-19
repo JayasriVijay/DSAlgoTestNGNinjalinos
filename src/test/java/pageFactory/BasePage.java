@@ -7,6 +7,7 @@ import java.util.HashMap;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -74,7 +75,6 @@ public class BasePage {
 		testData = excelReader.readExcelRow("ValidCredential", "testdata");
 		String username = testData.get("UserName");
 		userName.sendKeys(username);
-		testData = excelReader.readExcelRow("ValidCredential", "testdata");
 		String password = testData.get("Password");
 		pwd.sendKeys(password);
 		logInBtn.click();
@@ -87,17 +87,26 @@ public class BasePage {
 	
 
 	public String alert_message() {
-		wait.until(ExpectedConditions.alertIsPresent());
 		alert = tldriver.switchTo().alert();
 		String alertMsg = alert.getText();
 		return alertMsg;
 	}
 
-	public void handle_alert() {
-		wait.until(ExpectedConditions.alertIsPresent());
+	public void handle_alert() throws InterruptedException {
+		Thread.sleep(2000);
 		alert = tldriver.switchTo().alert();
+		Thread.sleep(2000);
 		alert.accept();
 
+	}
+	
+	public boolean isAlertOpen() {
+		try {
+			tldriver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
 	}
 
 	public void validAndInvalidCode(String code) {
@@ -116,6 +125,7 @@ public class BasePage {
 
 	}
 
+	
 	
 
 	public String get_current_url() {

@@ -27,8 +27,7 @@ public class GraphTest extends BaseTest {
 	BaseTest baseTest;
 	ExcelReader excelReader;
 	LoggerLoad log;
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
+
 
 	@BeforeMethod
 	public void graphPage() throws InterruptedException, IOException {
@@ -36,13 +35,11 @@ public class GraphTest extends BaseTest {
 		this.base = new BasePage();
 		this.log = new LoggerLoad();
 		this.excelReader= new ExcelReader();
-		this.testDataValid = new HashMap<>();
-		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 		
 	}
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void getClick_Graph() throws InterruptedException, IOException {
 		graphPg.getTograph();
 		graphPg.click_Graph_link();
@@ -54,7 +51,7 @@ public class GraphTest extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle, "Title not matched");
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void getClick_GraphRepre() throws InterruptedException, IOException {
 		graphPg.getTograph();
 		graphPg.click_GraphRepre();
@@ -67,31 +64,23 @@ public class GraphTest extends BaseTest {
 	}
 
 	
-	//@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
-	public void graphTryingValidAndInvalidCode(String code) throws InterruptedException, IOException {
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = BaseTest.class)
+	public void graphTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput) throws InterruptedException, IOException {
 		graphPg.getTograph();
 		graphPg.click_Graph_link();
 		graphPg.clickTryHere();
-		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
-		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
-		String validCodedata = testDataValid.get("PythonCode");
-		String invalidCodedata = testDataInValid.get("PythonCode");
-		String expectedOutput = testDataValid.get("RunResult");
-		String alertexpected = testDataInValid.get("RunResult");
-		if(code.equals(validCodedata)) 
-		{
-		Assert.assertEquals(base.output_text(),expectedOutput, "did not get the expected output");
+			if (ScenarioName.equalsIgnoreCase("ValidCode")) {
+				String actualOutput = base.output_text();
+				System.out.println("checking the actual ouput :" + actualOutput);
+				Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
+		  }  else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
+				boolean alertmsg = base.isAlertOpen();
+	            base.handle_alert();
+			  Assert.assertTrue(alertmsg, "The user is not able to see an alert window to display error message.");
+		  }  else {
+				Assert.fail("Provided code did not match valid or invalid test data");
 			}
-		else if(code.equals(invalidCodedata))
-		{
-		String alertmsg = base.alert_message();
-		base.handle_alert();
-		Assert.assertEquals(alertmsg, alertexpected, "did not get correct alert message for giving an invalid code as input" );			
-		}
-		else {
-		    Assert.fail("Provided code did not match valid or invalid test data");
-		}
 		
 	}
 	

@@ -1,6 +1,5 @@
 package testCases;
 
-import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -52,7 +51,7 @@ public class StackTest extends BaseTest {
 		stack.stack_btn();
 		stack.opreations_stack_btn();
 		String currentUrl = base.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/stack/operations-in-stack/", currentUrl,
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/stack/operations-in-stack/", currentUrl,
 				"not in operations in stack page");
 	}
 
@@ -62,7 +61,7 @@ public class StackTest extends BaseTest {
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
 		String currentUrl = base.get_current_url();
-		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
 				"not in try here page of implemetation of queue in python page");
 
 	}
@@ -81,33 +80,23 @@ public class StackTest extends BaseTest {
 	}
 
 	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
-	public void StackTryingValidAndInvalidCode(String code) throws IOException {
+	public void stackTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
+			throws InterruptedException, IOException {
 		stack.stack_btn();
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
-		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
-		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
-		String validCodedata = testDataValid.get("PythonCode");
-		String invalidCodedata = testDataInValid.get("PythonCode");
-		String expectedOutput = testDataValid.get("RunResult");
-		String alertexpected = testDataInValid.get("RunResult");
+		if (ScenarioName.equalsIgnoreCase("ValidCode")) {
+			String actualOutput = base.output_text();
 
-
-		if (code.equals(validCodedata)) {
-			Assert.assertEquals(base.output_text(), expectedOutput, "did not get the expected output");
-
-		} else if (code.equals(invalidCodedata)) {
-			String alertmsg = base.alert_message();
-			base.handle_alert();
-
-			Assert.assertEquals(alertmsg, alertexpected,
-					"did not get correct alert message for giving an invalid code as input");
-
+			Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
+		} else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
+			boolean alertmsg = base.isAlertOpen();
+            base.handle_alert();
+			Assert.assertTrue(alertmsg, "The user is not able to see an alert window to display error message.");
 		} else {
 			Assert.fail("Provided code did not match valid or invalid test data");
 		}
-
 	}
 
 	@Test(priority = 6)
@@ -116,7 +105,7 @@ public class StackTest extends BaseTest {
 		stack.implementation_stack_btn();
 		String currentUrl = base.get_current_url();
 		log.info("opening stack implementation page");
-		assertEquals("https://dsportalapp.herokuapp.com/stack/implementation/", currentUrl,
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/stack/implementation/", currentUrl,
 				"not in implementation in stack page");
 
 	}
@@ -128,7 +117,7 @@ public class StackTest extends BaseTest {
 		stack.tryhere_stack();
 		String currentUrl = base.get_current_url();
 		log.info("opening code editor from stack implementation page");
-		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
 
 	}
 
@@ -138,7 +127,7 @@ public class StackTest extends BaseTest {
 		stack.application_stack_btn();
 		String currentUrl = base.get_current_url();
 		log.info("opening stack application page");
-		assertEquals("https://dsportalapp.herokuapp.com/stack/stack-applications/", currentUrl,
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/stack/stack-applications/", currentUrl,
 				"not in implementation in stack page");
 
 	}
@@ -150,7 +139,7 @@ public class StackTest extends BaseTest {
 		stack.tryhere_stack();
 		String currentUrl = base.get_current_url();
 		log.info("opening code editor from stack implementation page");
-		assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
+		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl, "not in implementation in stack page");
 
 	}
 

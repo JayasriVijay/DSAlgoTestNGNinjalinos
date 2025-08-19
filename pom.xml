@@ -5,7 +5,6 @@
 	<groupId>dsAlgo_TestNG</groupId>
 	<artifactId>dsAlgo_TestNG</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -21,6 +20,11 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
 			<version>5.4.1</version>
 		</dependency>
 		<dependency>
@@ -44,28 +48,16 @@
 			<version>2.25.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>5.4.1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 			<version>2.29.1</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.aventstack/chaintest-testng -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>chaintest-testng</artifactId>
 			<version>1.0.12</version>
 		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
-		
-
-	</dependencies>
+			</dependencies>
 </project>
 
 

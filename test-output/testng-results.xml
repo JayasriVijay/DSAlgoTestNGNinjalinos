@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T12:08:29 GMT-04:00" name="Default suite" finished-at="2025-08-18T12:08:34 GMT-04:00" duration-ms="5202">
+  <suite started-at="2025-08-18T22:00:11 EDT" name="Default suite" finished-at="2025-08-18T22:00:28 EDT" duration-ms="16448">
     <groups>
     </groups>
-    <test started-at="2025-08-18T12:08:29 GMT-04:00" name="Default test" finished-at="2025-08-18T12:08:34 GMT-04:00" duration-ms="5202">
-      <class name="testCases.QueueTest">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.QueueTest@27b000f7]" started-at="2025-08-18T12:08:29 GMT-04:00" name="open_website" finished-at="2025-08-18T12:08:31 GMT-04:00" duration-ms="2022" status="PASS">
+    <test started-at="2025-08-18T22:00:11 EDT" name="Default test" finished-at="2025-08-18T22:00:28 EDT" duration-ms="16448">
+      <class name="testCases.LoginTest">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:11 EDT" name="open_website" finished-at="2025-08-18T22:00:14 EDT" duration-ms="2170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,196 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="queue_page()[pri:0, instance:testCases.QueueTest@27b000f7]" started-at="2025-08-18T12:08:31 GMT-04:00" name="queue_page" finished-at="2025-08-18T12:08:33 GMT-04:00" duration-ms="2065" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:14 EDT" name="setup" finished-at="2025-08-18T22:00:15 EDT" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queue_page -->
-        <test-method signature="queueImplementation()[pri:2, instance:testCases.QueueTest@27b000f7]" started-at="2025-08-18T12:08:33 GMT-04:00" name="queueImplementation" finished-at="2025-08-18T12:08:34 GMT-04:00" duration-ms="664" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="validandinvalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:15 EDT" name="validandinvalidlogin" data-provider="validandinvalidlogin" finished-at="2025-08-18T22:00:15 EDT" duration-ms="835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ValidCredential]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninjalinos@work.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sdet218920@]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queueImplementation -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.QueueTest@27b000f7]" started-at="2025-08-18T12:08:34 GMT-04:00" name="teardownDriver" finished-at="2025-08-18T12:08:34 GMT-04:00" duration-ms="224" status="PASS">
+        </test-method> <!-- validandinvalidlogin -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:15 EDT" name="teardownDriver" finished-at="2025-08-18T22:00:16 EDT" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.QueueTest -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:16 EDT" name="open_website" finished-at="2025-08-18T22:00:17 EDT" duration-ms="1342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:17 EDT" name="setup" finished-at="2025-08-18T22:00:18 EDT" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validandinvalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:18 EDT" name="validandinvalidlogin" data-provider="validandinvalidlogin" finished-at="2025-08-18T22:00:18 EDT" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validandinvalidlogin -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:18 EDT" name="teardownDriver" finished-at="2025-08-18T22:00:18 EDT" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:18 EDT" name="open_website" finished-at="2025-08-18T22:00:19 EDT" duration-ms="1285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:19 EDT" name="setup" finished-at="2025-08-18T22:00:21 EDT" duration-ms="1035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validandinvalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:21 EDT" name="validandinvalidlogin" data-provider="validandinvalidlogin" finished-at="2025-08-18T22:00:21 EDT" duration-ms="417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninjalinos]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validandinvalidlogin -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:21 EDT" name="teardownDriver" finished-at="2025-08-18T22:00:21 EDT" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:21 EDT" name="open_website" finished-at="2025-08-18T22:00:23 EDT" duration-ms="1685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:23 EDT" name="setup" finished-at="2025-08-18T22:00:24 EDT" duration-ms="966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validandinvalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:24 EDT" name="validandinvalidlogin" data-provider="validandinvalidlogin" finished-at="2025-08-18T22:00:24 EDT" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdfew]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validandinvalidlogin -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:24 EDT" name="teardownDriver" finished-at="2025-08-18T22:00:25 EDT" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:25 EDT" name="open_website" finished-at="2025-08-18T22:00:26 EDT" duration-ms="1518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_website -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:26 EDT" name="setup" finished-at="2025-08-18T22:00:27 EDT" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validandinvalidlogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:27 EDT" name="validandinvalidlogin" data-provider="validandinvalidlogin" finished-at="2025-08-18T22:00:27 EDT" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninjalinos]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdfew]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validandinvalidlogin -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.LoginTest@2d2acd89]" started-at="2025-08-18T22:00:27 EDT" name="teardownDriver" finished-at="2025-08-18T22:00:28 EDT" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriver -->
+      </class> <!-- testCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -80,10 +80,7 @@ public class TreePage extends BasePage{
 	@FindBy(xpath = "//*[text()='Practice Questions']")
 	WebElement practQuestTree;
 
-	
 		
-
-	
 	public void getToTree() throws InterruptedException, IOException {
 			wait.until(ExpectedConditions.elementToBeClickable(treegetStartedButton)).click();
 		
