@@ -1,6 +1,7 @@
 package testCases;
 
 import java.io.IOException;
+
 import java.util.HashMap;
 
 import org.testng.Assert;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 import pageFactory.BasePage;
 import pageFactory.Datastructure_pf;
 import pageFactory.Home_pf;
-import utils.ExcelReader;
+
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -23,7 +24,6 @@ public class DatastructuresTest extends BaseTest {
 
 	BasePage base;
 	LoggerLoad log;
-	ExcelReader excelReader;
 	Datastructure_pf Datastructurepf;
 
 	HashMap<String, String> testDataValid;
@@ -36,7 +36,6 @@ public class DatastructuresTest extends BaseTest {
 		this.Datastructurepf = new Datastructure_pf();
 		this.Homepf = new Home_pf();
 		this.log = new LoggerLoad();
-		this.excelReader = new ExcelReader();
 		this.testDataValid = new HashMap<>();
 		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
@@ -62,8 +61,7 @@ public class DatastructuresTest extends BaseTest {
 		allureScreenshot();
 		log.info("click on Practice questions");
 		log.error("There are no practice questions available in the Datastructure module");
-		Assert.assertEquals(acturl, "https://dsportalapp.herokuapp.com/data-structures-introduction/practic",
-				"user is not able to see practice questions, the page is empty");
+		Assert.fail("Failing this test case, there are no practice questions available in the Data Structures module");
 	}
 
 	@Test(priority = 3)
@@ -92,7 +90,8 @@ public class DatastructuresTest extends BaseTest {
 	}
 
 	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
-	public void dsTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)  throws IOException, InterruptedException {
+	public void dsTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
+			throws IOException, InterruptedException {
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickTryhereLink();
 		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
@@ -100,12 +99,13 @@ public class DatastructuresTest extends BaseTest {
 		base.validAndInvalidCode(code);
 		if (ScenarioName.equalsIgnoreCase("ValidCode")) {
 			String actualOutput = base.output_text();
-
 			Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
 		} else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
 			boolean alertmsg = base.isAlertOpen();
-            base.handle_alert();
+			base.handle_alert();
 			Assert.assertTrue(alertmsg, "The user is not able to see an alert window to display error message.");
 		} else {
 			Assert.fail("Provided code did not match valid or invalid test data");
-		}}}
+		}
+	}
+}

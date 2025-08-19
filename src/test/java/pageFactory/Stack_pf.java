@@ -15,7 +15,7 @@ public class Stack_pf {
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
-	
+
 	public Stack_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
 		PageFactory.initElements(tldriver, this);
@@ -40,8 +40,6 @@ public class Stack_pf {
 
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereStack;
-
-	
 
 	public void stack_btn() {
 
@@ -75,5 +73,4 @@ public class Stack_pf {
 		wait.until(ExpectedConditions.elementToBeClickable(tryHereStack)).click();
 	}
 
-	
 }

@@ -13,8 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverFactory.DriverFactory_TestNG;
 import utils.ExcelReader;
 
-
-
 public class Register_pf {
 
 	private WebDriver tldriver;
@@ -23,15 +21,14 @@ public class Register_pf {
 	ExcelReader excelReader;
 	JavascriptExecutor js;
 
-		public Register_pf() throws IOException
-		{
-			this.tldriver = DriverFactory_TestNG.getDriver();
-			PageFactory.initElements(tldriver, this);
-			this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-			js = (JavascriptExecutor) tldriver;
-			this.excelReader = new ExcelReader();
+	public Register_pf() throws IOException {
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		PageFactory.initElements(tldriver, this);
+		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
+		js = (JavascriptExecutor) tldriver;
+		this.excelReader = new ExcelReader();
 
-		}
+	}
 	// Locators
 
 	@FindBy(xpath = "//*[@name='username']")
@@ -48,17 +45,17 @@ public class Register_pf {
 
 	@FindBy(xpath = "//div[@class=\"alert alert-primary\"]")
 	WebElement missmatchPasswordMessage;
-	
 
 	public void setinvalidusername(String username) {
 		usernameTextbox.sendKeys(username);
 	}
-	public void setdatas(String username,String password,String confirmpassword) {
+
+	public void setdatas(String username, String password, String confirmpassword) {
 		usernameTextbox.sendKeys(username);
 		passwordTextbox.sendKeys(password);
 		confirmpasswordTextbox.sendKeys(confirmpassword);
 	}
-		
+
 	public void setinvalidpassword(String password) {
 		passwordTextbox.sendKeys(password);
 	}
@@ -66,8 +63,6 @@ public class Register_pf {
 	public void setinvalidconfirmpassword(String confirmpassword) {
 		confirmpasswordTextbox.sendKeys(confirmpassword);
 	}
-
-
 
 	public void clickRegisterbutton() {
 		registerButton.click();
@@ -77,7 +72,7 @@ public class Register_pf {
 		String msg = missmatchPasswordMessage.getText();
 		return msg;
 	}
-	
+
 	public String successfulMessage() {
 		String msg = missmatchPasswordMessage.getText();
 		return msg;
@@ -101,5 +96,5 @@ public class Register_pf {
 		String validationMsg = (String) js.executeScript("return arguments[0].validationMessage;", passwordTextbox);
 		return validationMsg;
 	}
-	
+
 }

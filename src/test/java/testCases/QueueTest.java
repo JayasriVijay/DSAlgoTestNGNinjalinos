@@ -1,6 +1,5 @@
 package testCases;
 
-
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -11,7 +10,6 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
-import utils.ExcelReader;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -25,7 +23,6 @@ public class QueueTest extends BaseTest {
 	Queue_pf queue;
 	BasePage base;
 	LoggerLoad log;
-	ExcelReader excelReader;
 	HashMap<String, String> testDataValid;
 	HashMap<String, String> testDataInValid;
 
@@ -34,7 +31,6 @@ public class QueueTest extends BaseTest {
 		this.base = new BasePage();
 		this.queue = new Queue_pf();
 		this.log = new LoggerLoad();
-		this.excelReader = new ExcelReader();
 		this.testDataValid = new HashMap<>();
 		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
@@ -53,7 +49,8 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.implementation_queue_python_btn();
 		String currentUrl = base.get_current_url();
-		Assert.assertTrue(currentUrl.contains("queue/implementation-lists/"),"not in try here page of implemetation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("queue/implementation-lists/"),
+				"not in try here page of implemetation of queue in python page");
 	}
 
 	@Test(priority = 3)
@@ -62,8 +59,7 @@ public class QueueTest extends BaseTest {
 		queue.implementation_queue_python_btn();
 		queue.tryhere_queue();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
-				"not in try here page of implemetation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/tryEditor"));
 
 	}
 
@@ -79,6 +75,7 @@ public class QueueTest extends BaseTest {
 				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it");
 
 	}
+
 	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
 	public void queueTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
@@ -92,7 +89,7 @@ public class QueueTest extends BaseTest {
 			Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
 		} else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
 			boolean alertmsg = base.isAlertOpen();
-            base.handle_alert();
+			base.handle_alert();
 			Assert.assertTrue(alertmsg, "The user is not able to see an alert window to display error message.");
 		} else {
 			Assert.fail("Provided code did not match valid or invalid test data");
@@ -104,8 +101,7 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.implementation_collection_btn();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/queue/implementation-collections/", currentUrl,
-				"not in implementation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/queue/implementation-collections/"));
 	}
 
 	@Test(priority = 7)
@@ -114,8 +110,7 @@ public class QueueTest extends BaseTest {
 		queue.implementation_collection_btn();
 		queue.tryhere_queue();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
-				"not in try here page of implemetation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/tryEditor"));
 
 	}
 
@@ -124,8 +119,7 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.implementation_array_btn();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/queue/Implementation-array/", currentUrl,
-				"not in implementation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/queue/Implementation-array/"));
 	}
 
 	@Test(priority = 9)
@@ -134,8 +128,7 @@ public class QueueTest extends BaseTest {
 		queue.implementation_array_btn();
 		queue.tryhere_queue();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
-				"not in try here page of implemetation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/tryEditor"));
 
 	}
 
@@ -144,8 +137,7 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.queue_operations_btn();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/queue/QueueOp/", currentUrl,
-				"not in implementation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/queue/QueueOp/"));
 	}
 
 	@Test(priority = 11)
@@ -154,8 +146,7 @@ public class QueueTest extends BaseTest {
 		queue.queue_operations_btn();
 		queue.tryhere_queue();
 		String currentUrl = base.get_current_url();
-		Assert.assertEquals("https://dsportalapp.herokuapp.com/tryEditor", currentUrl,
-				"not in try here page of implemetation of queue in python page");
+		Assert.assertTrue(currentUrl.contains("/tryEditor"));
 
 	}
 

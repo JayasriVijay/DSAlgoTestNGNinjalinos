@@ -14,8 +14,6 @@ import driverFactory.DriverFactory_TestNG;
 import utils.ExcelReader;
 import utils.LoggerLoad;
 
-
-
 public class Login_pf {
 
 	private WebDriver tldriver;
@@ -25,15 +23,14 @@ public class Login_pf {
 	ExcelReader excelReader;
 	JavascriptExecutor js;
 
-			public Login_pf( ) throws IOException
-			{
-				this.tldriver = DriverFactory_TestNG.getDriver();
-				PageFactory.initElements(tldriver, this);
-				this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-				js = (JavascriptExecutor) tldriver;
-				this.excelReader = new ExcelReader();
+	public Login_pf() throws IOException {
+		this.tldriver = DriverFactory_TestNG.getDriver();
+		PageFactory.initElements(tldriver, this);
+		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
+		js = (JavascriptExecutor) tldriver;
+		this.excelReader = new ExcelReader();
 
-			}
+	}
 
 	@FindBy(xpath = "//*[text()='Sign in']")
 	WebElement signinLink;
@@ -52,8 +49,6 @@ public class Login_pf {
 
 	@FindBy(xpath = "//div[@role='alert'] ")
 	WebElement invaliddatamsg;
-	
-
 
 	public void clickSigninLink() {
 		signinLink.click();
@@ -72,14 +67,12 @@ public class Login_pf {
 		String msg = invaliddatamsg.getText();
 		return msg;
 	}
-	public void setdata(String username,String password) {
+
+	public void setdata(String username, String password) {
 		username_textbox.sendKeys(username);
 		password_textbox.sendKeys(password);
-		
-		
+
 	}
-
-
 
 	public String invalidAssertionusernamebox() {
 

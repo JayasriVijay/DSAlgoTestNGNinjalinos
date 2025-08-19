@@ -83,8 +83,6 @@ public class BasePage {
 	public void clickRunBtn() {
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
 	}
-	
-	
 
 	public String alert_message() {
 		alert = tldriver.switchTo().alert();
@@ -98,7 +96,7 @@ public class BasePage {
 		alert.accept();
 
 	}
-	
+
 	public boolean isAlertOpen() {
 		try {
 			tldriver.switchTo().alert();
@@ -123,9 +121,6 @@ public class BasePage {
 		return outputText;
 
 	}
-
-	
-	
 
 	public String get_current_url() {
 		String current_url = tldriver.getCurrentUrl();

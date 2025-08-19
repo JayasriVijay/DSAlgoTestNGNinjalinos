@@ -12,17 +12,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory_TestNG;
 
-
-
 public class Home_pf {
 
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
-	
 
-	public Home_pf()
-	{
+	public Home_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(30));
@@ -85,8 +81,6 @@ public class Home_pf {
 	@FindBy(xpath = "//*[@class='alert alert-primary']")
 	WebElement notloggedinmesg;
 
-
-
 	public void clickgetstartedDatastructures() {
 		getstartedButton_dataStructures.click();
 	}
@@ -101,33 +95,31 @@ public class Home_pf {
 	}
 
 	public void clickgetstartedStack() {
-		if(getstartedButton_Stack.isDisplayed()) {
+		if (getstartedButton_Stack.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Stack)).click();
 		}
-		
-		
+
 	}
 
 	public void clickgetstartedQueue() {
-		if(getstartedButton_Queue.isDisplayed()) {
+		if (getstartedButton_Queue.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Queue)).click();
 		}
-		
-		
+
 	}
 
 	public void clickgetstartedTree() {
-		if(getstartedButton_Tree.isDisplayed()) {
+		if (getstartedButton_Tree.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Tree)).click();
 		}
-		
+
 	}
 
 	public void clickgetstartedGraph() {
-		if(getstartedButton_Graph.isDisplayed()) {
+		if (getstartedButton_Graph.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(getstartedButton_Graph)).click();
 		}
-		
+
 	}
 
 	public void clickDropdownbox() {
@@ -154,6 +146,7 @@ public class Home_pf {
 	public void clickDropdownTree() {
 		dropdownboxTree.click();
 	}
+
 	public void clickDropdownGraph() {
 		dropdownboxGraph.click();
 	}
@@ -168,7 +161,7 @@ public class Home_pf {
 	}
 
 	public String notloggedinmesg() {
-		
+
 		String text1 = notloggedinmesg.getText();
 		return text1;
 	}

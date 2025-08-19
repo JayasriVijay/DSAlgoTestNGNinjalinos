@@ -16,14 +16,13 @@ public class Queue_pf {
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
-	
+
 	public Queue_pf() {
 		this.tldriver = DriverFactory_TestNG.getDriver();
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
 
 	}
-
 
 	@FindBy(xpath = "//h5[text()='Queue']/../../..//a[text()='Get Started']")
 	WebElement QueueBtn;
@@ -46,7 +45,6 @@ public class Queue_pf {
 	@FindBy(xpath = "//div[2]/following::*/div[2]/a")
 	WebElement tryHereQueue;
 
-	
 	public void queue_btn() {
 
 		wait.until(ExpectedConditions.elementToBeClickable(QueueBtn)).click();
@@ -81,5 +79,4 @@ public class Queue_pf {
 		wait.until(ExpectedConditions.elementToBeClickable(tryHereQueue)).click();
 	}
 
-	
 }

@@ -19,7 +19,6 @@ public class ExcelReader {
 	public XSSFCell cell;
 	ConfigReader config;
 	String xlfilePath;
-	
 
 	public ExcelReader() throws IOException {
 		this.config = new ConfigReader();

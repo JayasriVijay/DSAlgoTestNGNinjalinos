@@ -13,21 +13,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory_TestNG;
 
-
-
 public class Datastructure_pf {
 	private WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
 	Actions action;
 	Alert alert;
-	public Datastructure_pf()  {
+
+	public Datastructure_pf() {
 
 		this.tldriver = DriverFactory_TestNG.getDriver();
 		PageFactory.initElements(tldriver, this);
 		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(30));
 	}
-
 
 	@FindBy(xpath = "//*[text()='Data Structures-Introduction']//../a")
 	WebElement getstartedButton_dataStructures;
@@ -55,9 +53,7 @@ public class Datastructure_pf {
 
 	@FindBy(xpath = "//div[@align='left'] ")
 	WebElement consoleoutpt;
-	
 
-	
 	public String datastructurespagetitle() {
 		String text = datastructuresPagetitle.getText();
 		return text;
@@ -73,7 +69,7 @@ public class Datastructure_pf {
 	}
 
 	public void clickTimecomplexityLink() {
-		if(timecomplexityLink.isDisplayed()) {
+		if (timecomplexityLink.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(timecomplexityLink)).click();
 		}
 
@@ -89,16 +85,14 @@ public class Datastructure_pf {
 	public void clickPracticeQuestionsLink() {
 		practiceQuestionsLink.click();
 	}
-	
 
 	public void clickTryhereLink() {
 
-		if(tryhereLink.isDisplayed()) {
+		if (tryhereLink.isDisplayed()) {
 			wait.until(ExpectedConditions.elementToBeClickable(tryhereLink)).click();
 		}
-		
-	}
 
+	}
 
 	public String editortxt() {
 		String txt = tryEditorbox.getText();

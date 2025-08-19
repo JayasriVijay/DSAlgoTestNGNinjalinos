@@ -2,7 +2,6 @@ package driverFactory;
 
 import java.time.Duration;
 
-
 import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
@@ -21,22 +20,22 @@ public class DriverFactory_TestNG {
 
 		switch (br.toLowerCase()) {
 		case "chrome":
-	        	ChromeOptions optionsChrome = new ChromeOptions();
-				optionsChrome.addArguments("--headless=new");
-	        	tldriver.set(new ChromeDriver(optionsChrome));
-			//tldriver.set(new ChromeDriver());
+			ChromeOptions optionsChrome = new ChromeOptions();
+			optionsChrome.addArguments("--headless=new");
+			tldriver.set(new ChromeDriver(optionsChrome));
+			// tldriver.set(new ChromeDriver());
 			break;
 		case "edge":
-	        	EdgeOptions optionsEdge = new EdgeOptions();
-				optionsEdge.addArguments("--headless=new");
-	        	tldriver.set(new EdgeDriver(optionsEdge));
-			//tldriver.set(new EdgeDriver());
+			EdgeOptions optionsEdge = new EdgeOptions();
+			optionsEdge.addArguments("--headless=new");
+			tldriver.set(new EdgeDriver(optionsEdge));
+			// tldriver.set(new EdgeDriver());
 			break;
 		case "firefox":
-	        	FirefoxOptions optionsFirefox = new FirefoxOptions();
-				optionsFirefox.addArguments("--headless");
-	        	tldriver.set(new FirefoxDriver(optionsFirefox));
-			//tldriver.set(new FirefoxDriver());
+			FirefoxOptions optionsFirefox = new FirefoxOptions();
+			optionsFirefox.addArguments("--headless");
+			tldriver.set(new FirefoxDriver(optionsFirefox));
+			// tldriver.set(new FirefoxDriver());
 			break;
 		default:
 			tldriver.set(new ChromeDriver());
@@ -60,7 +59,7 @@ public class DriverFactory_TestNG {
 	}
 
 	public static void tear_driver() {
-		if (tldriver.get()!=null) {
+		if (tldriver.get() != null) {
 			tldriver.get().quit();
 			tldriver.remove();
 		}
