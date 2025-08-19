@@ -108,34 +108,7 @@ public class LinkedList_pf extends BasePage {
 	        clickOndeletionLink();
 	        clickTryHere();
 	    }
-	 public String enterData(String inputData) {
-			if (inputData != null && !inputData.isEmpty()) {
-				JavascriptExecutor js = (JavascriptExecutor) tldriver;
-				js.executeScript("document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0]);", inputData);
-			}
-			runBtn.click();
-
-			if (isAlertPresent()) {
-				Alert alert = tldriver.switchTo().alert();
-				String alertText = alert.getText();
-				alert.accept();
-				return alertText;
-			} else {
-
-				String text = outputTxt.getText();
-				System.out.println("text" + text);
-				return text;
-			}
-		}
-
-		private boolean isAlertPresent() {
-			try {
-				tldriver.switchTo().alert();
-				return true;
-			} catch (NoAlertPresentException e) {
-				return false;
-			}
-		}
+	 
 	 
 	 
 	    

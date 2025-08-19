@@ -92,7 +92,7 @@ public class DatastructuresTest extends BaseTest {
 	}
 
 	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
-	public void queueTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)  throws IOException, InterruptedException {
+	public void dsTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)  throws IOException, InterruptedException {
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickTryhereLink();
 		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");

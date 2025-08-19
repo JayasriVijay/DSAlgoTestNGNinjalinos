@@ -3571,3 +3571,331 @@
 [INFO] 2025-08-18 22:00:28.374 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@93501be: 11 ms
 [INFO] 2025-08-18 22:00:28.385 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@498a612d: 10 ms
 [INFO] 2025-08-18 22:00:28.390 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@74667e6a: 5 ms
+[INFO] 2025-08-18 22:54:22.966 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.979 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO] 2025-08-18 22:54:22.984 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.984 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.985 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.986 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.987 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.988 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.989 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.990 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.992 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.993 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.996 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:22.996 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:22.999 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.000 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:23.023 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 14 ms.
+[INFO] 2025-08-18 22:54:23.043 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
+[INFO] 2025-08-18 22:54:23.047 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.049 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-18 22:54:23.054 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.054 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:23.054 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.055 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:23.062 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[INFO] 2025-08-18 22:54:23.067 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO] 2025-08-18 22:54:23.074 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.074 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:23.074 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 22:54:23.074 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 22:54:23.232 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse-1616401850\testng-customsuite.xml
+
+[INFO] 2025-08-18 22:54:23.288 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 13 ms.
+[INFO] 2025-08-18 22:54:28.145 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 22:54:33.431 [main] LoggerLoad - Navigating to Practice Questions Page from Intro...
+[INFO] 2025-08-18 22:54:38.691 [main] LoggerLoad - Navigating to Try Editor Page from Intro...
+[INFO] 2025-08-18 22:54:43.913 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:54:49.224 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:54:58.541 [main] LoggerLoad - Navigating to Create Linked List Page...
+[INFO] 2025-08-18 22:55:03.171 [main] LoggerLoad - Navigating to Practice Questions Page from CreateLinkedList...
+[INFO] 2025-08-18 22:55:07.708 [main] LoggerLoad - Navigating to Try Editor Page from CreateLinkedList...
+[INFO] 2025-08-18 22:55:12.780 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:55:17.941 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:55:26.365 [main] LoggerLoad - Navigating to Types of Linked List Page...
+[INFO] 2025-08-18 22:55:29.635 [main] LoggerLoad - Navigating to Practice Questions Page from Types of Linked List Page...
+[INFO] 2025-08-18 22:55:33.003 [main] LoggerLoad - Navigating to Try Editor Page from Types of Linked List Page...
+[INFO] 2025-08-18 22:55:36.548 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:55:40.078 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:55:47.477 [main] LoggerLoad - Navigating to Implement Linked List Page...
+[INFO] 2025-08-18 22:55:50.634 [main] LoggerLoad - Navigating to Practice Questions Page from ImplementLinkedList Page...
+[INFO] 2025-08-18 22:55:54.017 [main] LoggerLoad - Navigating to Try Editor Page from ImplementLinkedList Page...
+[INFO] 2025-08-18 22:55:57.443 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:00.924 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:08.252 [main] LoggerLoad - Navigating to Implement Linked List Page...
+[INFO] 2025-08-18 22:56:11.132 [main] LoggerLoad - Navigating to Practice Questions Page from TraversalPage Page...
+[INFO] 2025-08-18 22:56:14.426 [main] LoggerLoad - Navigating to Try Editor Page from TraversalPage Page...
+[INFO] 2025-08-18 22:56:17.822 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:21.316 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:28.545 [main] LoggerLoad - Navigating to Insertion Page...
+[INFO] 2025-08-18 22:56:31.688 [main] LoggerLoad - Navigating to Practice Questions Page from Insertion Page...
+[INFO] 2025-08-18 22:56:35.039 [main] LoggerLoad - Navigating to Try Editor Page from Insertion Page...
+[INFO] 2025-08-18 22:56:38.611 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:42.103 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:49.605 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:56:53.156 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 22:57:00.545 [main] LoggerLoad - Navigating to Deletion Page...
+[INFO] 2025-08-18 22:57:03.639 [main] LoggerLoad - Navigating to Practice Questions Page from Deletion Page...
+[INFO] 2025-08-18 22:57:07.042 [main] LoggerLoad - Navigating to Try Editor Page from Deletion Page...
+[INFO] 2025-08-18 22:57:08.073 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@1611ce1c: 0 ms
+[INFO] 2025-08-18 22:57:08.120 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@5c7876e1: 46 ms
+[INFO] 2025-08-18 22:57:08.271 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@7786c2e0: 151 ms
+[INFO] 2025-08-18 22:57:08.288 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@6ad036d6: 17 ms
+[INFO] 2025-08-18 22:57:08.342 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6030eff1: 54 ms
+[INFO] 2025-08-18 22:57:08.361 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@484b187c: 19 ms
+[INFO] 2025-08-18 22:57:08.379 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@29ceefb3: 18 ms
+[INFO] 2025-08-18 23:03:31.945 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-18 23:03:31.953 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[INFO] 2025-08-18 23:03:31.957 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.959 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.960 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.960 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.962 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.963 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.964 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.965 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.966 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.966 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.969 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.969 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.971 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:31.972 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:31.995 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+[INFO] 2025-08-18 23:03:32.026 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 30 ms.
+[INFO] 2025-08-18 23:03:32.028 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:32.028 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:32.029 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:32.029 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:32.030 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:32.030 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:32.055 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 23 ms.
+[INFO] 2025-08-18 23:03:32.057 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-18 23:03:32.059 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:32.060 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:32.061 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:03:32.061 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:03:32.180 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse-365519114\testng-customsuite.xml
+
+[INFO] 2025-08-18 23:03:32.220 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+[INFO] 2025-08-18 23:03:36.955 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 23:03:37.975 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@39ee94de: 0 ms
+[INFO] 2025-08-18 23:03:38.023 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@5a545b0f: 48 ms
+[INFO] 2025-08-18 23:03:38.110 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@68dd39d2: 87 ms
+[INFO] 2025-08-18 23:03:38.137 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@771a7d53: 24 ms
+[INFO] 2025-08-18 23:03:38.148 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@40c2ce52: 10 ms
+[INFO] 2025-08-18 23:03:38.157 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@78cfa264: 7 ms
+[INFO] 2025-08-18 23:03:38.170 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@f0020b1: 11 ms
+[INFO] 2025-08-18 23:04:07.983 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-18 23:04:07.998 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-18 23:04:08.002 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.002 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.005 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.007 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.008 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.008 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.011 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.011 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.012 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.013 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.015 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.015 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.016 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.017 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.033 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+[INFO] 2025-08-18 23:04:08.068 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 35 ms.
+[INFO] 2025-08-18 23:04:08.072 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.073 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.075 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.076 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.076 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.076 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.102 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 24 ms.
+[INFO] 2025-08-18 23:04:08.108 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+[INFO] 2025-08-18 23:04:08.112 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.113 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.113 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:04:08.113 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:04:08.268 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse-434835212\testng-customsuite.xml
+
+[INFO] 2025-08-18 23:04:08.346 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[INFO] 2025-08-18 23:04:13.198 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 23:04:13.871 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2954f6ab: 0 ms
+[INFO] 2025-08-18 23:04:13.913 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@20eaeaf8: 42 ms
+[INFO] 2025-08-18 23:04:13.983 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@78422efb: 67 ms
+[INFO] 2025-08-18 23:04:13.998 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@7dcb42a9: 15 ms
+[INFO] 2025-08-18 23:04:14.005 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4b0bd001: 7 ms
+[INFO] 2025-08-18 23:04:14.010 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@fb0a08c: 5 ms
+[INFO] 2025-08-18 23:04:14.017 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@e95595b: 7 ms
+[INFO] 2025-08-18 23:05:55.691 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-18 23:05:55.700 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[INFO] 2025-08-18 23:05:55.702 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.702 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.703 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.703 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.705 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.705 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.706 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.706 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.707 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.707 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.708 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.708 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.709 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.709 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.737 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 13 ms.
+[INFO] 2025-08-18 23:05:55.772 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 33 ms.
+[INFO] 2025-08-18 23:05:55.773 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.773 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.775 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.777 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.777 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.777 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.797 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 18 ms.
+[INFO] 2025-08-18 23:05:55.802 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[INFO] 2025-08-18 23:05:55.810 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.811 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.813 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:05:55.813 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:05:55.947 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse--300634474\testng-customsuite.xml
+
+[INFO] 2025-08-18 23:05:55.988 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+[INFO] 2025-08-18 23:06:01.015 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 23:06:01.503 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2ffb3aec: 1 ms
+[INFO] 2025-08-18 23:06:01.584 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@3127cb44: 79 ms
+[INFO] 2025-08-18 23:06:01.724 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@45658133: 140 ms
+[INFO] 2025-08-18 23:06:01.725 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@430b2699: 1 ms
+[INFO] 2025-08-18 23:06:01.733 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@1665fa54: 8 ms
+[INFO] 2025-08-18 23:06:01.740 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@441fbe89: 7 ms
+[INFO] 2025-08-18 23:06:01.752 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1163a27: 9 ms
+[INFO] 2025-08-18 23:08:53.755 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.779 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[INFO] 2025-08-18 23:08:53.781 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.782 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.782 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.784 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.785 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.785 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.787 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.787 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.790 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.790 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.792 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.796 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.804 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.805 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.819 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+[INFO] 2025-08-18 23:08:53.839 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+[INFO] 2025-08-18 23:08:53.843 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.844 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.855 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.855 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.855 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.856 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.860 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[INFO] 2025-08-18 23:08:53.867 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+[INFO] 2025-08-18 23:08:53.874 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-18 23:08:53.874 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:53.877 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:08:53.877 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:08:54.016 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse--639938676\testng-customsuite.xml
+
+[INFO] 2025-08-18 23:08:54.076 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+[INFO] 2025-08-18 23:08:58.905 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 23:09:03.340 [main] LoggerLoad - Navigating to Practice Questions Page from Intro...
+[INFO] 2025-08-18 23:09:08.942 [main] LoggerLoad - Navigating to Try Editor Page from Intro...
+[INFO] 2025-08-18 23:09:14.630 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:09:20.576 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:09:29.597 [main] LoggerLoad - Navigating to Create Linked List Page...
+[INFO] 2025-08-18 23:09:35.070 [main] LoggerLoad - Navigating to Practice Questions Page from CreateLinkedList...
+[INFO] 2025-08-18 23:09:40.366 [main] LoggerLoad - Navigating to Try Editor Page from CreateLinkedList...
+[INFO] 2025-08-18 23:09:46.057 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:09:53.277 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4fad51a3: 0 ms
+[INFO] 2025-08-18 23:09:53.402 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@273dec10: 125 ms
+[INFO] 2025-08-18 23:09:53.712 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@774f2992: 310 ms
+[INFO] 2025-08-18 23:09:53.730 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@31c7c281: 18 ms
+[INFO] 2025-08-18 23:09:53.947 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4f8659d0: 217 ms
+[INFO] 2025-08-18 23:09:53.996 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2ad2b274: 48 ms
+[INFO] 2025-08-18 23:09:54.033 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7530090a: 37 ms
+[INFO] 2025-08-18 23:10:17.130 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.145 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
+[INFO] 2025-08-18 23:10:17.147 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.147 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.148 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.149 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.151 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.151 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.153 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.153 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.154 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.155 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.156 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.156 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.157 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.157 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.171 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+[INFO] 2025-08-18 23:10:17.195 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 24 ms.
+[INFO] 2025-08-18 23:10:17.197 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.198 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-18 23:10:17.203 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.203 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.204 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.205 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.212 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+[INFO] 2025-08-18 23:10:17.218 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO] 2025-08-18 23:10:17.221 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.221 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-18 23:10:17.221 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-18 23:10:17.222 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-18 23:10:17.330 [main] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse--2144768245\testng-customsuite.xml
+
+[INFO] 2025-08-18 23:10:17.381 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
+[INFO] 2025-08-18 23:10:21.848 [main] LoggerLoad - Navigating to Linked List Intro Page...
+[INFO] 2025-08-18 23:10:26.210 [main] LoggerLoad - Navigating to Practice Questions Page from Intro...
+[INFO] 2025-08-18 23:10:30.774 [main] LoggerLoad - Navigating to Try Editor Page from Intro...
+[INFO] 2025-08-18 23:10:35.581 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:10:40.375 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:10:49.562 [main] LoggerLoad - Navigating to Create Linked List Page...
+[INFO] 2025-08-18 23:10:53.800 [main] LoggerLoad - Navigating to Practice Questions Page from CreateLinkedList...
+[INFO] 2025-08-18 23:10:58.392 [main] LoggerLoad - Navigating to Try Editor Page from CreateLinkedList...
+[INFO] 2025-08-18 23:11:03.237 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:11:08.586 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:11:17.589 [main] LoggerLoad - Navigating to Types of Linked List Page...
+[INFO] 2025-08-18 23:11:21.717 [main] LoggerLoad - Navigating to Practice Questions Page from Types of Linked List Page...
+[INFO] 2025-08-18 23:11:26.167 [main] LoggerLoad - Navigating to Try Editor Page from Types of Linked List Page...
+[INFO] 2025-08-18 23:11:30.802 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:11:35.913 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:11:45.047 [main] LoggerLoad - Navigating to Implement Linked List Page...
+[INFO] 2025-08-18 23:11:49.308 [main] LoggerLoad - Navigating to Practice Questions Page from ImplementLinkedList Page...
+[INFO] 2025-08-18 23:11:53.774 [main] LoggerLoad - Navigating to Try Editor Page from ImplementLinkedList Page...
+[INFO] 2025-08-18 23:11:58.761 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:12:03.642 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:12:12.760 [main] LoggerLoad - Navigating to Implement Linked List Page...
+[INFO] 2025-08-18 23:12:16.990 [main] LoggerLoad - Navigating to Practice Questions Page from TraversalPage Page...
+[INFO] 2025-08-18 23:12:21.422 [main] LoggerLoad - Navigating to Try Editor Page from TraversalPage Page...
+[INFO] 2025-08-18 23:12:26.117 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:12:31.213 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:12:40.280 [main] LoggerLoad - Navigating to Insertion Page...
+[INFO] 2025-08-18 23:12:44.389 [main] LoggerLoad - Navigating to Practice Questions Page from Insertion Page...
+[INFO] 2025-08-18 23:12:48.686 [main] LoggerLoad - Navigating to Try Editor Page from Insertion Page...
+[INFO] 2025-08-18 23:12:53.347 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:12:58.304 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:13:07.245 [main] LoggerLoad - Navigating to Deletion Page...
+[INFO] 2025-08-18 23:13:11.339 [main] LoggerLoad - Navigating to Practice Questions Page from Deletion Page...
+[INFO] 2025-08-18 23:13:15.825 [main] LoggerLoad - Navigating to Try Editor Page from Deletion Page...
+[INFO] 2025-08-18 23:13:20.569 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:13:25.330 [main] LoggerLoad - Checking for Valid and Invalid Code...
+[INFO] 2025-08-18 23:13:30.722 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@124b8fe9: 0 ms
+[INFO] 2025-08-18 23:13:30.774 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@47a72c32: 52 ms
+[INFO] 2025-08-18 23:13:30.879 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@6f28a07e: 104 ms
+[INFO] 2025-08-18 23:13:30.881 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@44e19b99: 0 ms
+[INFO] 2025-08-18 23:13:30.902 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@27f43664: 20 ms
+[INFO] 2025-08-18 23:13:30.922 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@68b4e7b5: 20 ms
+[INFO] 2025-08-18 23:13:30.936 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3c8c5513: 13 ms

@@ -3,13 +3,14 @@ package testCases;
 import java.io.IOException;
 
 
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import jdk.internal.org.jline.utils.Log;
+
 import pageFactory.BasePage;
 import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
@@ -146,7 +147,7 @@ LoggerLoad log;
 			Homepf.clickDropdownArrays();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Array ");
+			log.info("click on Dropdown Array ");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}
@@ -157,7 +158,7 @@ LoggerLoad log;
 			Homepf.clickDropdownLinkedList();
 			String actmsg = Homepf.notloggedinmesg();
 			String expmsg = "You are not logged in";
-			Log.info("click on Dropdown Linkedlst");
+			log.info("click on Dropdown Linkedlst");
 			Assert.assertEquals(actmsg, expmsg,
 					"the user is not able to see mesg your are not logged in because no option in the dropdown");
 		}

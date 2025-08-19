@@ -138,7 +138,7 @@ public class ArrayTest extends BaseTest {
 	}
 
 	@Test(priority = 10, dataProvider = "pythonCodeValidandInvalid")
-	 public void queueTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
+	 public void arrayTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 	   throws InterruptedException, IOException {
 	  array_pf.clickArraysInPython();
 	  array_pf.clickTryHere();

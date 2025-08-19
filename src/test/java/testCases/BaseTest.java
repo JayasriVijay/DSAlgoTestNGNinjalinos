@@ -21,15 +21,14 @@ import io.qameta.allure.Allure;
 import utils.ExcelReader;
 
 public class BaseTest {
-	HashMap<String, String> testDataValid ;
-	HashMap<String, String> testDataInValid ;
+	HashMap<String, String> testDataValid;
+	HashMap<String, String> testDataInValid;
 
 	ExcelReader excelReader;
 
 	public BaseTest() throws IOException {
 		this.excelReader = new ExcelReader();
-		//this.testDataValid = new HashMap<>();
-		//this.testDataInValid = new HashMap<>();
+
 	}
 
 	@Parameters({ "browser" })
@@ -37,7 +36,7 @@ public class BaseTest {
 	public void open_website(@Optional("chrome") String br) throws IOException {
 		DriverFactory_TestNG df = new DriverFactory_TestNG();
 		df.init_browser(br);
-		
+
 	}
 
 	@AfterMethod
@@ -45,27 +44,25 @@ public class BaseTest {
 		DriverFactory_TestNG.tear_driver();
 
 	}
-    
-	
+
 	public void failed_screenshot(String testMethodName) throws IOException {
 
 		File screenshot = ((TakesScreenshot) DriverFactory_TestNG.getDriver()).getScreenshotAs(OutputType.FILE);
 		File savedScreenshot = new File("target/screenshots/" + "screenshot_" + testMethodName + ".jpg");
 		FileUtils.copyFile(screenshot, savedScreenshot);
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
-		
-	}
-	
-	public void allureScreenshot() {
-	try {
-		byte[] screenshotBytes = ((TakesScreenshot) DriverFactory_TestNG.getDriver())
-				.getScreenshotAs(OutputType.BYTES);	
-	//	Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), "png");
-		Allure.getLifecycle().addAttachment("Screenshot on Failure", "image/png", "png", screenshotBytes);
 
-	} catch (Exception e) {
-		e.printStackTrace();
 	}
+
+	public void allureScreenshot() {
+		try {
+			byte[] screenshotBytes = ((TakesScreenshot) DriverFactory_TestNG.getDriver())
+					.getScreenshotAs(OutputType.BYTES);
+			Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), "png");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@DataProvider(name = "pythonCodeValidandInvalid")
@@ -75,7 +72,7 @@ public class BaseTest {
 		Object[][] data = { { "ValidCode", testDataValid.get("PythonCode"), testDataValid.get("RunResult") },
 				{ "InvalidCode", testDataInValid.get("PythonCode"), testDataInValid.get("RunResult") } };
 		return data;
-		
+
 	}
 
 }

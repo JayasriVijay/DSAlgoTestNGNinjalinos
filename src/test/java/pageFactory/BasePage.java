@@ -95,7 +95,6 @@ public class BasePage {
 	public void handle_alert() throws InterruptedException {
 		Thread.sleep(2000);
 		alert = tldriver.switchTo().alert();
-		Thread.sleep(2000);
 		alert.accept();
 
 	}

@@ -100,9 +100,9 @@ public class GraphTest extends BaseTest {
 		graphPg.getTograph();
 		graphPg.click_Graph_link();
 		graphPg.click_practQuest();
-		log.error("Practice questions page is empty in queue module");
+		log.error("Practice questions page is empty in graph module");
 		Assert.fail(
-				"Failing this test case to show the bug which is,there are no practice questions available for queue module");
+				"Failing this test case to show the bug which is,there are no practice questions available for graph module");
 	}
 
 }
