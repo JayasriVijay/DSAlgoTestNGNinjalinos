@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
+<testng-results ignored="38" total="39" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-19T00:56:22 GMT-04:00" name="Default suite" finished-at="2025-08-19T00:56:26 GMT-04:00" duration-ms="3154">
+  <suite started-at="2025-08-22T19:15:09 GMT-04:00" name="Default suite" finished-at="2025-08-22T19:15:16 GMT-04:00" duration-ms="6741">
     <groups>
     </groups>
-    <test started-at="2025-08-19T00:56:22 GMT-04:00" name="Default test" finished-at="2025-08-19T00:56:26 GMT-04:00" duration-ms="3154">
-      <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.HomeTest@8ed9cf]" started-at="2025-08-19T00:56:22 GMT-04:00" name="open_website" finished-at="2025-08-19T00:56:24 GMT-04:00" duration-ms="1710" status="PASS">
+    <test started-at="2025-08-22T19:15:09 GMT-04:00" name="Default test" finished-at="2025-08-22T19:15:16 GMT-04:00" duration-ms="6741">
+      <class name="testCases.ArrayTest">
+        <test-method is-config="true" signature="open_website(java.lang.String)[pri:0, instance:testCases.ArrayTest@5ce4369b]" started-at="2025-08-22T19:15:09 GMT-04:00" name="open_website" finished-at="2025-08-22T19:15:11 GMT-04:00" duration-ms="1635" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_website -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.HomeTest@8ed9cf]" started-at="2025-08-19T00:56:24 GMT-04:00" name="setup" finished-at="2025-08-19T00:56:25 GMT-04:00" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="array_page()[pri:0, instance:testCases.ArrayTest@5ce4369b]" started-at="2025-08-22T19:15:11 GMT-04:00" name="array_page" finished-at="2025-08-22T19:15:13 GMT-04:00" duration-ms="2185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickregister()[pri:15, instance:testCases.HomeTest@8ed9cf]" started-at="2025-08-19T00:56:25 GMT-04:00" name="clickregister" finished-at="2025-08-19T00:56:25 GMT-04:00" duration-ms="296" status="PASS">
+        </test-method> <!-- array_page -->
+        <test-method signature="testQ4InvalidCode_Submit()[pri:38, instance:testCases.ArrayTest@5ce4369b]" started-at="2025-08-22T19:15:13 GMT-04:00" name="testQ4InvalidCode_Submit" finished-at="2025-08-22T19:15:16 GMT-04:00" duration-ms="2563" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickregister -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.HomeTest@8ed9cf]" started-at="2025-08-19T00:56:25 GMT-04:00" name="teardownDriver" finished-at="2025-08-19T00:56:26 GMT-04:00" duration-ms="233" status="PASS">
+        </test-method> <!-- testQ4InvalidCode_Submit -->
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:testCases.ArrayTest@5ce4369b]" started-at="2025-08-22T19:15:16 GMT-04:00" name="teardownDriver" finished-at="2025-08-22T19:15:16 GMT-04:00" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-      </class> <!-- testCases.HomeTest -->
+      </class> <!-- testCases.ArrayTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

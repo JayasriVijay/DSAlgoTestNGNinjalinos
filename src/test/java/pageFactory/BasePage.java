@@ -21,7 +21,7 @@ import utils.ExcelReader;
 
 public class BasePage {
 
-	private WebDriver tldriver;
+	protected WebDriver tldriver;
 	String browser;
 	WebDriverWait wait;
 	ConfigReader config;
@@ -91,7 +91,6 @@ public class BasePage {
 	}
 
 	public void handle_alert() throws InterruptedException {
-		Thread.sleep(2000);
 		alert = tldriver.switchTo().alert();
 		alert.accept();
 

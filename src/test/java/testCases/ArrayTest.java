@@ -341,7 +341,6 @@ public class ArrayTest extends BaseTest {
 		base.clickRunBtn();
 		String outputQ1 = base.output_text();
 		String expectedOP = resultTestData.get("PracticeQ1validcode");
-		System.out.println(outputQ1);
 		Assert.assertEquals(expectedOP, outputQ1);
 
 	}
@@ -355,7 +354,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_validCode_practiceQ1();
 		array_pf.clickSubmit();
 		String outputQ1 = base.output_text();
-		System.out.println(outputQ1);
+		String expectedOP = resultTestData.get("SubmitResult");
+		Assert.assertEquals(expectedOP, outputQ1);
 
 	}
 
@@ -394,7 +394,6 @@ public class ArrayTest extends BaseTest {
 		base.clickRunBtn();
 		String outputQ2 = base.output_text();
 		String expectedOP = resultTestData.get("PracticeQ2validcode");
-		System.out.println(outputQ2);
 		Assert.assertEquals(expectedOP, outputQ2);
 
 	}
@@ -409,7 +408,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickSubmit();
 		String outputQ2 = base.output_text();
 		String expectedOP = resultTestData.get("SubmitResult");
-		System.out.println(outputQ2);
+
 		Assert.assertEquals(expectedOP, outputQ2);
 
 	}
@@ -449,7 +448,6 @@ public class ArrayTest extends BaseTest {
 		base.clickRunBtn();
 		String outputQ3 = base.output_text();
 		String expectedOP = resultTestData.get("PracticeQ3validcode");
-		System.out.println(outputQ3);
 		Assert.assertEquals(expectedOP, outputQ3);
 
 	}
@@ -463,7 +461,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.tryEditor_validCode_practiceQ3();
 		array_pf.clickSubmit();
 		String outputQ3 = base.output_text();
-		System.out.println(outputQ3);
+		String expectedOP = resultTestData.get("SubmitResult");
+		Assert.assertEquals(expectedOP, outputQ3);
 
 	}
 
@@ -502,7 +501,6 @@ public class ArrayTest extends BaseTest {
 		base.clickRunBtn();
 		String outputQ4 = base.output_text();
 		String expectedOP = resultTestData.get("PracticeQ4validcode");
-		System.out.println(outputQ4);
 		Assert.assertEquals(expectedOP, outputQ4);
 
 	}
@@ -517,7 +515,7 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickSubmit();
 		String outputQ4 = base.output_text();
 		String expectedOP = resultTestData.get("SubmitResult");
-		System.out.println("Submission fails for correct output, It's a bug");
+		log.error("There is a bug in Q4, even after submiiting valid Q it gives error");
 		Assert.assertEquals(expectedOP, outputQ4);
 
 	}

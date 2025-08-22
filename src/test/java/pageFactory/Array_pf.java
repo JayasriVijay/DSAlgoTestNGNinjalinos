@@ -174,7 +174,6 @@ public class Array_pf {
 	public void tryEditor_validCode_practiceQ1() throws IOException, InterruptedException {
 		String validCode1 = PQtestData.get("PracticeQ1validcode");
 		enterValidCodeInPracticeEditor(validCode1);
-		Thread.sleep(300);
 	}
 
 	public void tryEditor_validCode_practiceQ2() throws IOException {

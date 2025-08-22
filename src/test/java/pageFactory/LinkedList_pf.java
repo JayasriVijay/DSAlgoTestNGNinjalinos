@@ -13,11 +13,8 @@ import driverFactory.DriverFactory_TestNG;
 
 public class LinkedList_pf extends BasePage {
 
-	private WebDriver tldriver;
-
 	public LinkedList_pf() throws IOException {
 		super();
-		this.tldriver = DriverFactory_TestNG.getDriver();
 
 	}
 
