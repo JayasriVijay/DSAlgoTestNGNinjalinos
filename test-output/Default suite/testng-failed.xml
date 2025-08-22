@@ -5,10 +5,9 @@
     <classes>
       <class name="testCases.ArrayTest">
         <methods>
-          <include name="teardownDriver"/>
-          <include name="testQ4ValidCode_Submit"/>
           <include name="array_page"/>
           <include name="open_website"/>
+          <include name="testQ1NoCode_Submit"/>
         </methods>
       </class> <!-- testCases.ArrayTest -->
     </classes>

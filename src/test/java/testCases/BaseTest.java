@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -21,6 +22,8 @@ import utils.ExcelReader;
 public class BaseTest {
 	
 	ExcelReader excelReader;
+	HashMap<String, String> testDataValid; 
+	HashMap<String, String> testDataInValid; 
 
 	public BaseTest() throws IOException {
 		this.excelReader = new ExcelReader();
@@ -50,6 +53,17 @@ public class BaseTest {
 				+testMethodName+"_" + ".jpg");
 		FileUtils.copyFile(sFile, dFile);
 
+	}
+	
+	@DataProvider(name = "pythonCodeValidandInvalid")
+	public Object[] pythonCodeTestData() throws IOException {
+		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
+		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
+		
+		Object[][] data = { { "ValidCode", testDataValid.get("PythonCode"), testDataValid.get("RunResult") },
+				{ "InvalidCode", testDataInValid.get("PythonCode"), testDataInValid.get("RunResult") } };
+		return data;
+		
 	}
 	
 

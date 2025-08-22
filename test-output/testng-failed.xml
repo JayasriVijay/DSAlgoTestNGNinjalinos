@@ -25,8 +25,8 @@
       <class name="testCases.ArrayTest">
         <methods>
           <include name="teardownDriver"/>
-          <include name="testQ4ValidCode_Submit"/>
           <include name="array_page"/>
+          <include name="testQ4ValidCode_Submit"/>
           <include name="open_website"/>
           <include name="testTryEditorPageWithNoInput"/>
         </methods>

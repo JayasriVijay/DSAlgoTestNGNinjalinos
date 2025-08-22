@@ -7,6 +7,7 @@ import java.util.HashMap;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,7 +27,7 @@ public class BasePage {
 	private Actions action;
 	String browser;
 	Alert alert;
-	//JavascriptExecutor js;
+	JavascriptExecutor js;
 	WebDriverWait wait;
 	ConfigReader config;
 	ExcelReader excelReader;
@@ -43,6 +44,7 @@ public class BasePage {
 		this.config = new ConfigReader();
 		this.excelReader = new ExcelReader();
 		this.testData = new HashMap<>();
+		
 		
 	}
 
@@ -103,6 +105,17 @@ public class BasePage {
 		return outputText;
 
 	}
+	
+	public void validAndInvalidCode(String code) {
+		JavascriptExecutor js = (JavascriptExecutor) tldriver;
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".CodeMirror")));
+		js.executeScript(
+				"let editor = document.querySelector('.CodeMirror').CodeMirror;" + "editor.setValue(arguments[0]);",
+				code);
+		wait.until(ExpectedConditions.elementToBeClickable(runBtn)).click();
+	}
+	
 
 	public String alert_message() {
 		alert = tldriver.switchTo().alert();
@@ -115,6 +128,15 @@ public class BasePage {
 		alert = tldriver.switchTo().alert();
 		alert.accept();
 
+	}
+	
+	public boolean isAlertOpen() {
+		try {
+			tldriver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
 	}
 
 	public String get_current_url() {
