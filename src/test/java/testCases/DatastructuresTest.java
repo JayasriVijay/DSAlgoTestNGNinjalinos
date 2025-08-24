@@ -15,7 +15,7 @@ import pageFactory.Home_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class DatastructuresTest extends BaseTest {
 	public DatastructuresTest() throws IOException {
 		super();
@@ -82,7 +82,6 @@ public class DatastructuresTest extends BaseTest {
 		Datastructurepf.clickRunButton();
 		String actmsg = Datastructurepf.alert_message();
 		String expmsg = Datastructurepf.alertconfim();
-		allureScreenshot();
 		log.info("click on run tryedior page with no code");
 		log.error("user is should able to see error message 'Please enter the code'");
 		Assert.assertEquals(actmsg, expmsg, "alert msg is not displayed");

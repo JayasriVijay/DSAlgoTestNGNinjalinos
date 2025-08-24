@@ -13,7 +13,7 @@ import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class HomeTest extends BaseTest {
 	public HomeTest() throws IOException {
 		super();
@@ -108,7 +108,6 @@ public class HomeTest extends BaseTest {
 	public void ClickGraphBtn() {
 
 		Homepf.clickgetstartedGraph();
-
 		String actmsg = Homepf.notloggedinmesg();
 		String expmsg = "You are not logged in";
 		log.info("click on Graph getstarted");
@@ -119,7 +118,6 @@ public class HomeTest extends BaseTest {
 	@Test(priority = 8)
 	public void DropdownDS() {
 		Homepf.clickDropdownbox();
-		allureScreenshot();
 		log.error("the user is not able to see mesg your are not logged in because no option in the dropdown");
 		String actmsg = Homepf.notloggedinmesg();
 		String expmsg = "You are not logged in";

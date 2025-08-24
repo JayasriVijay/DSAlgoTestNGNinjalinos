@@ -11,7 +11,7 @@ import pageFactory.BasePage;
 import pageFactory.Launch_pf;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class LaunchTest extends BaseTest {
 
 	public LaunchTest() throws IOException {

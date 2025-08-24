@@ -13,7 +13,7 @@ import pageFactory.Login_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class LoginTest extends BaseTest {
 	public LoginTest() throws IOException {
 		super();

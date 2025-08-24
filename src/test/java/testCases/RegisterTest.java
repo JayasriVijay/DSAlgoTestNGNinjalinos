@@ -13,7 +13,7 @@ import pageFactory.Register_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class RegisterTest extends BaseTest {
 	public RegisterTest() throws IOException {
 		super();
@@ -61,7 +61,6 @@ public class RegisterTest extends BaseTest {
 		if (SenarioName.equalsIgnoreCase("validRegister")) {
 			String experror = testData.get("ErrorMessage");
 			String actualmessage = Registerpf.missmatchPasswordMessage();
-			allureScreenshot();
 			log.error("Practice questions page is empty in queue module");
 			log.info("entering valid regdata");
 			Assert.assertEquals(actualmessage, experror, "user not able to see 'user is already registered'");
