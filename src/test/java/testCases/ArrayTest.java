@@ -13,7 +13,7 @@ import pageFactory.BasePage;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners(CustomListener.class)
+
 public class ArrayTest extends BaseTest {
 
 	public ArrayTest() throws IOException {
