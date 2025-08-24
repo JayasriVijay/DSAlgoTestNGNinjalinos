@@ -13,7 +13,6 @@ import pageFactory.Stack_pf;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
 public class StackTest extends BaseTest {
 
 	public StackTest() throws IOException {
@@ -23,17 +22,11 @@ public class StackTest extends BaseTest {
 
 	Stack_pf stack;
 	BasePage base;
-	LoggerLoad log;
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
 
 	@BeforeMethod
 	public void stack_page() throws IOException {
 		this.base = new BasePage();
 		this.stack = new Stack_pf();
-		this.log = new LoggerLoad();
-		this.testDataValid = new HashMap<>();
-		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 
 	}
@@ -67,7 +60,6 @@ public class StackTest extends BaseTest {
 		stack.opreations_stack_btn();
 		stack.tryhere_stack();
 		base.clickRunBtn();
-		allureScreenshot();
 		log.error("Alert message for no code entered in editor is not displayed");
 		Assert.fail(
 				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it");
@@ -141,7 +133,6 @@ public class StackTest extends BaseTest {
 		stack.stack_btn();
 		stack.application_stack_btn();
 		stack.practice_stack();
-		allureScreenshot();
 		log.error("Practice questions page is empty in stack module");
 		log.info("opening practice questions in stack page");
 		Assert.fail(

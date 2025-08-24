@@ -1,19 +1,13 @@
 package testCases;
 
 import java.io.IOException;
-import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
 public class QueueTest extends BaseTest {
 
 	public QueueTest() throws IOException {
@@ -23,17 +17,11 @@ public class QueueTest extends BaseTest {
 
 	Queue_pf queue;
 	BasePage base;
-	LoggerLoad log;
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
 
 	@BeforeMethod
 	public void queue_page() throws IOException {
 		this.base = new BasePage();
 		this.queue = new Queue_pf();
-		this.log = new LoggerLoad();
-		this.testDataValid = new HashMap<>();
-		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 
 	}
@@ -70,7 +58,6 @@ public class QueueTest extends BaseTest {
 		queue.implementation_queue_python_btn();
 		queue.tryhere_queue();
 		base.clickRunBtn();
-		allureScreenshot();
 		log.error("Alert message for no code entered in editor is not displayed");
 		Assert.fail(
 				"Failing this test case to show the bug which is, no alert message comes up when clicking on run button without entering any code in it");
@@ -156,7 +143,6 @@ public class QueueTest extends BaseTest {
 		queue.queue_btn();
 		queue.queue_operations_btn();
 		queue.practice_queue();
-		allureScreenshot();
 		log.error("Practice questions page is empty in queue module");
 		Assert.fail(
 				"Failing this test case to show the bug which is,there are no practice questions available for queue module");
