@@ -3,6 +3,8 @@ package testCases;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,13 +16,20 @@ import com.aventstack.chaintest.plugins.ChainTestListener;
 import driverFactory.DriverFactory_TestNG;
 import io.qameta.allure.Allure;
 import utils.ExcelReader;
+import utils.LoggerLoad;
 
 public class BaseTest {
 
 	ExcelReader excelReader;
+	LoggerLoad log;
+	HashMap<String, String> testDataValid;
+	HashMap<String, String> testDataInValid;
 
 	public BaseTest() throws IOException {
 		this.excelReader = new ExcelReader();
+		this.log = new LoggerLoad();
+		this.testDataValid = new HashMap<>();
+		this.testDataInValid = new HashMap<>();
 
 	}
 
