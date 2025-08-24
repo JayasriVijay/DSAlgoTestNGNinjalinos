@@ -1,21 +1,16 @@
 package testCases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.aventstack.chaintest.plugins.ChainTestListener;
-
 import pageFactory.BasePage;
 import pageFactory.GraphPage;
 import utils.Dataprovider;
-import utils.LoggerLoad;
+
 
 public class GraphTest extends BaseTest {
-
 	public GraphTest() throws IOException {
 		super();
 	}
@@ -23,13 +18,11 @@ public class GraphTest extends BaseTest {
 	GraphPage graphPg;
 	BasePage base;
 	BaseTest baseTest;
-	LoggerLoad log;
 
 	@BeforeMethod
 	public void graphPage() throws InterruptedException, IOException {
 		this.graphPg = new GraphPage();
 		this.base = new BasePage();
-		this.log = new LoggerLoad();
 		base.launch_webpage();
 
 	}

@@ -1,7 +1,6 @@
 package testCases;
 
 import java.io.IOException;
-import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 import pageFactory.BasePage;
 import pageFactory.TreePage;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
 public class TreeTest extends BaseTest {
 	public TreeTest() throws IOException {
@@ -18,17 +16,12 @@ public class TreeTest extends BaseTest {
 
 	TreePage treePg;
 	BasePage base;
-	LoggerLoad log;
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
+	
 
 	@BeforeMethod
 	public void graphPage() throws InterruptedException, IOException {
 		this.base = new BasePage();
 		this.treePg = new TreePage();
-		this.log = new LoggerLoad();
-		this.testDataValid = new HashMap<>();
-		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 	}
 
