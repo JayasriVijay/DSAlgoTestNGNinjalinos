@@ -5,17 +5,13 @@ import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.TreePage;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners(CustomListener.class)
 public class TreeTest extends BaseTest {
-
 	public TreeTest() throws IOException {
 		super();
 	}

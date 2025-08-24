@@ -14,7 +14,6 @@ import pageFactory.GraphPage;
 import utils.Dataprovider;
 import utils.LoggerLoad;
 
-@Listeners(CustomListener.class)
 public class GraphTest extends BaseTest {
 
 	public GraphTest() throws IOException {

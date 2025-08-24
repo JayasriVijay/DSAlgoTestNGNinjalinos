@@ -44,10 +44,6 @@ public class BaseTest {
 		File savedScreenshot = new File("target/screenshots/" + "screenshot_" + testMethodName + ".jpg");
 		FileUtils.copyFile(screenshot, savedScreenshot);
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
-
-	}
-
-	public void allureScreenshot() {
 		try {
 			byte[] screenshotBytes = ((TakesScreenshot) DriverFactory_TestNG.getDriver())
 					.getScreenshotAs(OutputType.BYTES);
