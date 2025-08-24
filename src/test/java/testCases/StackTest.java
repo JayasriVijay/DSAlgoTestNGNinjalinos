@@ -1,17 +1,12 @@
 package testCases;
 
 import java.io.IOException;
-import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.Stack_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
 public class StackTest extends BaseTest {
 
