@@ -1,26 +1,16 @@
 package pageFactory;
 
-import java.time.Duration;
+import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory_TestNG;
+public class Stack_pf extends BasePage {
 
-public class Stack_pf {
-	private WebDriver tldriver;
-	String browser;
-	WebDriverWait wait;
+	public Stack_pf() throws IOException {
 
-	public Stack_pf() {
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-
+		super();
 	}
 
 	@FindBy(xpath = "//h5[text()='Stack']/../../..//a[text()='Get Started']")

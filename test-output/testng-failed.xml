@@ -9,6 +9,7 @@
           <include name="testQ4ValidCode_Submit"/>
           <include name="array_page"/>
           <include name="open_website"/>
+          <include name="testTryEditorPageWithNoInput"/>
         </methods>
       </class> <!-- testCases.ArrayTest -->
     </classes>

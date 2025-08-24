@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pageFactory.BasePage;
 import pageFactory.Datastructure_pf;
 import pageFactory.Home_pf;
-
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -57,7 +57,6 @@ public class DatastructuresTest extends BaseTest {
 
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickPracticeQuestionsLink();
-		String acturl = Datastructurepf.practiceQueURl();
 		allureScreenshot();
 		log.info("click on Practice questions");
 		log.error("There are no practice questions available in the Datastructure module");
@@ -89,7 +88,7 @@ public class DatastructuresTest extends BaseTest {
 		Assert.assertEquals(actmsg, expmsg, "alert msg is not displayed");
 	}
 
-	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void dsTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws IOException, InterruptedException {
 		Datastructurepf.clickTimecomplexityLink();

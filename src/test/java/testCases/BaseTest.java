@@ -3,26 +3,19 @@ package testCases;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import com.aventstack.chaintest.plugins.ChainTestListener;
-
 import driverFactory.DriverFactory_TestNG;
 import io.qameta.allure.Allure;
 import utils.ExcelReader;
 
 public class BaseTest {
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
 
 	ExcelReader excelReader;
 
@@ -51,7 +44,6 @@ public class BaseTest {
 		File savedScreenshot = new File("target/screenshots/" + "screenshot_" + testMethodName + ".jpg");
 		FileUtils.copyFile(screenshot, savedScreenshot);
 		ChainTestListener.embed(savedScreenshot, "image/jpg");
-		
 
 	}
 
@@ -64,16 +56,6 @@ public class BaseTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	@DataProvider(name = "pythonCodeValidandInvalid")
-	public Object[] pythonCodeTestData() throws IOException {
-		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
-		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
-		Object[][] data = { { "ValidCode", testDataValid.get("PythonCode"), testDataValid.get("RunResult") },
-				{ "InvalidCode", testDataInValid.get("PythonCode"), testDataInValid.get("RunResult") } };
-		return data;
-
 	}
 
 }

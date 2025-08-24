@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.Array_pf;
 import pageFactory.BasePage;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
@@ -133,7 +134,7 @@ public class ArrayTest extends BaseTest {
 
 	}
 
-	@Test(priority = 10, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 10, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void arrayTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
 		array_pf.clickArraysInPython();

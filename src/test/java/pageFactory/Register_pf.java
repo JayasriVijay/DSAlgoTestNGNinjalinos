@@ -1,32 +1,14 @@
 package pageFactory;
 
 import java.io.IOException;
-import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory_TestNG;
-import utils.ExcelReader;
-
-public class Register_pf {
-
-	private WebDriver tldriver;
-	String browser;
-	WebDriverWait wait;
-	ExcelReader excelReader;
-	JavascriptExecutor js;
+public class Register_pf extends BasePage {
 
 	public Register_pf() throws IOException {
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(10));
-		js = (JavascriptExecutor) tldriver;
-		this.excelReader = new ExcelReader();
+		super();
 
 	}
 	// Locators

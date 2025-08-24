@@ -23,19 +23,19 @@ public class DriverFactory_TestNG {
 			ChromeOptions optionsChrome = new ChromeOptions();
 			optionsChrome.addArguments("--headless=new");
 			tldriver.set(new ChromeDriver(optionsChrome));
-			// tldriver.set(new ChromeDriver());
+			//tldriver.set(new ChromeDriver());
 			break;
 		case "edge":
 			EdgeOptions optionsEdge = new EdgeOptions();
 			optionsEdge.addArguments("--headless=new");
 			tldriver.set(new EdgeDriver(optionsEdge));
-			// tldriver.set(new EdgeDriver());
+			//tldriver.set(new EdgeDriver());
 			break;
 		case "firefox":
 			FirefoxOptions optionsFirefox = new FirefoxOptions();
 			optionsFirefox.addArguments("--headless");
 			tldriver.set(new FirefoxDriver(optionsFirefox));
-			// tldriver.set(new FirefoxDriver());
+			//tldriver.set(new FirefoxDriver());
 			break;
 		default:
 			tldriver.set(new ChromeDriver());

@@ -1,30 +1,16 @@
 package pageFactory;
 
-import java.time.Duration;
+import java.io.IOException;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory_TestNG;
+public class Datastructure_pf extends BasePage {
 
-public class Datastructure_pf {
-	private WebDriver tldriver;
-	String browser;
-	WebDriverWait wait;
-	Actions action;
-	Alert alert;
+	public Datastructure_pf() throws IOException {
+		super();
 
-	public Datastructure_pf() {
-
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(30));
 	}
 
 	@FindBy(xpath = "//*[text()='Data Structures-Introduction']//../a")

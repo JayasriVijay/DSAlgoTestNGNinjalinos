@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Stack_pf;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -73,7 +74,7 @@ public class StackTest extends BaseTest {
 
 	}
 
-	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void stackTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
 		stack.stack_btn();

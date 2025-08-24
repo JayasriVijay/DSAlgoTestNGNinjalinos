@@ -10,33 +10,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverFactory.DriverFactory_TestNG;
-import utils.ExcelReader;
 
-public class Array_pf {
+public class Array_pf extends BasePage {
 
 	private WebDriver driver;
-	private WebDriverWait wait;
 	private Actions action;
-	ExcelReader excelReader;
-	private BasePage base_pf;
 	HashMap<String, String> PQtestData;
 	HashMap<String, String> testData2;
 	HashMap<String, String> testData3;
 
 	public Array_pf() throws IOException {
+		super();
 		this.driver = DriverFactory_TestNG.getDriver();
-
-		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		this.action = new Actions(driver);
-		this.base_pf = new BasePage();
-
-		this.excelReader = new ExcelReader();
 		this.PQtestData = new HashMap<>();
 		this.testData2 = new HashMap<>();
 		this.testData3 = new HashMap<>();
@@ -100,7 +90,7 @@ public class Array_pf {
 	}
 
 	public void background_array() throws IOException {
-		base_pf.launch_webpage();
+		launch_webpage();
 
 	}
 

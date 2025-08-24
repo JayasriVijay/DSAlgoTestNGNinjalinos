@@ -2,14 +2,8 @@ package pageFactory;
 
 import java.io.IOException;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import driverFactory.DriverFactory_TestNG;
 
 public class LinkedList_pf extends BasePage {
 

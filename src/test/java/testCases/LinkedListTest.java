@@ -6,6 +6,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageFactory.BasePage;
 import pageFactory.LinkedList_pf;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -70,7 +71,7 @@ public class LinkedListTest extends BaseTest {
 		verifyTryEditorPageTitle();
 	}
 
-	@Test(dataProvider = "pythonCodeValidandInvalid", dataProviderClass = BaseTest.class, priority = 4)
+	@Test(dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class, priority = 4)
 	public void verifytryEditorforValidandInvalidCode_Intro(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException {
 		log.info("Checking for Valid and Invalid Code...");

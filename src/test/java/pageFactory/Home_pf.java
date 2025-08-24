@@ -1,27 +1,15 @@
 package pageFactory;
 
-import java.time.Duration;
+import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverFactory.DriverFactory_TestNG;
+public class Home_pf extends BasePage {
 
-public class Home_pf {
-
-	private WebDriver tldriver;
-	String browser;
-	WebDriverWait wait;
-
-	public Home_pf() {
-		this.tldriver = DriverFactory_TestNG.getDriver();
-		PageFactory.initElements(tldriver, this);
-		this.wait = new WebDriverWait(tldriver, Duration.ofSeconds(30));
+	public Home_pf() throws IOException {
+		super();
 	}
 	// Locators
 
@@ -165,8 +153,9 @@ public class Home_pf {
 		String text1 = notloggedinmesg.getText();
 		return text1;
 	}
+
 	public String title() {
-		String title=tldriver.getTitle();
+		String title = tldriver.getTitle();
 		return title;
 	}
 }

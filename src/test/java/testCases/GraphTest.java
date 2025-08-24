@@ -11,6 +11,7 @@ import com.aventstack.chaintest.plugins.ChainTestListener;
 
 import pageFactory.BasePage;
 import pageFactory.GraphPage;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
@@ -58,7 +59,7 @@ public class GraphTest extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle, "Title not matched");
 	}
 
-	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = BaseTest.class)
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void graphTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
 		graphPg.getTograph();

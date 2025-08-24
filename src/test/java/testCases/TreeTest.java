@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.TreePage;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners(CustomListener.class)
@@ -177,7 +178,7 @@ public class TreeTest extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle, "Implementation Of BST");
 	}
 
-	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void treeTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
 		treePg.getToTree();

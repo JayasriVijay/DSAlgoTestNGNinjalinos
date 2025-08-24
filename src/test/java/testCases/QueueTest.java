@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.BasePage;
 import pageFactory.Queue_pf;
+import utils.Dataprovider;
 import utils.LoggerLoad;
 
 @Listeners({ CustomListener.class })
@@ -76,7 +77,7 @@ public class QueueTest extends BaseTest {
 
 	}
 
-	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid")
+	@Test(priority = 5, dataProvider = "pythonCodeValidandInvalid", dataProviderClass = Dataprovider.class)
 	public void queueTryingValidAndInvalidCode(String ScenarioName, String code, String expectedOutput)
 			throws InterruptedException, IOException {
 		queue.queue_btn();

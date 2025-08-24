@@ -24,6 +24,9 @@ public class Dataprovider {
 	Map<String, String> testData3;
 	Map<String, String> testData4;
 	HashMap<String, String> testData5;
+	HashMap<String, String> testDataValid;
+	HashMap<String, String> testDataInValid;
+
 
 	@DataProvider(name = "validandinvalidlogin")
 	public String[][] getvalidinvalidData() throws IOException {
@@ -59,6 +62,16 @@ public class Dataprovider {
 						testData5.get("Confirmpassword") } };
 
 		return data;
+	}
+	
+	@DataProvider(name = "pythonCodeValidandInvalid")
+	public Object[][] pythonCodeTestData() throws IOException {
+		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
+		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
+		Object[][] data = { { "ValidCode", testDataValid.get("PythonCode"), testDataValid.get("RunResult") },
+				{ "InvalidCode", testDataInValid.get("PythonCode"), testDataInValid.get("RunResult") } };
+		return data;
+
 	}
 
 }
