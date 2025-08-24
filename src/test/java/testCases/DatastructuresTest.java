@@ -57,7 +57,7 @@ public class DatastructuresTest extends BaseTest {
 
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickPracticeQuestionsLink();
-		allureScreenshot();
+		//allureScreenshot();
 		log.info("click on Practice questions");
 		log.error("There are no practice questions available in the Datastructure module");
 		Assert.fail("Failing this test case, there are no practice questions available in the Data Structures module");

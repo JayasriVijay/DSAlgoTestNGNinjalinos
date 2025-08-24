@@ -3,21 +3,20 @@
 <suite parallel="tests" name="Failed suite [Suite_dsAlgo]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
-    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     <listener class-name="Analyzer.DsalgoAnnotationTransformer"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Test_All_Modules_chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.StackTest">
+      <class name="testCases.QueueTest">
         <methods>
-          <include name="StackTryingEmptyEditor"/>
+          <include name="queueOpenPracticeQuestions"/>
+          <include name="queue_page"/>
           <include name="teardownDriver"/>
-          <include name="StackopenPracticeQuestions"/>
+          <include name="queueTryingEmptyEditor"/>
           <include name="open_website"/>
-          <include name="stack_page"/>
         </methods>
-      </class> <!-- testCases.StackTest -->
+      </class> <!-- testCases.QueueTest -->
     </classes>
   </test> <!-- Test_All_Modules_chrome(failed) -->
 </suite> <!-- Failed suite [Suite_dsAlgo] -->

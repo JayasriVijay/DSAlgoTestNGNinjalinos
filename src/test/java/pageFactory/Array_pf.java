@@ -1,32 +1,22 @@
 package pageFactory;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.HashMap;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import driverFactory.DriverFactory_TestNG;
 
 public class Array_pf extends BasePage {
 
-	private WebDriver driver;
-	private Actions action;
 	HashMap<String, String> PQtestData;
 	HashMap<String, String> testData2;
 	HashMap<String, String> testData3;
 
 	public Array_pf() throws IOException {
 		super();
-		this.driver = DriverFactory_TestNG.getDriver();
-		this.action = new Actions(driver);
 		this.PQtestData = new HashMap<>();
 		this.testData2 = new HashMap<>();
 		this.testData3 = new HashMap<>();
@@ -155,7 +145,7 @@ public class Array_pf extends BasePage {
 	public void enterValidCodeInPracticeEditor(String code) {
 		safeClick(practiceQuestionEditor);
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = (JavascriptExecutor) tldriver;
 
 		js.executeScript("var editor = arguments[0].CodeMirror || arguments[0].closest('.CodeMirror').CodeMirror;"
 				+ "editor.setValue(arguments[1]);", practiceQuestionEditor, code);
@@ -184,8 +174,7 @@ public class Array_pf extends BasePage {
 	public void tryEditor_invalidCode_practiceQ() throws IOException {
 		String data = PQtestData.get("InvalidCode");
 		safeClick(practiceQuestionEditor);
-		Actions actions = new Actions(driver);
-		actions.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
+		action.moveToElement(practiceQuestionEditor).click().keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND)
 				.sendKeys(Keys.DELETE).sendKeys(data).perform();
 
 	}
@@ -195,12 +184,11 @@ public class Array_pf extends BasePage {
 	}
 
 	public void waitForUrlToContain(String partialUrl) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.urlContains(partialUrl));
 	}
 
 	public String getURL() {
-		return driver.getCurrentUrl();
+		return tldriver.getCurrentUrl();
 	}
 
 	public void getErrMsg_NoCode() {
