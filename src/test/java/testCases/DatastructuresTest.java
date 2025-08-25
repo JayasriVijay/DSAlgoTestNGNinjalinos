@@ -1,7 +1,6 @@
 package testCases;
 
 import java.io.IOException;
-import java.util.HashMap;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,7 +8,6 @@ import pageFactory.BasePage;
 import pageFactory.Datastructure_pf;
 import pageFactory.Home_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
 
 public class DatastructuresTest extends BaseTest {
@@ -80,8 +78,6 @@ public class DatastructuresTest extends BaseTest {
 			throws IOException, InterruptedException {
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickTryhereLink();
-		testDataValid = excelReader.readExcelRow("ValidCode", "testdata");
-		testDataInValid = excelReader.readExcelRow("InvalidCode", "testdata");
 		base.validAndInvalidCode(code);
 		if (ScenarioName.equalsIgnoreCase("ValidCode")) {
 			String actualOutput = base.output_text();
