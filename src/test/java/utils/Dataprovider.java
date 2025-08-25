@@ -1,14 +1,9 @@
 package utils;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
-import driverFactory.DriverFactory_TestNG;
 
 public class Dataprovider {
 	ExcelReader excelReader;

@@ -1,17 +1,14 @@
 package testCases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
-import utils.LoggerLoad;
+
 
 
 public class HomeTest extends BaseTest {
@@ -23,15 +20,14 @@ public class HomeTest extends BaseTest {
 	Launch_pf Launchpf;
 	Home_pf Homepf;
 	BasePage base;
-	LoggerLoad log;
+
 
 	@BeforeMethod
 	@Parameters("browser")
 	public void setup() throws IOException, InterruptedException {
 
 		Launchpf = new Launch_pf();
-		Homepf = new Home_pf();
-		this.log = new LoggerLoad();
+		Homepf = new Home_pf();		
 		Launchpf.get_testUrl();
 		Launchpf.clickgetstarted();
 	}

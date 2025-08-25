@@ -4,14 +4,12 @@ import java.io.IOException;
 import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
 import pageFactory.Login_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
 
 public class LoginTest extends BaseTest {
@@ -21,7 +19,6 @@ public class LoginTest extends BaseTest {
 
 	Launch_pf Launchpf;
 	Home_pf Homepf;
-	LoggerLoad log;
 	Login_pf Loginpf;
 	private Map<String, String> testData;
 	private Map<String, String> testData1;
@@ -35,8 +32,7 @@ public class LoginTest extends BaseTest {
 
 		Launchpf = new Launch_pf();
 		Homepf = new Home_pf();
-		Loginpf = new Login_pf();
-		this.log = new LoggerLoad();
+		Loginpf = new Login_pf();	
 		Launchpf.get_testUrl();
 		Launchpf.clickgetstarted();
 		Loginpf.clickSigninLink();

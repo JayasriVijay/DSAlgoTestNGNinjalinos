@@ -1,14 +1,10 @@
 package testCases;
 
 import java.io.IOException;
-
 import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.Datastructure_pf;
 import pageFactory.Home_pf;
@@ -23,11 +19,7 @@ public class DatastructuresTest extends BaseTest {
 	}
 
 	BasePage base;
-	LoggerLoad log;
 	Datastructure_pf Datastructurepf;
-
-	HashMap<String, String> testDataValid;
-	HashMap<String, String> testDataInValid;
 	Home_pf Homepf;
 
 	@BeforeMethod

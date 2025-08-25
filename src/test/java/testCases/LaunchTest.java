@@ -1,15 +1,11 @@
 package testCases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.BasePage;
 import pageFactory.Launch_pf;
-import utils.LoggerLoad;
 
 
 public class LaunchTest extends BaseTest {
@@ -21,12 +17,12 @@ public class LaunchTest extends BaseTest {
 
 	Launch_pf Launchpf;
 	BasePage base;
-	LoggerLoad log;
+	
 
 	@BeforeMethod
 
 	public void setup() throws IOException, InterruptedException {
-		this.log = new LoggerLoad();
+	
 		Launchpf = new Launch_pf();
 		Launchpf.get_testUrl();
 	}

@@ -4,25 +4,21 @@ import java.io.IOException;
 import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageFactory.Home_pf;
 import pageFactory.Launch_pf;
 import pageFactory.Register_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
 
 public class RegisterTest extends BaseTest {
 	public RegisterTest() throws IOException {
 		super();
-
 	}
 
 	Launch_pf Launchpf;
-	Home_pf Homepf;
-	LoggerLoad log;
+	Home_pf Homepf;	
 	Register_pf Registerpf;
 
 	private Map<String, String> testData;
@@ -38,8 +34,7 @@ public class RegisterTest extends BaseTest {
 
 		Launchpf = new Launch_pf();
 		Homepf = new Home_pf();
-		Registerpf = new Register_pf();
-		this.log = new LoggerLoad();
+		Registerpf = new Register_pf();	
 		Launchpf.get_testUrl();
 		Launchpf.clickgetstarted();
 		Homepf.clickRegister();
