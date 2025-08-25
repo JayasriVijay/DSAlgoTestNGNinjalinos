@@ -2,23 +2,19 @@ package testCases;
 import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageFactory.BasePage;
 import pageFactory.LinkedList_pf;
 import utils.Dataprovider;
-import utils.LoggerLoad;
 
-@Listeners({ CustomListener.class })
+
 public class LinkedListTest extends BaseTest {
 
 	public LinkedListTest() throws IOException {
 		super();
-
 	}
 
 	LinkedList_pf linkedListPg;
-	LoggerLoad log;
 	String Input;
 	String actualOutput;
 	String expectedOutput;
@@ -30,8 +26,7 @@ public class LinkedListTest extends BaseTest {
 		base = new BasePage();
 		base.launch_webpage();
 		linkedListPg.getToLinkedList();
-		log = new LoggerLoad();
-	}
+		}
 
 	public void verifyPracticeQuestionsPageTitle() {
 		linkedListPg.clickOnPracticeQuestion();
