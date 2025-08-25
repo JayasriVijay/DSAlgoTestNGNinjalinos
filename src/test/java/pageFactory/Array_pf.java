@@ -12,15 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class Array_pf extends BasePage {
 
 	HashMap<String, String> PQtestData;
-	HashMap<String, String> testData2;
-	HashMap<String, String> testData3;
+
 
 	public Array_pf() throws IOException {
 		super();
 		this.PQtestData = new HashMap<>();
-		this.testData2 = new HashMap<>();
-		this.testData3 = new HashMap<>();
-		PQtestData = excelReader.readExcelRow("Code", "practiceQ");
+	    PQtestData = excelReader.readExcelRow("Code", "practiceQ");
 	}
 
 	// ========== Elements ==========
@@ -68,11 +65,6 @@ public class Array_pf extends BasePage {
 	@FindBy(css = "input[value='Submit']")
 	WebElement submitBtn;
 
-	private void safeType(WebElement element, String code) {
-		wait.until(ExpectedConditions.visibilityOf(element));
-		wait.until(ExpectedConditions.elementToBeClickable(element));
-		action.moveToElement(element).click().sendKeys(code).perform();
-	}
 
 	private void safeClick(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -85,7 +77,6 @@ public class Array_pf extends BasePage {
 	}
 
 	public void clickArrayGetStarted() {
-
 		safeClick(arrayGetStarted);
 	}
 
@@ -129,24 +120,10 @@ public class Array_pf extends BasePage {
 		safeClick(squaresOfSortedArrayLink);
 	}
 
-	public void tryEditor_validCode() throws IOException {
-		testData2 = excelReader.readExcelRow("ValidCode", "testdata");
-		String data = testData2.get("PythonCode");
-		safeType(textEditor, data);
-	}
-
-	public void tryEditor_invalidCode() throws IOException {
-		testData3 = excelReader.readExcelRow("InvalidCode", "testdata");
-		String data = testData3.get("PythonCode");
-
-		safeType(textEditor, data);
-	}
 
 	public void enterValidCodeInPracticeEditor(String code) {
 		safeClick(practiceQuestionEditor);
-
 		JavascriptExecutor js = (JavascriptExecutor) tldriver;
-
 		js.executeScript("var editor = arguments[0].CodeMirror || arguments[0].closest('.CodeMirror').CodeMirror;"
 				+ "editor.setValue(arguments[1]);", practiceQuestionEditor, code);
 	}

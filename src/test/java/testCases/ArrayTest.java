@@ -2,16 +2,13 @@ package testCases;
 
 import java.io.IOException;
 import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import pageFactory.Array_pf;
 import pageFactory.BasePage;
 import utils.Dataprovider;
-import utils.LoggerLoad;
+
 
 
 public class ArrayTest extends BaseTest {
@@ -23,7 +20,6 @@ public class ArrayTest extends BaseTest {
 
 	Array_pf array_pf;
 	BasePage base;
-	LoggerLoad log;
 	HashMap<String, String> resultTestData;
 	String actualOutput;
 	String expectedOutput;
@@ -32,7 +28,6 @@ public class ArrayTest extends BaseTest {
 	public void array_page() throws IOException {
 		base = new BasePage();
 		array_pf = new Array_pf();
-		this.log = new LoggerLoad();
 		base.launch_webpage();
 		array_pf.clickArrayGetStarted();
 		resultTestData = excelReader.readExcelRow("Result", "practiceQ");
@@ -40,7 +35,6 @@ public class ArrayTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void testArraysInPythonLink() throws InterruptedException, IOException {
-
 		array_pf.clickArraysInPython();
 		array_pf.waitForUrlToContain("/arrays-in-python/");
 		String currentUrl = array_pf.getURL();
@@ -51,7 +45,6 @@ public class ArrayTest extends BaseTest {
 
 	@Test(priority = 2)
 	public void testArraysUsingListLink() throws IOException {
-
 		array_pf.clickArraysUsingList();
 		array_pf.waitForUrlToContain("/arrays-using-list/");
 		String currentUrl = array_pf.getURL();
@@ -61,8 +54,7 @@ public class ArrayTest extends BaseTest {
 
 	@Test(priority = 3)
 	public void testBasicOperationsLink() throws IOException {
-
-		array_pf.clickBasicOperations();
+        array_pf.clickBasicOperations();
 		array_pf.waitForUrlToContain("/basic-operations-in-lists/");
 		String currentUrl = array_pf.getURL();
 		log.info("Navigating to basic operations link");
@@ -72,8 +64,7 @@ public class ArrayTest extends BaseTest {
 
 	@Test(priority = 4)
 	public void testApplicationsOfArray() throws IOException {
-
-		array_pf.clickApplicationsOfArray();
+        array_pf.clickApplicationsOfArray();
 		array_pf.waitForUrlToContain("/applications-of-array/");
 		String currentUrl = array_pf.getURL();
 		Assert.assertTrue(currentUrl.contains("array/applications-of-array/"));
@@ -82,8 +73,7 @@ public class ArrayTest extends BaseTest {
 
 	@Test(priority = 5)
 	public void testClickTryHereFromPythonLink() throws IOException {
-
-		array_pf.clickArraysInPython();
+        array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
 		array_pf.waitForUrlToContain("/tryEditor");
 		String currentUrl = array_pf.getURL();
@@ -140,10 +130,8 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickArraysInPython();
 		array_pf.clickTryHere();
 		base.validAndInvalidCode(code);
-
 		if (ScenarioName.equalsIgnoreCase("ValidCode")) {
 			String actualOutput = base.output_text();
-
 			Assert.assertEquals(actualOutput, expectedOutput, "did not get the expected output");
 		} else if (ScenarioName.equalsIgnoreCase("InvalidCode")) {
 			boolean alertmsg = base.isAlertOpen();
@@ -409,7 +397,6 @@ public class ArrayTest extends BaseTest {
 		array_pf.clickSubmit();
 		String outputQ2 = base.output_text();
 		String expectedOP = resultTestData.get("SubmitResult");
-
 		Assert.assertEquals(expectedOP, outputQ2);
 
 	}

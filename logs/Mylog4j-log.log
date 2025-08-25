@@ -4891,3 +4891,187 @@
 [INFO] 2025-08-24 14:08:17.704 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@413bef78: 13 ms
 [INFO] 2025-08-24 14:08:17.715 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@180b3819: 10 ms
 [INFO] 2025-08-24 14:08:17.725 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4de79b7d: 10 ms
+[INFO] 2025-08-24 18:36:47.870 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.872 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.872 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.873 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.874 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.877 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-24 18:36:47.881 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+[INFO] 2025-08-24 18:36:47.881 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.881 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.882 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.882 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.882 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.882 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.883 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.884 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-24 18:36:47.885 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.885 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.885 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:36:47.885 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:36:47.887 [main] Utils - [TestNG] Running:
+  /private/var/folders/0b/48sgl7yd1lqb_m1nr3b4thy80000gn/T/testng-eclipse--551936057/testng-customsuite.xml
+
+[INFO] 2025-08-24 18:36:47.895 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+[INFO] 2025-08-24 18:36:51.593 [main] LoggerLoad - Navigating to arryas in python link
+[INFO] 2025-08-24 18:36:56.358 [main] LoggerLoad - Navigating to basic operations link
+[INFO] 2025-08-24 18:37:02.031 [main] LoggerLoad - Navigating to tryhere page
+[ERROR] 2025-08-24 18:37:13.571 [main] LoggerLoad - There is no alert message displayed when we click on run button without entering any code in the code editor in array module
+[ERROR] 2025-08-24 18:38:59.732 [main] LoggerLoad - There is a bug in Q4, even after submiiting valid Q it gives error
+[INFO] 2025-08-24 18:38:59.843 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@37c47166: 0 ms
+[INFO] 2025-08-24 18:38:59.856 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@7c76d466: 13 ms
+[INFO] 2025-08-24 18:38:59.870 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@4433e4e2: 14 ms
+[INFO] 2025-08-24 18:38:59.873 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@458c58e3: 3 ms
+[INFO] 2025-08-24 18:38:59.878 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@72b1ee4b: 5 ms
+[INFO] 2025-08-24 18:38:59.882 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2cf1c10e: 4 ms
+[INFO] 2025-08-24 18:38:59.886 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@39124055: 4 ms
+[INFO] 2025-08-24 18:40:38.484 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.485 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.486 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.486 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.486 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.487 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.488 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.488 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.488 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.488 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.491 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-24 18:40:38.494 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+[INFO] 2025-08-24 18:40:38.494 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.494 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.495 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.495 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.495 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.495 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.496 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.497 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.497 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.497 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.498 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:40:38.498 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:40:38.499 [main] Utils - [TestNG] Running:
+  /private/var/folders/0b/48sgl7yd1lqb_m1nr3b4thy80000gn/T/testng-eclipse--2031189953/testng-customsuite.xml
+
+[INFO] 2025-08-24 18:40:38.506 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+[INFO] 2025-08-24 18:40:41.247 [main] LoggerLoad - Navigating to arryas in python link
+[INFO] 2025-08-24 18:40:46.078 [main] LoggerLoad - Navigating to basic operations link
+[INFO] 2025-08-24 18:40:51.559 [main] LoggerLoad - Navigating to tryhere page
+[ERROR] 2025-08-24 18:41:02.802 [main] LoggerLoad - There is no alert message displayed when we click on run button without entering any code in the code editor in array module
+[ERROR] 2025-08-24 18:42:47.900 [main] LoggerLoad - There is a bug in Q4, even after submiiting valid Q it gives error
+[INFO] 2025-08-24 18:42:48.019 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@723493f2: 0 ms
+[INFO] 2025-08-24 18:42:48.028 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@7c89133: 9 ms
+[INFO] 2025-08-24 18:42:48.045 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@66716c60: 17 ms
+[INFO] 2025-08-24 18:42:48.049 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@abe3a3: 4 ms
+[INFO] 2025-08-24 18:42:48.056 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@498c3adc: 7 ms
+[INFO] 2025-08-24 18:42:48.060 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@8f7544a: 4 ms
+[INFO] 2025-08-24 18:42:48.064 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@6910e725: 4 ms
+[INFO] 2025-08-24 18:57:32.621 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.622 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.623 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.623 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.623 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.623 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.624 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.625 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.625 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.625 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.625 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.628 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-24 18:57:32.633 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO] 2025-08-24 18:57:32.633 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.633 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.634 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.634 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.634 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.634 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.635 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.637 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-24 18:57:32.637 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.637 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.637 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 18:57:32.637 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 18:57:32.640 [main] Utils - [TestNG] Running:
+  /private/var/folders/0b/48sgl7yd1lqb_m1nr3b4thy80000gn/T/testng-eclipse--898061235/testng-customsuite.xml
+
+[INFO] 2025-08-24 18:57:32.648 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+[INFO] 2025-08-24 18:57:35.643 [main] LoggerLoad - Navigating to arryas in python link
+[INFO] 2025-08-24 18:57:40.288 [main] LoggerLoad - Navigating to basic operations link
+[INFO] 2025-08-24 18:57:46.613 [main] LoggerLoad - Navigating to tryhere page
+[ERROR] 2025-08-24 18:57:57.998 [main] LoggerLoad - There is no alert message displayed when we click on run button without entering any code in the code editor in array module
+[ERROR] 2025-08-24 18:59:42.790 [main] LoggerLoad - There is a bug in Q4, even after submiiting valid Q it gives error
+[INFO] 2025-08-24 18:59:42.912 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@abe3a3: 0 ms
+[INFO] 2025-08-24 18:59:42.924 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@7e9079cf: 12 ms
+[INFO] 2025-08-24 18:59:42.943 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@287e35df: 19 ms
+[INFO] 2025-08-24 18:59:42.947 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@65dfce2f: 4 ms
+[INFO] 2025-08-24 18:59:42.953 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@7b0c4127: 6 ms
+[INFO] 2025-08-24 18:59:42.961 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5769eb7b: 8 ms
+[INFO] 2025-08-24 18:59:42.966 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@24fc59e3: 5 ms
+[INFO] 2025-08-24 19:05:40.890 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.892 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.893 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.893 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.893 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.893 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.894 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.895 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.895 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.895 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.895 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.898 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 2025-08-24 19:05:40.902 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+[INFO] 2025-08-24 19:05:40.902 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.903 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.903 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.903 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.903 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.903 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.904 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.905 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 2025-08-24 19:05:40.906 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.906 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.906 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 2025-08-24 19:05:40.906 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 2025-08-24 19:05:40.908 [main] Utils - [TestNG] Running:
+  /private/var/folders/0b/48sgl7yd1lqb_m1nr3b4thy80000gn/T/testng-eclipse--138829062/testng-customsuite.xml
+
+[INFO] 2025-08-24 19:05:40.916 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+[INFO] 2025-08-24 19:05:43.887 [main] LoggerLoad - Navigating to arryas in python link
+[INFO] 2025-08-24 19:05:48.740 [main] LoggerLoad - Navigating to basic operations link
+[INFO] 2025-08-24 19:05:54.233 [main] LoggerLoad - Navigating to tryhere page
+[ERROR] 2025-08-24 19:06:05.693 [main] LoggerLoad - There is no alert message displayed when we click on run button without entering any code in the code editor in array module
+[ERROR] 2025-08-24 19:07:51.142 [main] LoggerLoad - There is a bug in Q4, even after submiiting valid Q it gives error
+[INFO] 2025-08-24 19:07:51.261 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6fe37577: 0 ms
+[INFO] 2025-08-24 19:07:51.271 [main] Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@1a596879: 10 ms
+[INFO] 2025-08-24 19:07:51.286 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@75a45ce: 15 ms
+[INFO] 2025-08-24 19:07:51.289 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@2cf1c10e: 3 ms
+[INFO] 2025-08-24 19:07:51.295 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@31ca510a: 6 ms
+[INFO] 2025-08-24 19:07:51.300 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@778c5658: 5 ms
+[INFO] 2025-08-24 19:07:51.305 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4e0d2ddd: 5 ms
