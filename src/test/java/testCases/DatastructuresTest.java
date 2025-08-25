@@ -27,9 +27,6 @@ public class DatastructuresTest extends BaseTest {
 		this.base = new BasePage();
 		this.Datastructurepf = new Datastructure_pf();
 		this.Homepf = new Home_pf();
-		this.log = new LoggerLoad();
-		this.testDataValid = new HashMap<>();
-		this.testDataInValid = new HashMap<>();
 		base.launch_webpage();
 		Datastructurepf.clickgetstartedDatastructures();
 
@@ -49,7 +46,6 @@ public class DatastructuresTest extends BaseTest {
 
 		Datastructurepf.clickTimecomplexityLink();
 		Datastructurepf.clickPracticeQuestionsLink();
-		//allureScreenshot();
 		log.info("click on Practice questions");
 		log.error("There are no practice questions available in the Datastructure module");
 		Assert.fail("Failing this test case, there are no practice questions available in the Data Structures module");
